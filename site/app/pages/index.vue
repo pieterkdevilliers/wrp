@@ -205,13 +205,16 @@ useSeoMeta({
               <div class="credential">Author of <em>Barefoot Business</em> (2018 bestseller)</div>
             </div>
           </div>
-          <div class="book-card">
-            <div class="book-card-eyebrow">Bestselling Book · 2018</div>
-            <div class="book-title">Barefoot Business</div>
-            <div class="book-author">Pieter K de Villiers</div>
-            <p class="book-desc">
-              The book that established the thinking behind everything I do. Barefoot Business is about building a business that works for you — not the other way around. Practical, direct, and grounded in what actually works for small and growing businesses.
-            </p>
+          <div class="about-right">
+            <img src="/images/book_cover.jpg" alt="Barefoot Business by Pieter K de Villiers" class="book-cover" />
+            <div class="book-card">
+              <div class="book-card-eyebrow">Bestselling Book · 2018</div>
+              <div class="book-title">Barefoot Business</div>
+              <div class="book-author">Pieter K de Villiers</div>
+              <p class="book-desc">
+                The book that established the thinking behind everything I do. Barefoot Business is about building a business that works for you — not the other way around. Practical, direct, and grounded in what actually works for small and growing businesses.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -404,20 +407,20 @@ section { padding: 7rem 3rem; }
 /* PROBLEM */
 .problem {
   background: var(--surface-dark);
-  color: var(--ink);
+  color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
   align-items: center;
 }
 
-.problem h2 { color: var(--ink); }
+.problem h2 { color: #ffffff; }
 
-.problem .section-eyebrow { color: rgba(0, 0, 0, 0.5); }
+.problem .section-eyebrow { color: var(--accent); }
 
 .problem-body {
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.85;
 }
 
@@ -435,17 +438,17 @@ section { padding: 7rem 3rem; }
   gap: 1rem;
   align-items: flex-start;
   padding: 1rem 1.25rem;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 10px;
   font-size: 0.9rem;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   line-height: 1.6;
 }
 
 .problem-list li::before {
   content: '→';
-  color: var(--ink);
+  color: var(--accent);
   flex-shrink: 0;
   margin-top: 0.1rem;
   font-weight: 600;
@@ -558,7 +561,7 @@ section { padding: 7rem 3rem; }
 
 .workshop-details {
   background: var(--surface-dark);
-  color: var(--ink);
+  color: #ffffff;
   padding: 2.5rem;
   border-radius: 20px;
 }
@@ -569,7 +572,7 @@ section { padding: 7rem 3rem; }
   font-weight: 700;
   letter-spacing: -0.01em;
   margin-bottom: 1.5rem;
-  color: var(--ink);
+  color: #ffffff;
 }
 
 .detail-row {
@@ -583,14 +586,14 @@ section { padding: 7rem 3rem; }
 
 .detail-row:last-of-type { border-bottom: none; }
 
-.detail-label { color: rgba(0, 0, 0, 0.45); font-size: 0.78rem; }
-.detail-value { color: var(--ink); font-weight: 500; }
+.detail-label { color: rgba(255, 255, 255, 0.4); font-size: 0.78rem; }
+.detail-value { color: #ffffff; font-weight: 500; }
 
 .detail-value.price {
   font-family: 'Inter', sans-serif;
   font-size: 1.4rem;
   font-weight: 800;
-  color: var(--ink);
+  color: var(--accent);
   letter-spacing: -0.02em;
 }
 
@@ -599,14 +602,6 @@ section { padding: 7rem 3rem; }
   text-align: center;
   margin-top: 2rem;
   display: block;
-  background: #ffffff !important;
-  color: var(--ink) !important;
-}
-
-.workshop-cta:hover {
-  background: rgba(255, 255, 255, 0.88) !important;
-  color: var(--ink) !important;
-  transform: translateY(-1px);
 }
 
 /* WHO I WORK WITH */
@@ -652,7 +647,7 @@ section { padding: 7rem 3rem; }
 /* ABOUT */
 .about {
   background: var(--surface-dark);
-  color: var(--ink);
+  color: #ffffff;
   padding: 7rem 3rem;
 }
 
@@ -665,13 +660,13 @@ section { padding: 7rem 3rem; }
   align-items: center;
 }
 
-.about h2 { color: var(--ink); }
+.about h2 { color: #ffffff; }
 
-.about .section-eyebrow { color: rgba(0, 0, 0, 0.5); }
+.about .section-eyebrow { color: var(--accent); }
 
 .about-body {
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.85;
 }
 
@@ -689,15 +684,28 @@ section { padding: 7rem 3rem; }
   gap: 0.85rem;
   align-items: flex-start;
   font-size: 0.88rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.5;
 }
 
 .credential::before {
   content: '—';
-  color: var(--ink);
+  color: var(--accent);
   flex-shrink: 0;
   font-weight: 600;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-cover {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.22);
+  margin-bottom: 1.75rem;
 }
 
 .book-card {
@@ -712,7 +720,7 @@ section { padding: 7rem 3rem; }
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: 1rem;
 }
 
@@ -720,19 +728,19 @@ section { padding: 7rem 3rem; }
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem;
   font-style: italic;
-  color: var(--ink);
+  color: #ffffff;
   margin-bottom: 0.4rem;
 }
 
 .book-author {
   font-size: 0.82rem;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: 1.5rem;
 }
 
 .book-desc {
   font-size: 0.88rem;
-  color: rgba(0, 0, 0, 0.55);
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.7;
 }
 

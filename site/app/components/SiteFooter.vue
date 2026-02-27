@@ -12,7 +12,7 @@
 <style scoped>
 footer {
   background: var(--surface-dark);
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.35);
   padding: 2.5rem 3rem;
   display: flex;
   justify-content: space-between;
@@ -22,12 +22,12 @@ footer {
 }
 
 footer a {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.35);
   text-decoration: none;
   transition: color 0.15s;
 }
 
-footer a:hover { color: var(--ink); }
+footer a:hover { color: rgba(255, 255, 255, 0.85); }
 
 .footer-links { display: flex; gap: 2rem; }
 

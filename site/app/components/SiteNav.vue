@@ -46,7 +46,7 @@ nav {
   border-bottom: 1px solid var(--border-inv);
 }
 
-.nav--dark .nav-logo { color: var(--ink); }
+.nav--dark .nav-logo { color: #ffffff; }
 
 @media (max-width: 900px) {
   .nav--light,

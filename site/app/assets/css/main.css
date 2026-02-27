@@ -3,13 +3,13 @@
 :root {
   --bg:           #ffffff;
   --surface:      #f5f5f7;
-  --surface-dark: #29bbec;
+  --surface-dark: #1d1d1f;
   --ink:          #1d1d1f;
   --ink-2:        #6e6e73;
   --accent:       #29bbec;
   --accent-dark:  #0da8d8;
   --border:       rgba(0, 0, 0, 0.08);
-  --border-inv:   rgba(0, 0, 0, 0.1);
+  --border-inv:   rgba(255, 255, 255, 0.1);
 }
 
 html { scroll-behavior: smooth; }

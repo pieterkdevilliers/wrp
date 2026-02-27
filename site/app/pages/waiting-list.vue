@@ -211,7 +211,7 @@ function handleSubmit() {
 <style scoped>
 .page-wrapper {
   background: var(--surface-dark);
-  color: var(--ink);
+  color: #ffffff;
   min-height: 100vh;
 }
 
@@ -219,12 +219,12 @@ function handleSubmit() {
 .nav-back {
   font-size: 0.8rem;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   transition: color 0.15s;
 }
 
-.nav-back:hover { color: var(--ink); }
+.nav-back:hover { color: #ffffff; }
 
 /* LAYOUT */
 .page {
@@ -247,7 +247,7 @@ function handleSubmit() {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: 1.25rem;
 }
 
@@ -267,16 +267,16 @@ h1 em {
 
 .lead {
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.8;
   max-width: 520px;
   margin-bottom: 2.5rem;
 }
 
 .scarcity {
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-left: 3px solid var(--ink);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-inv);
+  border-left: 3px solid var(--accent);
   padding: 1.25rem 1.75rem;
   margin-bottom: 2.5rem;
   border-radius: 0 10px 10px 0;
@@ -287,13 +287,13 @@ h1 em {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: 0.4rem;
 }
 
 .scarcity-text {
   font-size: 0.9rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.6;
 }
 
@@ -302,7 +302,7 @@ h1 em {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.35);
+  color: rgba(255, 255, 255, 0.35);
   margin-bottom: 1rem;
 }
 
@@ -317,7 +317,7 @@ h1 em {
   gap: 0.85rem;
   align-items: flex-start;
   font-size: 0.88rem;
-  color: rgba(0, 0, 0, 0.65);
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.55;
 }
 
@@ -336,7 +336,7 @@ h1 em {
 
 .benefit-icon::after {
   content: '✓';
-  color: var(--ink);
+  color: #ffffff;
   font-size: 0.55rem;
   font-weight: 700;
 }
@@ -351,7 +351,7 @@ h1 em {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 0.95rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   line-height: 1.65;
   margin-bottom: 0.6rem;
 }
@@ -360,7 +360,7 @@ h1 em {
   font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.06em;
-  color: rgba(0, 0, 0, 0.35);
+  color: rgba(255, 255, 255, 0.35);
   text-transform: uppercase;
 }
 
@@ -401,12 +401,12 @@ h1 em {
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 0.6rem;
-  color: var(--ink);
+  color: #ffffff;
 }
 
 .form-header p {
   font-size: 0.88rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   line-height: 1.6;
 }
 
@@ -428,17 +428,17 @@ label {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 input,
 select,
 textarea {
-  background: rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--border-inv);
   border-radius: 8px;
   padding: 0.8rem 1rem;
-  color: var(--ink);
+  color: #ffffff;
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
@@ -451,14 +451,14 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--ink);
-  background: rgba(255, 255, 255, 0.38);
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 select {
@@ -498,9 +498,9 @@ textarea {
   gap: 0.6rem;
   cursor: pointer;
   font-size: 0.82rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.65);
   padding: 0.6rem 0.75rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   transition: all 0.15s;
   user-select: none;
@@ -510,9 +510,9 @@ textarea {
 }
 
 .checkbox-item:hover {
-  border-color: rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 0.85);
-  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .checkbox-item input[type="checkbox"] {
@@ -546,7 +546,7 @@ textarea {
 
 .form-disclaimer {
   font-size: 0.72rem;
-  color: rgba(0, 0, 0, 0.35);
+  color: rgba(255, 255, 255, 0.35);
   line-height: 1.6;
   margin-top: 0.85rem;
   text-align: center;
@@ -581,11 +581,11 @@ textarea {
   font-weight: 800;
   letter-spacing: -0.025em;
   margin-bottom: 1rem;
-  color: var(--ink);
+  color: #ffffff;
 }
 
 .success-state > p {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 0.92rem;
   line-height: 1.75;
   max-width: 380px;
@@ -606,7 +606,7 @@ textarea {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.4);
   margin-bottom: 1rem;
 }
 
@@ -614,16 +614,16 @@ textarea {
   display: flex;
   gap: 1rem;
   font-size: 0.85rem;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.6;
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .next-step:last-child { border-bottom: none; }
 
 .next-step-num {
-  color: var(--ink);
+  color: var(--accent);
   font-weight: 600;
   flex-shrink: 0;
 }
