@@ -42,7 +42,7 @@ function handleSubmit() {
         <div class="scarcity">
           <div class="scarcity-label">Current Availability</div>
           <div class="scarcity-text">
-            I am currently accepting new clients for Q2 2026. I have a small number of workshop slots available. Joining this list is the only way to be considered - I don't take cold enquiries.
+            I have a small number of workshop slots available. Joining this list is the only way to be considered - I don't take cold enquiries.
           </div>
         </div>
         <p class="benefits-title">What joining the list means</p>
