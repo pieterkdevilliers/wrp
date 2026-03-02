@@ -22,7 +22,7 @@ useSeoMeta({
         <p class="hero-eyebrow">AI &amp; Automation Consulting · UK</p>
         <h1>Your business is losing value in the <em>gaps nobody sees.</em></h1>
         <p class="hero-sub">
-          I map your full prospect and customer journey — from first touch to loyal advocate — then identify exactly where automation and AI can eliminate the leaks, delays, and manual effort that are quietly costing you.
+          Imagine your full prospect and customer journey - from first touch to loyal advocate - fully mapped out, revealing exactly where automation and AI can seal the leaks, slash delays, and erase the manual effort that's quietly draining your resources.
         </p>
         <div class="hero-actions">
           <NuxtLink to="/waiting-list" class="btn-primary">Join the Waiting List</NuxtLink>
@@ -31,17 +31,17 @@ useSeoMeta({
       </div>
       <div class="hero-right">
         <p class="hero-quote">
-          "Most businesses don't have a sales problem or a tech problem. They have a journey problem — and they've been too busy to look at it properly."
+          "Most businesses don't have a sales problem or a tech problem. They have a journey problem - and they've been too busy to look at it properly."
         </p>
-        <p class="hero-quote-attr">— Pieter K de Villiers, Barefoot Business</p>
+        <p class="hero-quote-attr">- Pieter K de Villiers, Barefoot Business</p>
         <div class="hero-stats">
           <div>
             <div class="stat-number">10+</div>
-            <div class="stat-label">Years shipping AI &amp; automation products</div>
+            <div class="stat-label">Years shipping AI &amp; automation products, making real impact</div>
           </div>
           <div>
             <div class="stat-number">0→1</div>
-            <div class="stat-label">Products built as founder &amp; technical lead</div>
+            <div class="stat-label">Experienced in taking products from idea to launch as founder &amp; technical lead</div>
           </div>
           <div>
             <div class="stat-number">£2,500</div>
@@ -67,12 +67,12 @@ useSeoMeta({
         </div>
       </div>
       <ul class="problem-list">
-        <li>Leads are going cold because follow-up depends on someone remembering to do it</li>
-        <li>Your onboarding process is inconsistent and relies on tribal knowledge</li>
-        <li>You're using five different tools that were meant to solve the same problem</li>
-        <li>Your team spends hours each week on tasks that should take minutes</li>
-        <li>You've thought about AI but don't know where it would actually make a difference</li>
-        <li>Growth feels like it requires more people, when it should require better systems</li>
+        <li>Do you find leads are going cold because follow-up depends on someone remembering to do it?</li>
+        <li>Is your onboarding process inconsistent because it relies on tribal knowledge?</li>
+        <li>Are you using five different tools that were meant to solve the same problem?</li>
+        <li>Does your team spend hours each week on tasks that should take minutes?</li>
+        <li>Have you thought about adding AI but don't know where it would actually make a difference?</li>
+        <li>Does growth feel like it requires more people, when it should require better systems?</li>
       </ul>
     </section>
 
@@ -82,25 +82,25 @@ useSeoMeta({
         <div class="how-header">
           <p class="section-eyebrow">How It Works</p>
           <h2>A clear process. A defined outcome.</h2>
-          <p>Every engagement starts with understanding before it starts with building. Here's what working together looks like.</p>
+          <p>Every engagement starts with understanding before it moves to building. Here's what working together looks like.</p>
         </div>
         <div class="steps">
           <div class="step">
             <div class="step-number">01</div>
             <h3>Journey Mapping Workshop</h3>
-            <p>We spend a focused day together — in person — mapping your full prospect and customer journey. Every touchpoint, handoff, gap, and opportunity. You'll leave with a clear picture of what's happening and what it's costing you.</p>
+            <p>We spend a focused day together - in person - mapping your full prospect and customer journey. Every touchpoint, handoff, gap, and opportunity. You'll leave with a clear picture of what's happening and what it's costing you.</p>
             <span class="step-tag">£2,500 · Fixed Price · 1 Day</span>
           </div>
           <div class="step">
             <div class="step-number">02</div>
             <h3>Automation &amp; AI Opportunities</h3>
-            <p>Once we can see the journey clearly, it becomes obvious where technology can help. I identify the highest-leverage automation and AI opportunities — ranked by impact and implementation effort — so you make smart decisions, not expensive ones.</p>
+            <p>Once we can see the journey clearly, it becomes obvious where technology can help. We'll identify the highest-leverage automation and AI opportunities - ranked by impact and implementation effort - so you make smart decisions, not expensive ones.</p>
             <span class="step-tag">Strategic Recommendation</span>
           </div>
           <div class="step">
             <div class="step-number">03</div>
             <h3>Build &amp; Implement</h3>
-            <p>I design, build, and implement the tools your business actually needs — whether that's online integrations, LLM-powered workflows, or on-premise AI. Working with a trusted network of specialists when needed, but always with me as your technical lead.</p>
+            <p>I design, build, and implement the tools your business actually needs - whether that's online integrations, LLM-powered workflows, or on-premise AI. Working with a trusted network of specialists when needed, but always with me as your technical lead.</p>
             <span class="step-tag">Fractional Tech Lead</span>
           </div>
         </div>
@@ -115,10 +115,10 @@ useSeoMeta({
             <p class="section-eyebrow">The Workshop</p>
             <h2>One day that changes how you see your business.</h2>
             <div class="workshop-body">
-              <p>The Customer Journey Mapping Workshop is the starting point for every engagement. It's a focused, facilitated session with you and your leadership team — held in person, at your premises.</p>
-              <p>We map every stage of your prospect and customer journey: how people find you, what happens when they engage, how they buy, how you onboard them, and what keeps them — or doesn't.</p>
+              <p>The Customer Journey Mapping Workshop is the starting point for every engagement. It's a focused, facilitated session with you and your leadership team - held in person, at your premises.</p>
+              <p>We map every stage of your prospect and customer journey: how people find you, what happens when they engage, how they buy, how you onboard them, and what keeps them - or doesn't.</p>
               <p>Most business owners have never seen their own business this way. The gaps that are invisible day-to-day become obvious when you step back and look at the whole picture.</p>
-              <p>You'll leave with a complete journey map, a prioritised list of improvement opportunities, and clarity on where automation and AI can make the biggest difference — whether or not you continue working with me.</p>
+              <p>You'll leave with a complete journey map, a prioritised list of improvement opportunities, and clarity on where automation and AI can make the biggest difference - whether or not you continue working with me.</p>
             </div>
             <div class="workshop-callout">
               "The workshop alone is worth more than most businesses spend on software in a year. It gives you the map before you buy the territory."
@@ -144,10 +144,6 @@ useSeoMeta({
                 <span class="detail-value">Full journey map + opportunity report</span>
               </div>
               <div class="detail-row">
-                <span class="detail-label">Location</span>
-                <span class="detail-value">UK-based businesses</span>
-              </div>
-              <div class="detail-row">
                 <span class="detail-label">Investment</span>
                 <span class="detail-value price">£2,500</span>
               </div>
@@ -167,19 +163,19 @@ useSeoMeta({
       <div class="fit-grid">
         <div class="fit-card good">
           <h3>A strong fit if you are...</h3>
-          <p>A founder-led business with 5–50 people that has grown beyond spreadsheets and manual processes, but hasn't yet built a proper operations or technology function. You know things could be slicker. You're ready to invest in getting them right, and you want a partner who can both think strategically and actually build things.</p>
+          <p>An owner-managed business with 5–50 people that has grown beyond spreadsheets and manual processes, but hasn't yet built a proper operations or technology function. You know things could be slicker. You're ready to invest in getting them right, and you want a partner who can both think strategically and actually build things.</p>
         </div>
         <div class="fit-card good">
           <h3>Also a strong fit if you...</h3>
-          <p>Have tried automation tools or AI before and felt like you didn't get the value. Or you're thinking about AI and want someone who can help you make genuinely good decisions — not sell you a solution looking for a problem. You need a technical partner who speaks business, not jargon.</p>
+          <p>Have tried automation tools or AI before and felt like you didn't get the value. Or you're thinking about AI and want someone who can help you make genuinely good decisions - not sell you a solution looking for a problem. You need a technical partner who speaks business, not jargon.</p>
         </div>
         <div class="fit-card notgood">
           <h3>Probably not the right fit if...</h3>
-          <p>You're looking for someone to simply execute a brief you've already written. Or you need a team of 10 developers. I'm a specialist, not an agency — I work with a small number of clients at any time, and I'm selective about the engagements I take on.</p>
+          <p>You're looking for someone to simply execute a brief you've already written. Or you need a team of 10 developers. I'm a specialist, not an agency - I work with a small number of clients at any time, and I'm selective about the engagements I take on.</p>
         </div>
         <div class="fit-card notgood">
           <h3>Also not the right fit if...</h3>
-          <p>You want cheap or fast. I offer neither. The businesses I work with see genuine, lasting improvement in how they operate — and that takes proper thinking, proper building, and a willingness to look honestly at how things currently work.</p>
+          <p>You want cheap or fast. I offer neither. The businesses I work with see genuine, lasting improvement in how they operate - and that takes proper thinking, proper building, and a willingness to look honestly at how things currently work.</p>
         </div>
       </div>
     </div>
@@ -193,27 +189,27 @@ useSeoMeta({
             <p class="section-eyebrow">About</p>
             <h2>I've been on both sides of the problem.</h2>
             <div class="about-body">
-              <p>I'm Pieter K de Villiers — an AI Product Lead, Technical Product Manager, and former founder who has spent over a decade building the kinds of systems I now help businesses implement.</p>
-              <p>As a founder, I built Macanta Software — a no-code CRM and process automation platform — from zero, led the full product lifecycle, and managed the transition post-acquisition. I've been the person trying to make a business run on systems that weren't quite right, and I've been the person building the solutions.</p>
-              <p>That combination is rare. Most consultants are either strategic thinkers who hand you a report, or technical builders who need someone else to tell them what to build. I can do both — which means you get strategy that can actually be implemented, and implementation that's grounded in real business thinking.</p>
-              <p>I work with a small number of clients at any time, which means you get my full attention — not an account manager who passes you to a junior team.</p>
+              <p>I'm Pieter K de Villiers - an AI Product Lead, Technical Product Manager, and former founder who has spent over a decade building the kinds of systems I now help businesses.</p>
+              <p>As a founder, I built Macanta Software - a no-code CRM and process automation platform - from zero, led the full product lifecycle, and managed the transition post-acquisition. I've been the person trying to make a business run on systems that weren't quite right, and I've been the person building the solutions.</p>
+              <p>That combination is rare. Most consultants are either strategic thinkers who hand you a report, or technical builders who need someone else to tell them what to build. I can do both - which means you get strategy that can actually be implemented, and implementation that's grounded in real business thinking.</p>
+              <p>I work with a small number of clients at any time, which means you get my full attention - not an account manager who passes you to a junior team.</p>
             </div>
             <div class="credentials">
               <div class="credential">10+ years defining, architecting, and shipping AI-enabled SaaS products</div>
               <div class="credential">Former co-founder: built and sold a no-code automation platform (Macanta)</div>
               <div class="credential">Technical fluency in Python, LangChain, LLM orchestration, GCP, and Kubernetes</div>
               <div class="credential">Business Automation Consultant since 2014 — helping businesses work smarter</div>
-              <div class="credential">Author of <em>Barefoot Business</em> (2018 bestseller)</div>
+              <div class="credential">Author of <em>Barefoot Business</em> (2017 bestseller)</div>
             </div>
           </div>
           <div class="about-right">
             <img src="/images/book_cover.jpg" alt="Barefoot Business by Pieter K de Villiers" class="book-cover" />
-            <div class="book-card">
-              <div class="book-card-eyebrow">Bestselling Book · 2018</div>
-              <div class="book-title">Barefoot Business</div>
-              <div class="book-author">Pieter K de Villiers</div>
-              <p class="book-desc">
-                The book that established the thinking behind everything I do. Barefoot Business is about building a business that works for you — not the other way around. Practical, direct, and grounded in what actually works for small and growing businesses.
+            <div class="hero-right">
+              <p class="hero-quote">
+                "Too many entrepreneurs are not aware of the key elements outlined in this book and, as such, will always struggle to break out of small business performance and into the big league."
+              </p>
+              <p class="hero-quote-attr">
+                - Martin Norbury, CEO & Founder at The Scalability Coach
               </p>
             </div>
           </div>
@@ -226,7 +222,7 @@ useSeoMeta({
       <p class="section-eyebrow">Get Started</p>
       <h2>I take on a limited number of clients. Spaces are genuinely limited.</h2>
       <p>
-        I work with a small number of businesses at any one time to ensure every client gets the attention they deserve. If you're interested in working together, the best first step is to join the waiting list. No commitment — just the first step in the right direction.
+        I work with a small number of businesses at any one time to ensure every client gets the attention they deserve. If you're interested in working together, the best first step is to join the waiting list. No commitment - just the first step in the right direction.
       </p>
       <NuxtLink to="/waiting-list" class="btn-primary">Join the Waiting List</NuxtLink>
     </div>
