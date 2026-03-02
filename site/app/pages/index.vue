@@ -189,6 +189,7 @@ useSeoMeta({
       <section class="about">
         <div class="about-inner">
           <div>
+            <img src="/images/pkdv-profile.jpg" alt="Pieter K de Villiers" class="profile-photo" />
             <p class="section-eyebrow">About</p>
             <h2>I've been on both sides of the problem.</h2>
             <div class="about-body">
@@ -482,6 +483,8 @@ section { padding: 7rem 3rem; }
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .step-number {
@@ -510,7 +513,8 @@ section { padding: 7rem 3rem; }
 
 .step-tag {
   display: inline-block;
-  margin-top: 1.5rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -672,6 +676,17 @@ section { padding: 7rem 3rem; }
 
 .about-body p + p { margin-top: 1.1rem; }
 
+.profile-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin-bottom: 1.75rem;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
 .credentials {
   display: flex;
   flex-direction: column;
@@ -768,6 +783,9 @@ section { padding: 7rem 3rem; }
   .problem { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; gap: 1rem; }
   .workshop-inner { grid-template-columns: 1fr; }
+  .workshop-details { padding: 1.5rem 1.25rem; border-radius: 14px; }
+  .detail-row { flex-direction: column; align-items: flex-start; gap: 0.2rem; padding: 0.75rem 0; }
+  .detail-value.price { font-size: 1.2rem; }
   .fit-grid { grid-template-columns: 1fr; }
   .about-inner { grid-template-columns: 1fr; }
   section { padding: 5rem 1.5rem; }
