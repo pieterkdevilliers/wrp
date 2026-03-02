@@ -37,12 +37,12 @@ function handleSubmit() {
         <p class="eyebrow">Limited Availability · UK Businesses Only</p>
         <h1>This work is in <em>high demand.</em><br>Spaces are genuinely limited.</h1>
         <p class="lead">
-          I work with a small number of businesses at any one time. That's a deliberate choice — not a sales tactic. Every client I take on gets my full attention, and that means I can only take on a handful of engagements per quarter.
+          I work with a small number of businesses at any one time. That's a deliberate choice - not a sales tactic. Every client I take on gets my full attention, and that means I can only take on a handful of engagements per quarter.
         </p>
         <div class="scarcity">
           <div class="scarcity-label">Current Availability</div>
           <div class="scarcity-text">
-            I am currently accepting new clients for Q2 2025. I have a small number of workshop slots available. Joining this list is the only way to be considered — I don't take cold enquiries.
+            I am currently accepting new clients for Q2 2026. I have a small number of workshop slots available. Joining this list is the only way to be considered - I don't take cold enquiries.
           </div>
         </div>
         <p class="benefits-title">What joining the list means</p>
@@ -53,7 +53,7 @@ function handleSubmit() {
           </div>
           <div class="benefit">
             <div class="benefit-icon" />
-            <span>You'll receive a short, personal note from me — not a newsletter blast — about whether I think we'd be a good fit</span>
+            <span>You'll receive a short, personal note from me - not a newsletter blast - about whether I think we'd be a good fit</span>
           </div>
           <div class="benefit">
             <div class="benefit-icon" />
@@ -61,15 +61,15 @@ function handleSubmit() {
           </div>
           <div class="benefit">
             <div class="benefit-icon" />
-            <span>Access to my thinking: occasional notes on customer journey strategy, automation, and AI — only when I have something worth saying</span>
+            <span>Access to my thinking: occasional notes on customer journey strategy, automation, and AI - only when I have something worth saying</span>
           </div>
           <div class="benefit">
             <div class="benefit-icon" />
-            <span>No obligation. If it's not the right time, I'll still keep you on the list for when it is.</span>
+            <span>No obligation. If it's not the right time, I'll still keep you on the list for when it is</span>
           </div>
         </div>
         <div class="proof">
-          <p class="proof-quote">"The workshop gave us a level of clarity about our business that five years of working in it never had. We could finally see exactly where we were losing people — and what to do about it."</p>
+          <p class="proof-quote">"The workshop gave us a level of clarity about our business that five years of working in it never had. We could finally see exactly where we were losing people - and what to do about it."</p>
           <p class="proof-attr">— Business Owner, Professional Services · South East England</p>
         </div>
       </div>
@@ -80,7 +80,7 @@ function handleSubmit() {
         <div v-if="!submitted">
           <div class="form-header">
             <h2>Join the Waiting List</h2>
-            <p>Tell me a little about your business. This isn't a commitment — it's the start of a conversation. I read every submission personally.</p>
+            <p>Tell me a little about your business. This isn't a commitment - it's the start of a conversation. I read every submission personally.</p>
           </div>
 
           <form class="form" @submit.prevent="handleSubmit">
@@ -179,13 +179,13 @@ function handleSubmit() {
           <div class="success-icon">✦</div>
           <h2>You're on the list.</h2>
           <p>
-            Thank you for taking the time to tell me about your business. I'll read your submission personally and be in touch when a slot becomes available — or sooner, if it seems like we might be a strong fit.
+            Thank you for taking the time to tell me about your business. I'll read your submission personally and be in touch when a slot becomes available - or sooner, if it seems like we might be a strong fit.
           </p>
           <div class="next-steps">
-            <p class="next-steps-title">What happens next</p>
+            <p class="next-steps-title">What happens next?</p>
             <div class="next-step">
               <span class="next-step-num">1</span>
-              <span>You'll receive a short confirmation email from me within 24 hours</span>
+              <span>You'll receive a short confirmation email from me within the next few minutes</span>
             </div>
             <div class="next-step">
               <span class="next-step-num">2</span>
