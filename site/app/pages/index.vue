@@ -198,7 +198,7 @@ useSeoMeta({
               <div class="credential">10+ years defining, architecting, and shipping AI-enabled SaaS products</div>
               <div class="credential">Former co-founder: built and sold a no-code automation platform (Macanta)</div>
               <div class="credential">Technical fluency in Python, LangChain, LLM orchestration, GCP, and Kubernetes</div>
-              <div class="credential">Business Automation Consultant since 2014 — helping businesses work smarter</div>
+              <div class="credential">Business Automation Consultant since 2014 - helping businesses work smarter</div>
               <div class="credential">Author of <em>Barefoot Business</em> (2017 bestseller)</div>
             </div>
           </div>
