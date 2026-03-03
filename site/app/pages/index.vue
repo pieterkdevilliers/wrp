@@ -12,7 +12,7 @@ useSeoMeta({
         <li><a href="#how">How It Works</a></li>
         <li><a href="#workshop">Workshop</a></li>
         <li><a href="#about">About</a></li>
-        <li><NuxtLink to="/waiting-list" class="nav-cta">Join Waiting List</NuxtLink></li>
+        <li><a href="https://koalendar.com/u/pieter-de-villiers" class="nav-cta" target="_blank" rel="noopener">Let's Talk</a></li>
       </ul>
     </SiteNav>
 
@@ -25,7 +25,7 @@ useSeoMeta({
           Imagine your full prospect and customer journey - from first touch to loyal advocate - fully mapped out, revealing exactly where automation and AI can seal the leaks, slash delays, and erase the manual effort that's quietly draining your resources.
         </p>
         <div class="hero-actions">
-          <NuxtLink to="/waiting-list" class="btn-primary">Join the Waiting List</NuxtLink>
+          <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
           <a href="#how" class="btn-secondary">See How It Works</a>
         </div>
       </div>
@@ -147,7 +147,7 @@ useSeoMeta({
                 <span class="detail-label">Investment</span>
                 <span class="detail-value price">£2,500</span>
               </div>
-              <NuxtLink to="/waiting-list" class="btn-primary workshop-cta">Join the Waiting List</NuxtLink>
+              <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary workshop-cta" target="_blank" rel="noopener">Let's Talk</a>
             </div>
           </div>
         </div>
@@ -222,9 +222,9 @@ useSeoMeta({
       <p class="section-eyebrow">Get Started</p>
       <h2>I take on a limited number of clients. Spaces are genuinely limited.</h2>
       <p>
-        I work with a small number of businesses at any one time to ensure every client gets the attention they deserve. If you're interested in working together, the best first step is to join the waiting list. No commitment - just the first step in the right direction.
+        I work with a small number of businesses at any one time to ensure every client gets the attention they deserve. If you're interested in working together, the best first step is a short conversation. No commitment - just the first step in the right direction.
       </p>
-      <NuxtLink to="/waiting-list" class="btn-primary">Join the Waiting List</NuxtLink>
+      <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
     </div>
 
     <SiteFooter />
