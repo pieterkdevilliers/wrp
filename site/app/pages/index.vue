@@ -63,7 +63,7 @@ useSeoMeta({
         <div class="problem-body">
           <p>Most businesses invest in software, automation, and AI before they understand their own process. So the tools add complexity instead of removing it.</p>
           <p>The result is a patchwork of systems that don't talk to each other, a team doing manual work that should be automated, and customers falling through gaps that nobody has properly mapped.</p>
-          <p>Before you spend another pound on technology, you need to see the journey your customers are actually on — not the one you think they're on.</p>
+          <p>Before you spend another pound on technology, you need to see the journey your customers are actually on - not the one you think they're on.</p>
         </div>
       </div>
       <ul class="problem-list">
@@ -115,7 +115,7 @@ useSeoMeta({
             <p class="section-eyebrow">The Workshop</p>
             <h2>One day that changes how you see your business.</h2>
             <div class="workshop-body">
-              <p>The Customer Journey Mapping Workshop is the starting point for every engagement. It's a focused, facilitated session with you and your leadership team - held in person, at your premises.</p>
+              <p>The Customer Journey Mapping Workshop (White Room Process) is the starting point for every engagement. It's a focused, facilitated session with you and your leadership team - held in person, at your premises.</p>
               <p>We map every stage of your prospect and customer journey: how people find you, what happens when they engage, how they buy, how you onboard them, and what keeps them - or doesn't.</p>
               <p>Most business owners have never seen their own business this way. The gaps that are invisible day-to-day become obvious when you step back and look at the whole picture.</p>
               <p>You'll leave with a complete journey map, a prioritised list of improvement opportunities, and clarity on where automation and AI can make the biggest difference - whether or not you continue working with me.</p>
@@ -189,14 +189,14 @@ useSeoMeta({
             <p class="section-eyebrow">About</p>
             <h2>I've been on both sides of the problem.</h2>
             <div class="about-body">
-              <p>I'm Pieter K de Villiers - an AI Product Lead, Technical Product Manager, and former founder who has spent over a decade building the kinds of systems I now help businesses.</p>
-              <p>As a founder, I built Macanta Software - a no-code CRM and process automation platform - from zero, led the full product lifecycle, and managed the transition post-acquisition. I've been the person trying to make a business run on systems that weren't quite right, and I've been the person building the solutions.</p>
+              <p>I'm Pieter K de Villiers - an AI Product Lead, Technical Product Manager, and former founder who has spent over a decade building the kinds of systems I now help businesses build and implement.</p>
+              <p>As a founder, I built MacantaCRM - a no-code CRM and process automation platform - from zero, led the full product lifecycle, and managed the transition post-acquisition. I've been the person trying to make a business run on systems that weren't quite right, and I've been the person building the solutions.</p>
               <p>That combination is rare. Most consultants are either strategic thinkers who hand you a report, or technical builders who need someone else to tell them what to build. I can do both - which means you get strategy that can actually be implemented, and implementation that's grounded in real business thinking.</p>
               <p>I work with a small number of clients at any time, which means you get my full attention - not an account manager who passes you to a junior team.</p>
             </div>
             <div class="credentials">
               <div class="credential">10+ years defining, architecting, and shipping AI-enabled SaaS products</div>
-              <div class="credential">Former co-founder: built and sold a no-code automation platform (Macanta)</div>
+              <div class="credential">Former co-founder: built and sold a no-code automation platform (MacantaCRM)</div>
               <div class="credential">Technical fluency in Python, LangChain, LLM orchestration, GCP, and Kubernetes</div>
               <div class="credential">Business Automation Consultant since 2014 - helping businesses work smarter</div>
               <div class="credential">Author of <em>Barefoot Business</em> (2017 bestseller)</div>
