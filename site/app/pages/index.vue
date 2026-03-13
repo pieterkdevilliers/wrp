@@ -232,7 +232,9 @@ onBeforeUnmount(() => {
               <p class="hero-quote-attr">
                 - Martin Norbury, CEO & Founder at The Scalability Coach
               </p>
+              <hr>
               <div>
+                <p class="section-eyebrow">Get your free copy</p>
                 <client-only>
                   <iframe
                     ref="gcForm"
