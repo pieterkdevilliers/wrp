@@ -1,4 +1,7 @@
 <script setup>
+import { onMounted, onBeforeUnmount, ref } from 'vue'
+import { useSeoMeta } from '#imports'
+
 useSeoMeta({
   title: 'Pieter K de Villiers — AI & Automation Consulting',
 })
@@ -12,6 +15,7 @@ function handleMessage(e) {
 }
 
 onMounted(() => {
+  // Only add listener on client
   window.addEventListener('message', handleMessage)
 })
 
