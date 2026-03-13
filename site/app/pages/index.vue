@@ -235,13 +235,13 @@ onBeforeUnmount(() => {
               <div>
                 <client-only>
                   <iframe
-                    id="gc-form-ddb6e6bf-e592-43eb-9155-0e4ee2cf4de8"
+                    ref="gcForm"
                     src="https://ee-crm.expertecho.ai/embed/ddb6e6bf-e592-43eb-9155-0e4ee2cf4de8"
                     width="100%"
                     height="0"
                     style="border:none;overflow:hidden;"
                     scrolling="no"
-                ></iframe>
+                  ></iframe>
                 </client-only>
               </div>
             </div>
