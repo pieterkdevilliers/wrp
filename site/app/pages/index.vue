@@ -233,7 +233,16 @@ onBeforeUnmount(() => {
                 - Martin Norbury, CEO & Founder at The Scalability Coach
               </p>
               <div>
-                <iframe id="gc-form-ddb6e6bf-e592-43eb-9155-0e4ee2cf4de8" src="https://ee-crm.expertecho.ai/embed/ddb6e6bf-e592-43eb-9155-0e4ee2cf4de8" width="100%" height="0" style="border:none;overflow:hidden;" scrolling="no"></iframe>
+                <client-only>
+                  <iframe
+                    id="gc-form-ddb6e6bf-e592-43eb-9155-0e4ee2cf4de8"
+                    src="https://ee-crm.expertecho.ai/embed/ddb6e6bf-e592-43eb-9155-0e4ee2cf4de8"
+                    width="100%"
+                    height="0"
+                    style="border:none;overflow:hidden;"
+                    scrolling="no"
+                ></iframe>
+                </client-only>
               </div>
             </div>
           </div>
