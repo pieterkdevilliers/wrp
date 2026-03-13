@@ -2,10 +2,24 @@
 useSeoMeta({
   title: 'Pieter K de Villiers — AI & Automation Consulting',
 })
+
+const gcForm = ref(null)
+
+function handleMessage(e) {
+  if (e.data && e.data.gcFormHeight && gcForm.value) {
+    gcForm.value.style.height = e.data.gcFormHeight + 'px'
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('message', handleMessage)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('message', handleMessage)
+})
 </script>
-<script>
-                window.addEventListener('message',function(e){if(e.data&&e.data.gcFormHeight){document.getElementById('gc-form-ddb6e6bf-e592-43eb-9155-0e4ee2cf4de8').style.height=e.data.gcFormHeight+'px';}});
-                </script>
+
 
 <template>
   <div class="page">
