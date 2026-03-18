@@ -1,4 +1,3 @@
-export default defineEventHandler(async () => {
-  const data = await useStorage('assets:data').getItem('podcasts.json')
-  return data ?? []
-})
+import podcasts from '../../app/data/podcasts.json'
+
+export default defineEventHandler(() => podcasts)
