@@ -33,6 +33,7 @@ onBeforeUnmount(() => {
         <li><a href="#how">How It Works</a></li>
         <li><a href="#workshop">Workshop</a></li>
         <li><a href="#podcasts">Podcasts</a></li>
+        <li><NuxtLink to="/blog">Blog</NuxtLink></li>
         <li><a href="#about">About</a></li>
         <li><a href="https://koalendar.com/u/pieter-de-villiers" class="nav-cta" target="_blank" rel="noopener">Let's Talk</a></li>
       </ul>
