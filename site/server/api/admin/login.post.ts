@@ -6,5 +6,13 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 401, message: 'Invalid password' })
   }
 
-  return { ok: true, token: getAdminToken() }
+  setCookie(event, 'admin_token', getAdminToken(), {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax',
+    maxAge: 60 * 60 * 24 * 7,
+    path: '/',
+  })
+
+  return { ok: true }
 })
