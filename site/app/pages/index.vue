@@ -15,7 +15,6 @@ function handleMessage(e) {
 }
 
 onMounted(() => {
-  // Only add listener on client
   window.addEventListener('message', handleMessage)
 })
 
@@ -30,8 +29,7 @@ onBeforeUnmount(() => {
 
     <SiteNav>
       <ul class="nav-links">
-        <li><a href="#how">How It Works</a></li>
-        <li><a href="#workshop">Workshop</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#podcasts">Podcasts</a></li>
         <li><NuxtLink to="/blog">Blog</NuxtLink></li>
         <li><a href="#about">About</a></li>
@@ -49,7 +47,7 @@ onBeforeUnmount(() => {
         </p>
         <div class="hero-actions">
           <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
-          <a href="#how" class="btn-secondary">See How It Works</a>
+          <a href="#services" class="btn-secondary">See What's Available</a>
         </div>
       </div>
       <div class="hero-right">
@@ -67,7 +65,7 @@ onBeforeUnmount(() => {
             <div class="stat-label">Experienced in taking products from idea to launch as founder &amp; technical lead</div>
           </div>
           <div>
-            <div class="stat-number">£2,500</div>
+            <div class="stat-number">£2,495</div>
             <div class="stat-label">Fixed-price discovery workshop</div>
           </div>
           <div>
@@ -99,82 +97,46 @@ onBeforeUnmount(() => {
       </ul>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <div id="how">
-      <div class="how">
-        <div class="how-header">
-          <p class="section-eyebrow">How It Works</p>
-          <h2>A clear process. A defined outcome.</h2>
-          <p>Every engagement starts with understanding before it moves to building. Here's what working together looks like.</p>
+    <!-- SERVICES -->
+    <div id="services">
+      <div class="services">
+        <div class="services-header">
+          <p class="section-eyebrow">Start Here</p>
+          <h2>Choose where to begin.</h2>
+          <p class="services-intro">Every business is at a different stage. Start with what makes sense for you right now.</p>
         </div>
-        <div class="steps">
-          <div class="step">
-            <div class="step-number">01</div>
-            <h3>Journey Mapping Workshop</h3>
-            <p>We spend a focused day together - in person - mapping your full prospect and customer journey. Every touchpoint, handoff, gap, and opportunity. You'll leave with a clear picture of what's happening and what it's costing you.</p>
-            <span class="step-tag">£2,500 · Fixed Price · 1 Day</span>
+        <div class="services-grid">
+
+          <div class="service-card">
+            <p class="service-price">Free</p>
+            <h3>The Book</h3>
+            <p class="service-desc">Get a free copy of <em>Barefoot Business</em> — Pieter's 2017 bestseller on building a business that works without you being the bottleneck.</p>
+            <a href="#about" class="btn-primary service-cta">Get Your Free Copy</a>
           </div>
-          <div class="step">
-            <div class="step-number">02</div>
-            <h3>Automation &amp; AI Opportunities</h3>
-            <p>Once we can see the journey clearly, it becomes obvious where technology can help. We'll identify the highest-leverage automation and AI opportunities - ranked by impact and implementation effort - so you make smart decisions, not expensive ones.</p>
-            <span class="step-tag">Strategic Recommendation</span>
+
+          <div class="service-card">
+            <p class="service-price">Free</p>
+            <h3>Self Assessment</h3>
+            <p class="service-desc">Take the Business Journey Scorecard to see exactly where your business is losing value — and get a personalised report in minutes.</p>
+            <a href="https://pieter-euxiryis.scoreapp.com/" class="btn-primary service-cta" target="_blank" rel="noopener">Take the Assessment</a>
           </div>
-          <div class="step">
-            <div class="step-number">03</div>
-            <h3>Build &amp; Implement</h3>
-            <p>I design, build, and implement the tools your business actually needs - whether that's online integrations, LLM-powered workflows, or on-premise AI. Working with a trusted network of specialists when needed, but always with me as your technical lead.</p>
-            <span class="step-tag">Fractional Tech Lead</span>
+
+          <div class="service-card">
+            <p class="service-price">£249</p>
+            <h3>Journey Audit</h3>
+            <p class="service-desc">A focused remote audit of your customer journey. Discover where you're losing time and money, and get a prioritised action plan — delivered within a week.</p>
+            <NuxtLink to="/journey-audit" class="btn-primary service-cta">Book a Journey Audit</NuxtLink>
           </div>
+
+          <div class="service-card">
+            <p class="service-price">£2,495</p>
+            <h3>Workshop</h3>
+            <p class="service-desc">A full-day in-person session to map your complete customer journey end-to-end — and leave with a clear picture of exactly what to fix and how.</p>
+            <NuxtLink to="/workshop" class="btn-primary service-cta">What's Involved in a Workshop</NuxtLink>
+          </div>
+
         </div>
       </div>
-    </div>
-
-    <!-- THE WORKSHOP -->
-    <div id="workshop">
-      <section class="workshop">
-        <div class="workshop-inner">
-          <div>
-            <p class="section-eyebrow">The Workshop</p>
-            <h2>One day that changes how you see your business.</h2>
-            <div class="workshop-body">
-              <p>The Customer Journey Mapping Workshop (White Room Process) is the starting point for every engagement. It's a focused, facilitated session with you and your leadership team - held in person, at your premises.</p>
-              <p>We map every stage of your prospect and customer journey: how people find you, what happens when they engage, how they buy, how you onboard them, and what keeps them - or doesn't.</p>
-              <p>Most business owners have never seen their own business this way. The gaps that are invisible day-to-day become obvious when you step back and look at the whole picture.</p>
-              <p>You'll leave with a complete journey map, a prioritised list of improvement opportunities, and clarity on where automation and AI can make the biggest difference - whether or not you continue working with me.</p>
-            </div>
-            <div class="workshop-callout">
-              "The workshop alone is worth more than most businesses spend on software in a year. It gives you the map before you buy the territory."
-            </div>
-          </div>
-          <div>
-            <div class="workshop-details">
-              <h3>Workshop Details</h3>
-              <div class="detail-row">
-                <span class="detail-label">Format</span>
-                <span class="detail-value">In-person, at your location</span>
-              </div>
-              <div class="detail-row">
-                <span class="detail-label">Duration</span>
-                <span class="detail-value">Full day</span>
-              </div>
-              <div class="detail-row">
-                <span class="detail-label">Participants</span>
-                <span class="detail-value">You + leadership team</span>
-              </div>
-              <div class="detail-row">
-                <span class="detail-label">Deliverable</span>
-                <span class="detail-value">Full journey map + opportunity report</span>
-              </div>
-              <div class="detail-row">
-                <span class="detail-label">Investment</span>
-                <span class="detail-value price">£2,500</span>
-              </div>
-              <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary workshop-cta" target="_blank" rel="noopener">Let's Talk</a>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
 
     <!-- WHO I WORK WITH -->
@@ -206,49 +168,47 @@ onBeforeUnmount(() => {
     <!-- ABOUT -->
     <div id="about">
       <section class="about">
-        <div class="about-inner">
-          <div>
-            <img src="/images/pkdv-profile.jpg" alt="Pieter K de Villiers" class="profile-photo" />
-            <p class="section-eyebrow">About</p>
-            <h2>I've been on both sides of the problem.</h2>
-            <div class="about-body">
-              <p>I'm Pieter K de Villiers - an AI Product Lead, Technical Product Manager, and former founder who has spent over a decade building the kinds of systems I now help businesses build and implement.</p>
-              <p>As a founder, I built MacantaCRM - a no-code CRM and process automation platform - from zero, led the full product lifecycle, and managed the transition post-acquisition. I've been the person trying to make a business run on systems that weren't quite right, and I've been the person building the solutions.</p>
-              <p>That combination is rare. Most consultants are either strategic thinkers who hand you a report, or technical builders who need someone else to tell them what to build. I can do both - which means you get strategy that can actually be implemented, and implementation that's grounded in real business thinking.</p>
-              <p>I work with a small number of clients at any time, which means you get my full attention - not an account manager who passes you to a junior team.</p>
-            </div>
-            <div class="credentials">
-              <div class="credential">10+ years defining, architecting, and shipping AI-enabled SaaS products</div>
-              <div class="credential">Former co-founder: built and sold a no-code automation platform (MacantaCRM)</div>
-              <div class="credential">Technical fluency in Python, LangChain, LLM orchestration, GCP, and Kubernetes</div>
-              <div class="credential">Business Automation Consultant since 2014 - helping businesses work smarter</div>
-              <div class="credential">Author of <em>Barefoot Business</em> (2017 bestseller)</div>
-            </div>
+        <div class="about-text">
+          <img src="/images/pkdv-profile.jpg" alt="Pieter K de Villiers" class="profile-photo" />
+          <p class="section-eyebrow">About</p>
+          <h2>I've been on both sides of the problem.</h2>
+          <div class="about-body">
+            <p>I'm Pieter K de Villiers - an AI Product Lead, Technical Product Manager, and former founder who has spent over a decade building the kinds of systems I now help businesses build and implement.</p>
+            <p>As a founder, I built MacantaCRM - a no-code CRM and process automation platform - from zero, led the full product lifecycle, and managed the transition post-acquisition. I've been the person trying to make a business run on systems that weren't quite right, and I've been the person building the solutions.</p>
+            <p>That combination is rare. Most consultants are either strategic thinkers who hand you a report, or technical builders who need someone else to tell them what to build. I can do both - which means you get strategy that can actually be implemented, and implementation that's grounded in real business thinking.</p>
+            <p>I work with a small number of clients at any time, which means you get my full attention - not an account manager who passes you to a junior team.</p>
           </div>
-          <div class="about-right">
+          <div class="credentials">
+            <div class="credential">10+ years defining, architecting, and shipping AI-enabled SaaS products</div>
+            <div class="credential">Former co-founder: built and sold a no-code automation platform (MacantaCRM)</div>
+            <div class="credential">Technical fluency in Python, LangChain, LLM orchestration, GCP, and Kubernetes</div>
+            <div class="credential">Business Automation Consultant since 2014 - helping businesses work smarter</div>
+            <div class="credential">Author of <em>Barefoot Business</em> (2017 bestseller)</div>
+          </div>
+        </div>
+        <div class="about-bottom">
+          <div class="about-book">
             <img src="/images/book_cover.jpg" alt="Barefoot Business by Pieter K de Villiers" class="book-cover" />
-            <div class="hero-right">
-              <p class="hero-quote">
-                "Too many entrepreneurs are not aware of the key elements outlined in this book and, as such, will always struggle to break out of small business performance and into the big league."
-              </p>
-              <p class="hero-quote-attr">
-                - Martin Norbury, CEO & Founder at The Scalability Coach
-              </p>
-              <hr>
-              <div>
-                <p class="section-eyebrow">Get your free copy</p>
-                <client-only>
-                  <iframe
-                    ref="gcForm"
-                    src="https://ee-crm.expertecho.ai/embed/ddb6e6bf-e592-43eb-9155-0e4ee2cf4de8"
-                    width="100%"
-                    height="0"
-                    style="border:none;overflow:hidden;"
-                    scrolling="no"
-                  ></iframe>
-                </client-only>
-              </div>
-            </div>
+          </div>
+          <div class="about-form">
+            <p class="hero-quote">
+              "Too many entrepreneurs are not aware of the key elements outlined in this book and, as such, will always struggle to break out of small business performance and into the big league."
+            </p>
+            <p class="hero-quote-attr">
+              - Martin Norbury, CEO & Founder at The Scalability Coach
+            </p>
+            <hr>
+            <p class="section-eyebrow">Get your free copy</p>
+            <client-only>
+              <iframe
+                ref="gcForm"
+                src="https://ee-crm.expertecho.ai/embed/ddb6e6bf-e592-43eb-9155-0e4ee2cf4de8"
+                width="100%"
+                height="0"
+                style="border:none;overflow:hidden;"
+                scrolling="no"
+              ></iframe>
+            </client-only>
           </div>
         </div>
       </section>
@@ -491,157 +451,71 @@ section { padding: 7rem 3rem; }
   font-weight: 600;
 }
 
-/* HOW IT WORKS */
-.how {
+/* SERVICES */
+.services {
   max-width: 1100px;
   margin: 0 auto;
   padding: 7rem 3rem;
 }
 
-.how-header { text-align: center; margin-bottom: 4rem; }
+.services-header {
+  margin-bottom: 3.5rem;
+}
 
-.how-header p {
-  max-width: 540px;
-  margin: 0 auto;
+.services-intro {
   color: var(--ink-2);
   font-size: 1rem;
   line-height: 1.7;
+  max-width: 480px;
+  margin-top: 0.5rem;
 }
 
-.steps {
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
 }
 
-.step {
+.service-card {
   background: var(--bg);
   border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
   border-radius: 16px;
-  padding: 2.5rem 2rem;
+  padding: 2rem 1.75rem;
   display: flex;
   flex-direction: column;
 }
 
-.step-number {
-  font-family: 'Inter', sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  color: rgba(0, 0, 0, 0.06);
-  line-height: 1;
-  margin-bottom: 1.25rem;
-  letter-spacing: -0.04em;
+.service-price {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
 }
 
-.step h3 {
+.service-card h3 {
   font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: -0.01em;
+  color: var(--ink);
   margin-bottom: 0.75rem;
 }
 
-.step p {
+.service-desc {
   font-size: 0.88rem;
   color: var(--ink-2);
   line-height: 1.7;
-}
-
-.step-tag {
-  display: inline-block;
-  margin-top: auto;
-  padding-top: 1.5rem;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: rgba(41, 187, 236, 0.08);
-  padding: 0.3rem 0.7rem;
-  border-radius: 980px;
-}
-
-/* WORKSHOP */
-.workshop {
-  background: var(--surface);
-  padding: 7rem 3rem;
-}
-
-.workshop-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 6rem;
-  align-items: center;
-}
-
-.workshop h2 { margin-bottom: 1.25rem; }
-
-.workshop-body {
-  color: var(--ink-2);
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.workshop-body p + p { margin-top: 1.1rem; }
-
-.workshop-callout {
-  background: var(--bg);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 8px 8px 0;
-  padding: 1.25rem 1.75rem;
-  margin-top: 2rem;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 1.05rem;
-  line-height: 1.65;
-  color: var(--ink);
-}
-
-.workshop-details {
-  background: var(--surface-dark);
-  color: #ffffff;
-  padding: 2.5rem;
-  border-radius: 20px;
-}
-
-.workshop-details h3 {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+  flex: 1;
   margin-bottom: 1.5rem;
-  color: #ffffff;
 }
 
-.detail-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.85rem 0;
-  border-bottom: 1px solid var(--border-inv);
-  font-size: 0.88rem;
-}
-
-.detail-row:last-of-type { border-bottom: none; }
-
-.detail-label { color: rgba(255, 255, 255, 0.4); font-size: 0.78rem; }
-.detail-value { color: #ffffff; font-weight: 500; }
-
-.detail-value.price {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: var(--accent);
-  letter-spacing: -0.02em;
-}
-
-.workshop-cta {
-  width: 100%;
-  text-align: center;
-  margin-top: 2rem;
+.service-cta {
   display: block;
+  text-align: center;
+  width: 100%;
 }
 
 /* WHO I WORK WITH */
@@ -691,13 +565,18 @@ section { padding: 7rem 3rem; }
   padding: 7rem 3rem;
 }
 
-.about-inner {
+.about-text {
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.about-bottom {
+  max-width: 1100px;
+  margin: 4rem auto 0;
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 6rem;
-  align-items: center;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 5rem;
+  align-items: stretch;
 }
 
 .about h2 { color: #ffffff; }
@@ -746,9 +625,9 @@ section { padding: 7rem 3rem; }
   font-weight: 600;
 }
 
-.about-right {
+.about-book {
   display: flex;
-  flex-direction: column;
+  align-items: stretch;
 }
 
 .book-cover {
@@ -756,43 +635,15 @@ section { padding: 7rem 3rem; }
   display: block;
   border-radius: 6px;
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.22);
-  margin-bottom: 1.75rem;
+  object-fit: cover;
 }
 
-.book-card {
-  background: rgba(255, 255, 255, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.45);
+.about-form {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border-radius: 16px;
   padding: 2rem;
-  border-radius: 20px;
-}
-
-.book-card-eyebrow {
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 1rem;
-}
-
-.book-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.7rem;
-  font-style: italic;
-  color: #ffffff;
-  margin-bottom: 0.4rem;
-}
-
-.book-author {
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 1.5rem;
-}
-
-.book-desc {
-  font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.65);
-  line-height: 1.7;
 }
 
 /* CTA */
@@ -817,15 +668,15 @@ section { padding: 7rem 3rem; }
   .hero-left { padding: 4.5rem 1.5rem 3rem; }
   .hero-right { padding: 3rem 1.5rem; }
   .problem { grid-template-columns: 1fr; }
-  .steps { grid-template-columns: 1fr; gap: 1rem; }
-  .workshop-inner { grid-template-columns: 1fr; }
-  .workshop-details { padding: 1.5rem 1.25rem; border-radius: 14px; }
-  .detail-row { flex-direction: column; align-items: flex-start; gap: 0.2rem; padding: 0.75rem 0; }
-  .detail-value.price { font-size: 1.2rem; }
+  .services-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .fit-grid { grid-template-columns: 1fr; }
-  .about-inner { grid-template-columns: 1fr; }
+  .about-bottom { grid-template-columns: 1fr; }
   section { padding: 5rem 1.5rem; }
   .who,
-  .how { padding: 5rem 1.5rem; }
+  .services { padding: 5rem 1.5rem; }
+}
+
+@media (max-width: 600px) {
+  .services-grid { grid-template-columns: 1fr; }
 }
 </style>

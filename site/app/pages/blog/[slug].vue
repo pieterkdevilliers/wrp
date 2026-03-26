@@ -21,8 +21,10 @@ function formatDate(d) {
   <div class="post-page">
     <SiteNav>
       <ul class="nav-links">
-        <li><NuxtLink to="/">Home</NuxtLink></li>
+        <li><NuxtLink to="/#services">Services</NuxtLink></li>
+        <li><NuxtLink to="/#podcasts">Podcasts</NuxtLink></li>
         <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+        <li><NuxtLink to="/#about">About</NuxtLink></li>
         <li><a href="https://koalendar.com/u/pieter-de-villiers" class="nav-cta" target="_blank" rel="noopener">Let's Talk</a></li>
       </ul>
     </SiteNav>

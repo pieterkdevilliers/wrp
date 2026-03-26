@@ -43,6 +43,7 @@ nav {
 /* Dark variant — static (waiting-list page) */
 .nav--dark {
   padding: 1.5rem 3rem;
+  background: var(--surface-dark);
   border-bottom: 1px solid var(--border-inv);
 }
 
