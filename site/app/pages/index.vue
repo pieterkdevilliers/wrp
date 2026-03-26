@@ -110,28 +110,28 @@ onBeforeUnmount(() => {
           <div class="service-card">
             <p class="service-price">Free</p>
             <h3>The Book</h3>
-            <p class="service-desc">Get a free copy of <em>Barefoot Business</em> — Pieter's 2017 bestseller on building a business that works without you being the bottleneck.</p>
+            <p class="service-desc">Get a free copy of <em>Barefoot Business</em> - my 2017 Amazon bestseller on building a business that works without you being the bottleneck.</p>
             <a href="#about" class="btn-primary service-cta">Get Your Free Copy</a>
           </div>
 
           <div class="service-card">
             <p class="service-price">Free</p>
             <h3>Self Assessment</h3>
-            <p class="service-desc">Take the Business Journey Scorecard to see exactly where your business is losing value — and get a personalised report in minutes.</p>
+            <p class="service-desc">Take the Business Journey Scorecard to see exactly where your business is losing value, and get a personalised report in minutes.</p>
             <a href="https://pieter-euxiryis.scoreapp.com/" class="btn-primary service-cta" target="_blank" rel="noopener">Take the Assessment</a>
           </div>
 
           <div class="service-card">
             <p class="service-price">£249</p>
             <h3>Journey Audit</h3>
-            <p class="service-desc">A focused remote audit of your customer journey. Discover where you're losing time and money, and get a prioritised action plan — delivered within a week.</p>
+            <p class="service-desc">A focused, remote audit of your customer journey. Discover where you're losing time and money, and get a prioritised action plan, delivered within a week.</p>
             <NuxtLink to="/journey-audit" class="btn-primary service-cta">Book a Journey Audit</NuxtLink>
           </div>
 
           <div class="service-card">
             <p class="service-price">£2,495</p>
             <h3>Workshop</h3>
-            <p class="service-desc">A full-day in-person session to map your complete customer journey end-to-end — and leave with a clear picture of exactly what to fix and how.</p>
+            <p class="service-desc">A full-day in-person session to map your complete customer journey end-to-end, and leave with a clear picture of exactly what to fix and how.</p>
             <NuxtLink to="/workshop" class="btn-primary service-cta">What's Involved in a Workshop</NuxtLink>
           </div>
 
