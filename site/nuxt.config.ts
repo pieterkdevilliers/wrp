@@ -6,6 +6,15 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   app: {
     head: {
+      script: [
+        {
+          'data-host': 'https://checkanalytic.com',
+          src: 'https://checkanalytic.com/js/script.js',
+          id: 'ZwSg9rf6GA',
+          async: true,
+          defer: true,
+        },
+      ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
