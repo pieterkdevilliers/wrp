@@ -27,15 +27,7 @@ onBeforeUnmount(() => {
 <template>
   <div class="page">
 
-    <SiteNav>
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#podcasts">Podcasts</a></li>
-        <li><NuxtLink to="/blog">Blog</NuxtLink></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="https://koalendar.com/u/pieter-de-villiers" class="nav-cta" target="_blank" rel="noopener">Let's Talk</a></li>
-      </ul>
-    </SiteNav>
+    <SiteNav />
 
     <!-- HERO -->
     <section class="hero">
@@ -237,34 +229,6 @@ onBeforeUnmount(() => {
   background: var(--bg);
   color: var(--ink);
 }
-
-/* NAV SLOT CONTENT */
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  align-items: center;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--ink-2);
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: color 0.15s;
-}
-
-.nav-links a:hover { color: var(--ink); }
-
-.nav-cta {
-  background: var(--accent) !important;
-  color: #ffffff !important;
-  padding: 0.5rem 1.1rem !important;
-  border-radius: 6px;
-  font-size: 0.82rem !important;
-}
-
-.nav-cta:hover { background: var(--accent-dark) !important; }
 
 /* TYPOGRAPHY */
 h1 {
@@ -663,7 +627,6 @@ section { padding: 7rem 3rem; }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .nav-links { display: none; }
   .hero { grid-template-columns: 1fr; }
   .hero-left { padding: 4.5rem 1.5rem 3rem; }
   .hero-right { padding: 3rem 1.5rem; }

@@ -19,15 +19,7 @@ function formatDate(d) {
 
 <template>
   <div class="post-page">
-    <SiteNav>
-      <ul class="nav-links">
-        <li><NuxtLink to="/#services">Services</NuxtLink></li>
-        <li><NuxtLink to="/#podcasts">Podcasts</NuxtLink></li>
-        <li><NuxtLink to="/blog">Blog</NuxtLink></li>
-        <li><NuxtLink to="/#about">About</NuxtLink></li>
-        <li><a href="https://koalendar.com/u/pieter-de-villiers" class="nav-cta" target="_blank" rel="noopener">Let's Talk</a></li>
-      </ul>
-    </SiteNav>
+    <SiteNav />
 
     <article class="post-wrap">
       <header class="post-header">
@@ -51,30 +43,6 @@ function formatDate(d) {
   background: var(--bg);
   color: var(--ink);
   min-height: 100vh;
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  align-items: center;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: var(--ink-2);
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-.nav-links a:hover { color: var(--ink); }
-
-.nav-cta {
-  background: var(--accent) !important;
-  color: #ffffff !important;
-  padding: 0.5rem 1.1rem !important;
-  border-radius: 6px;
-  font-size: 0.82rem !important;
 }
 
 .post-wrap {
@@ -208,7 +176,6 @@ h1 {
 }
 
 @media (max-width: 900px) {
-  .nav-links { display: none; }
   .post-wrap { padding: 6rem 1.5rem 5rem; }
 }
 </style>

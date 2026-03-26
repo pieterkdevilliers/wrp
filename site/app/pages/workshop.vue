@@ -7,15 +7,7 @@ useSeoMeta({
 
 <template>
   <div class="page">
-    <SiteNav :dark="true">
-      <ul class="nav-links">
-        <li><NuxtLink to="/#services">Services</NuxtLink></li>
-        <li><NuxtLink to="/#podcasts">Podcasts</NuxtLink></li>
-        <li><NuxtLink to="/blog">Blog</NuxtLink></li>
-        <li><NuxtLink to="/#about">About</NuxtLink></li>
-        <li><a href="https://koalendar.com/u/pieter-de-villiers" class="nav-cta" target="_blank" rel="noopener">Let's Talk</a></li>
-      </ul>
-    </SiteNav>
+    <SiteNav :dark="true" />
 
     <!-- HERO -->
     <section class="workshop-hero">
@@ -86,31 +78,6 @@ useSeoMeta({
 .page {
   background: var(--bg);
   color: var(--ink);
-}
-
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  align-items: center;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: color 0.15s;
-}
-
-.nav-links a:hover { color: #ffffff; }
-
-.nav-cta {
-  background: var(--accent) !important;
-  color: #ffffff !important;
-  padding: 0.5rem 1.1rem !important;
-  border-radius: 6px;
-  font-size: 0.82rem !important;
 }
 
 /* HERO */
