@@ -22,7 +22,7 @@ useSeoMeta({
       <div class="audit-hero-inner">
         <p class="section-eyebrow">Journey Audit · £249</p>
         <h1>Find out exactly where your business is leaking value.</h1>
-        <p class="audit-hero-sub">A focused remote engagement that maps the critical stages of your customer journey, surfaces the gaps costing you time and money, and delivers a clear, prioritised action plan — all for a fixed price of £249.</p>
+        <p class="audit-hero-sub">A focused remote engagement that maps the critical stages of your customer journey, surfaces the gaps costing you time and money, and delivers a clear, prioritised action plan, all for a fixed price of £249.</p>
         <div class="hero-actions">
           <a href="https://buy.stripe.com/9B6aEXeEM6D163k8k1eEo02" class="btn-primary" target="_blank" rel="noopener">Book a Journey Audit</a>
         </div>
@@ -33,14 +33,14 @@ useSeoMeta({
     <section id="detail" class="audit-section">
       <div class="audit-heading">
         <p class="section-eyebrow">What It Is</p>
-        <h2>A clear view of your business — without the full-day commitment.</h2>
+        <h2>A clear view of your business - without the full-day commitment.</h2>
       </div>
       <div class="audit-inner">
         <div class="audit-content">
           <div class="audit-body">
-            <p>The Journey Audit is a structured remote engagement designed for businesses that know something isn't working — but aren't sure exactly where to focus. It's the right first step if you want clarity before making any investment in automation or AI.</p>
-            <p>We start with a focused discovery call where I gather the context I need about your business, your customers, and your current processes. From there, I conduct a structured audit of 3–5 key stages of your customer journey — from first contact through to retention — identifying the friction points, handoff failures, and manual effort that are quietly draining your resources.</p>
-            <p>You receive a written report with a clear description of what I found, followed by a prioritised list of automation and AI opportunities ranked by impact and implementation effort. We then debrief together so you leave with a genuine understanding of what to do next — not just a document to file away.</p>
+            <p>The Journey Audit is a structured remote session designed for businesses that know something isn't working, but aren't sure exactly where to focus. It's the right first step if you want clarity before making any investment in automation or AI.</p>
+            <p>We start with a focused discovery call where I gather the context I need about your business, your customers, and your current processes. From there, I conduct a structured audit of 3–5 key stages of your customer journey, from first contact through to retention, identifying the friction points, handoff failures, and manual effort that are quietly draining your resources.</p>
+            <p>You receive a written report with a clear description of what I found, followed by a prioritised list of automation and AI opportunities ranked by impact and implementation effort. We then review together, so you leave with a genuine understanding of what to do next, not just a document to file away.</p>
           </div>
         </div>
 
@@ -73,7 +73,7 @@ useSeoMeta({
               <li>
                 <span class="deliverable-icon">→</span>
                 <div>
-                  <strong>30-minute debrief call</strong>
+                  <strong>30-minute review call</strong>
                   <p>Walk through the findings together and answer your questions so you're clear on the next step.</p>
                 </div>
               </li>
@@ -88,7 +88,7 @@ useSeoMeta({
       <div class="for-inner">
         <p class="section-eyebrow">Who It's For</p>
         <h2>You don't need to be ready for a full engagement.</h2>
-        <p class="for-body">The Journey Audit is ideal if you're an owner-managed business that knows things could run more smoothly, but you're not ready to commit to a full-day workshop. It's also the right starting point if you've been thinking about automation or AI and want an honest, independent view on where it would actually make a difference — before spending any significant budget. Think of it as the map that tells you whether the territory is worth exploring.</p>
+        <p class="for-body">The Journey Audit is ideal if you're an owner-managed business that knows things could run more smoothly, but you're not ready to commit to a full-day workshop. It's also the right starting point if you've been thinking about automation or AI and want an honest, independent view on where it would actually make a difference, before spending any significant budget. Think of it as the map that tells you whether the territory is worth exploring.</p>
       </div>
     </section>
 
@@ -104,8 +104,8 @@ useSeoMeta({
         </div>
         <div class="book-copy">
           <h2>Ready to see where you're losing value?</h2>
-          <p>Most businesses I work with are surprised by what the audit reveals. Not because the problems are complex — but because nobody has ever stepped back to look at the whole picture before.</p>
-          <p>For £249, you get a clear, honest view of what's costing you, and a practical list of what to do about it. There's no obligation to take things further — though most do.</p>
+          <p>Most businesses I work with are surprised by what the audit reveals. Not because the problems are complex, but because nobody has ever stepped back to look at the whole picture before.</p>
+          <p>For £249, you get a clear, honest view of what's costing you, and a practical list of what to do about it. There's no obligation to take things further, though most do.</p>
           <p class="guarantee">If you're not satisfied with the audit report, I'll refund you in full. No questions asked.</p>
         </div>
       </div>

@@ -34,12 +34,12 @@ useSeoMeta({
       <section class="workshop-detail">
         <div class="workshop-heading">
           <p class="section-eyebrow">What We Do</p>
-          <h2>A complete picture of your customer's journey — and yours.</h2>
+          <h2>A complete picture of your customer's journey, and yours.</h2>
         </div>
         <div class="workshop-inner">
           <div>
             <div class="workshop-body">
-              <p>The Customer Journey Mapping Workshop (White Room Process) is a focused, facilitated session with you and your leadership team - held in person, at your premises.</p>
+              <p>The Customer Journey Mapping Workshop (White Room Process) is a focused, facilitated session with you and your leadership team, held in person, at your premises. (Or a meeting room of your choosing.)</p>
               <p>We map every stage of your prospect and customer journey: how people find you, what happens when they engage, how they buy, how you onboard them, and what keeps them - or doesn't.</p>
               <p>Most business owners have never seen their own business this way. The gaps that are invisible day-to-day become obvious when you step back and look at the whole picture.</p>
               <p>You'll leave with a complete journey map, a prioritised list of improvement opportunities, and clarity on where automation and AI can make the biggest difference - whether or not you continue working with me.</p>
