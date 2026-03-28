@@ -110,7 +110,7 @@ onBeforeUnmount(() => {
             <p class="service-price">Free</p>
             <h3>Self Assessment</h3>
             <p class="service-desc">Take the Business Journey Scorecard to see exactly where your business is losing value, and get a personalised report in minutes.</p>
-            <a href="https://pieter-euxiryis.scoreapp.com/" class="btn-primary service-cta" target="_blank" rel="noopener">Take the Assessment</a>
+            <a href="https://business-journey-health.scoreapp.com/" class="btn-primary service-cta" target="_blank" rel="noopener">Take the Assessment</a>
           </div>
 
           <div class="service-card">
