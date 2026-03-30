@@ -20,17 +20,19 @@ function formatDate(d) {
       <p class="blog-intro">Longer-form thoughts on AI, automation, and building better businesses.</p>
     </div>
 
-    <div class="blog-list">
+    <div class="blog-grid">
       <NuxtLink
         v-for="post in posts"
         :key="post.path"
         :to="`/blog/${post.stem.replace('posts/', '')}`"
         class="post-card"
       >
-        <span class="post-date">{{ formatDate(post.date) }}</span>
-        <h2 class="post-title">{{ post.title }}</h2>
-        <p class="post-desc">{{ post.description }}</p>
-        <span class="post-read">Read more →</span>
+        <div class="post-card-inner">
+          <span class="post-date">{{ formatDate(post.date) }}</span>
+          <h2 class="post-title">{{ post.title }}</h2>
+          <p class="post-desc">{{ post.description }}</p>
+          <span class="post-read">Read more →</span>
+        </div>
       </NuxtLink>
 
       <p v-if="!posts?.length" class="empty">No posts yet.</p>
@@ -48,7 +50,7 @@ function formatDate(d) {
 }
 
 .blog-header {
-  max-width: 720px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 8rem 3rem 4rem;
 }
@@ -76,28 +78,36 @@ h1 {
   line-height: 1.7;
 }
 
-.blog-list {
-  max-width: 720px;
+.blog-grid {
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 3rem 7rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  border-top: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
 .post-card {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 2.5rem 0;
-  border-bottom: 1px solid var(--border);
   text-decoration: none;
   color: inherit;
-  transition: opacity 0.15s;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 
-.post-card:hover { opacity: 0.75; }
+.post-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.post-card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 2rem;
+}
 
 .post-date {
   font-size: 0.75rem;
@@ -108,25 +118,25 @@ h1 {
 
 .post-title {
   font-family: 'Inter', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 1.25;
+  line-height: 1.3;
   color: var(--ink);
 }
 
 .post-desc {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   color: var(--ink-2);
   line-height: 1.7;
-  max-width: 560px;
+  flex: 1;
 }
 
 .post-read {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--accent);
-  margin-top: 0.25rem;
+  margin-top: 0.5rem;
 }
 
 .empty {
@@ -137,6 +147,9 @@ h1 {
 
 @media (max-width: 900px) {
   .blog-header { padding: 6rem 1.5rem 3rem; }
-  .blog-list { padding: 0 1.5rem 5rem; }
+  .blog-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem 5rem;
+  }
 }
 </style>

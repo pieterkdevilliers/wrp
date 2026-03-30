@@ -46,7 +46,7 @@ function formatDate(d) {
 }
 
 .post-wrap {
-  max-width: 720px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 8rem 3rem 7rem;
 }
