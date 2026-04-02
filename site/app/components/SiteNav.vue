@@ -5,6 +5,7 @@
     <ul class="nav-links">
       <li><NuxtLink to="/#services">Services</NuxtLink></li>
       <li><NuxtLink to="/#podcasts">Podcasts</NuxtLink></li>
+      <li><NuxtLink to="/gaps-and-gains">Gaps &amp; Gains</NuxtLink></li>
       <li><NuxtLink to="/blog">Blog</NuxtLink></li>
       <li><NuxtLink to="/#about">About</NuxtLink></li>
       <li><a href="https://koalendar.com/u/pieter-de-villiers" class="nav-cta" target="_blank" rel="noopener">Let's Talk</a></li>
@@ -20,6 +21,7 @@
       <ul>
         <li><NuxtLink to="/#services" @click="open = false">Services</NuxtLink></li>
         <li><NuxtLink to="/#podcasts" @click="open = false">Podcasts</NuxtLink></li>
+        <li><NuxtLink to="/gaps-and-gains" @click="open = false">Gaps &amp; Gains</NuxtLink></li>
         <li><NuxtLink to="/blog" @click="open = false">Blog</NuxtLink></li>
         <li><NuxtLink to="/#about" @click="open = false">About</NuxtLink></li>
         <li><a href="https://koalendar.com/u/pieter-de-villiers" class="mobile-cta" target="_blank" rel="noopener" @click="open = false">Let's Talk</a></li>
