@@ -163,18 +163,18 @@ onBeforeUnmount(() => {
         <div class="about-text">
           <img src="/images/pkdv-profile.jpg" alt="Pieter K de Villiers" class="profile-photo" />
           <p class="section-eyebrow">About</p>
-          <h2>I've been on both sides of the problem.</h2>
+          <h2>More than a decade of helping businesses work smarter. Now with AI in the toolkit.</h2>
           <div class="about-body">
-            <p>I'm Pieter K de Villiers - an AI Product Lead, Technical Product Manager, and former founder who has spent over a decade building the kinds of systems I now help businesses build and implement.</p>
-            <p>As a founder, I built MacantaCRM - a no-code CRM and process automation platform - from zero, led the full product lifecycle, and managed the transition post-acquisition. I've been the person trying to make a business run on systems that weren't quite right, and I've been the person building the solutions.</p>
-            <p>That combination is rare. Most consultants are either strategic thinkers who hand you a report, or technical builders who need someone else to tell them what to build. I can do both - which means you get strategy that can actually be implemented, and implementation that's grounded in real business thinking.</p>
-            <p>I work with a small number of clients at any time, which means you get my full attention - not an account manager who passes you to a junior team.</p>
+            <p>I'm Pieter K de Villiers. I've been working with business owners on process improvement and automation since 2014, long before AI became a buzzword. I understand how businesses actually run: the manual work-arounds, the hand-off failures, the bottlenecks that everyone knows about but nobody has fixed.</p>
+            <p>Along the way, I built MacantaCRM, a no-code CRM and process automation platform, from the ground up. Took it to market, and managed the transition through acquisition. I know what it's like to be the business owner trying to keep operations together, and I know what it takes to build systems that genuinely hold up under pressure.</p>
+            <p>That background shapes how I work. I'm not a developer who learned to talk to clients, and I'm not a strategist who hands you a report and leaves. I sit at the intersection of business thinking and technical delivery, which means the recommendations I make are ones that can actually be implemented, and the things I build are grounded in how your business works in practice.</p>
+            <p>I work with a small number of clients at any time. You'll work with me directly, not an account manager, not a junior consultant.</p>
           </div>
           <div class="credentials">
-            <div class="credential">10+ years defining, architecting, and shipping AI-enabled SaaS products</div>
-            <div class="credential">Former co-founder: built and sold a no-code automation platform (MacantaCRM)</div>
-            <div class="credential">Technical fluency in Python, LangChain, LLM orchestration, GCP, and Kubernetes</div>
-            <div class="credential">Business Automation Consultant since 2014 - helping businesses work smarter</div>
+            <div class="credential">Business process automation consultant since 2014</div>
+            <div class="credential">Former co-founder: built and sold MacantaCRM, a no-code CRM and automation platform</div>
+            <div class="credential">10+ years working with owners and leadership teams on operational improvement</div>
+            <div class="credential">Now applying AI and modern automation tools to the same problems I've always solved</div>
             <div class="credential">Author of <em>Barefoot Business</em> (2017 bestseller)</div>
           </div>
         </div>
