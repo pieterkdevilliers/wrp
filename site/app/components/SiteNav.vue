@@ -4,6 +4,7 @@
 
     <ul class="nav-links">
       <li><NuxtLink to="/#services">Services</NuxtLink></li>
+      <li><NuxtLink to="/coaching">Coaching</NuxtLink></li>
       <li><NuxtLink to="/#podcasts">Podcasts</NuxtLink></li>
       <li><NuxtLink to="/gaps-and-gains">Gaps &amp; Gains</NuxtLink></li>
       <li><NuxtLink to="/blog">Blog</NuxtLink></li>
@@ -20,6 +21,7 @@
     <div class="nav-mobile" :class="{ 'is-open': open }">
       <ul>
         <li><NuxtLink to="/#services" @click="open = false">Services</NuxtLink></li>
+        <li><NuxtLink to="/coaching" @click="open = false">Coaching</NuxtLink></li>
         <li><NuxtLink to="/#podcasts" @click="open = false">Podcasts</NuxtLink></li>
         <li><NuxtLink to="/gaps-and-gains" @click="open = false">Gaps &amp; Gains</NuxtLink></li>
         <li><NuxtLink to="/blog" @click="open = false">Blog</NuxtLink></li>

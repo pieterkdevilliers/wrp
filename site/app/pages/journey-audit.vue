@@ -1,6 +1,6 @@
 <script setup>
 useSeoMeta({
-  title: 'Journey Audit — Pieter K de Villiers',
+  title: 'Journey Audit: Pieter K de Villiers',
   description: 'A focused remote audit of your customer journey for £249. Identify where your business is leaking value and get a prioritised list of automation and AI opportunities.',
 })
 </script>
@@ -52,14 +52,14 @@ useSeoMeta({
                 <span class="deliverable-icon">→</span>
                 <div>
                   <strong>Written Journey Audit report</strong>
-                  <p>A clear, jargon-free document covering the 3–5 key journey stages reviewed, with observations on each.</p>
+                  <p>A clear, jargon-free document covering the 3-5 key journey stages reviewed, with observations on each.</p>
                 </div>
               </li>
               <li>
                 <span class="deliverable-icon">→</span>
                 <div>
-                  <strong>Prioritised opportunity list</strong>
-                  <p>Automation and AI opportunities ranked by business impact and ease of implementation.</p>
+                  <strong>Prioritised action plan</strong>
+                  <p>What to fix, in what order, and why, based on business impact and effort to implement.</p>
                 </div>
               </li>
               <li>
@@ -80,7 +80,7 @@ useSeoMeta({
       <div class="for-inner">
         <p class="section-eyebrow">Who It's For</p>
         <h2>You don't need to be ready for a full engagement.</h2>
-        <p class="for-body">The Journey Audit is ideal if you're an owner-managed business that knows things could run more smoothly, but you're not ready to commit to a full-day workshop. It's also the right starting point if you've been thinking about automation or AI and want an honest, independent view on where it would actually make a difference, before spending any significant budget. Think of it as the map that tells you whether the territory is worth exploring.</p>
+        <p class="for-body">The Journey Audit is ideal if you're an owner-managed business that knows things could run more smoothly, but you're not ready to commit to a full-day workshop. It's also the right starting point if you've been aware that things could run more smoothly, but you've never had an outside pair of eyes look at the whole picture honestly. Think of it as the map that tells you whether the territory is worth exploring.</p>
       </div>
     </section>
 
@@ -96,6 +96,7 @@ useSeoMeta({
         </div>
         <div class="book-copy">
           <h2>Ready to see where you're losing value?</h2>
+          <p>Many clients use the audit as the starting point for ongoing coaching, working through the findings systematically over time, rather than trying to fix everything at once. If that's of interest, we can talk through what that looks like on the review call.</p>
           <p>Most businesses I work with are surprised by what the audit reveals. Not because the problems are complex, but because nobody has ever stepped back to look at the whole picture before.</p>
           <p>For £249, you get a clear, honest view of what's costing you, and a practical list of what to do about it. There's no obligation to take things further, though most do.</p>
           <p class="guarantee">If you're not satisfied with the audit report, I'll refund you in full. No questions asked.</p>
