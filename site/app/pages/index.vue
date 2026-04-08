@@ -3,7 +3,7 @@ import { onMounted, onBeforeUnmount, ref } from 'vue'
 import { useSeoMeta } from '#imports'
 
 useSeoMeta({
-  title: 'Pieter K de Villiers — AI & Automation Consulting',
+  title: 'Pieter K de Villiers - AI & Automation Consulting',
 })
 
 const gcForm = ref(null)
@@ -32,10 +32,10 @@ onBeforeUnmount(() => {
     <!-- HERO -->
     <section class="hero">
       <div class="hero-left">
-        <p class="hero-eyebrow">AI &amp; Automation Consulting · UK</p>
-        <h1>Your business is losing value in the <em>gaps nobody sees.</em></h1>
+        <p class="hero-eyebrow">Business Journey Consulting · UK</p>
+        <h1>Your leads are going cold. Your onboarding is inconsistent. Your team is doing work that <em>should be automated.</em></h1>
         <p class="hero-sub">
-          Imagine your full prospect and customer journey - from first touch to loyal advocate - fully mapped out, revealing exactly where automation and AI can seal the leaks, slash delays, and erase the manual effort that's quietly draining your resources.
+          I help owner-managed businesses map their full customer journey, find exactly where they're losing time and money, and fix it, without adding more tools to the pile.
         </p>
         <div class="hero-actions">
           <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
@@ -46,23 +46,22 @@ onBeforeUnmount(() => {
         <p class="hero-quote">
           "Most businesses don't have a sales problem or a tech problem. They have a journey problem - and they've been too busy to look at it properly."
         </p>
-        <p class="hero-quote-attr">- Pieter K de Villiers, Barefoot Business</p>
         <div class="hero-stats">
           <div>
             <div class="stat-number">10+</div>
-            <div class="stat-label">Years shipping AI &amp; automation products, making real impact</div>
+            <div class="stat-label">Years working with owner-managed businesses on process and operations</div>
           </div>
           <div>
-            <div class="stat-number">0→1</div>
-            <div class="stat-label">Experienced in taking products from idea to launch as founder &amp; technical lead</div>
+            <div class="stat-number">2014</div>
+            <div class="stat-label">The year I started doing this, long before AI became a buzzword</div>
           </div>
           <div>
-            <div class="stat-number">£2,495</div>
-            <div class="stat-label">Fixed-price discovery workshop</div>
+            <div class="stat-number">£249</div>
+            <div class="stat-label">Fixed-price audit call, report, and review, to find exactly where you're losing value</div>
           </div>
           <div>
-            <div class="stat-number">1 day</div>
-            <div class="stat-label">To transform how you see your business</div>
+            <div class="stat-number">5-50</div>
+            <div class="stat-label">The team size of the businesses I work with</div>
           </div>
         </div>
       </div>
@@ -76,7 +75,8 @@ onBeforeUnmount(() => {
         <div class="problem-body">
           <p>Most businesses invest in software, automation, and AI before they understand their own process. So the tools add complexity instead of removing it.</p>
           <p>The result is a patchwork of systems that don't talk to each other, a team doing manual work that should be automated, and customers falling through gaps that nobody has properly mapped.</p>
-          <p>Before you spend another pound on technology, you need to see the journey your customers are actually on - not the one you think they're on.</p>
+          <p>Before you spend another pound on technology, you need to see the journey your customers are actually on, not the one you think they're on.</p>
+          <p>These aren't technology problems. They're journey problems, and most businesses don't even realise they have one until they've mapped it properly.</p>
         </div>
       </div>
       <ul class="problem-list">
@@ -92,46 +92,74 @@ onBeforeUnmount(() => {
     <!-- SERVICES -->
     <div id="services">
       <div class="services">
-        <div class="services-header">
-          <p class="section-eyebrow">Start Here</p>
-          <h2>Choose where to begin.</h2>
-          <p class="services-intro">Every business is at a different stage. Start with what makes sense for you right now.</p>
+        <div class="services-group">
+          <div class="services-group-header">
+            <p class="section-eyebrow">Start Here</p>
+            <h2>Getting Started</h2>
+            <p class="services-intro">Every business is at a different stage. These are the best ways to get clarity on where yours is losing value, with no obligation to go further.</p>
+          </div>
+          <div class="services-grid">
+
+            <div class="service-card">
+              <p class="service-price">Free</p>
+              <h3>The Book</h3>
+              <p class="service-desc">Get a free copy of <em>Barefoot Business</em>: the 2017 Amazon bestseller on building a business that works without you being the bottleneck.</p>
+              <a href="#about" class="btn-primary service-cta">Get Your Free Copy</a>
+            </div>
+
+            <div class="service-card">
+              <p class="service-price">Free</p>
+              <h3>Business Journey Scorecard</h3>
+              <p class="service-desc">Answer 20 questions and get a personalised report showing exactly where your business is losing value. Takes less than 5 minutes.</p>
+              <a href="https://business-journey-health.scoreapp.com/" class="btn-primary service-cta" target="_blank" rel="noopener">Take the Scorecard</a>
+            </div>
+
+            <div class="service-card">
+              <p class="service-price">£249</p>
+              <h3>Audit Call</h3>
+              <p class="service-desc">A focused 90-minute diagnostic call. We look at your business, your customer journey, and where the gaps are costing you. You leave with clarity and a prioritised view of what to fix. No commitment beyond the call.</p>
+              <NuxtLink to="/journey-audit" class="btn-primary service-cta">Find Out More</NuxtLink>
+            </div>
+
+          </div>
         </div>
-        <div class="services-grid">
 
-          <div class="service-card">
-            <p class="service-price">Free</p>
-            <h3>The Book</h3>
-            <p class="service-desc">Get a free copy of <em>Barefoot Business</em> - my 2017 Amazon bestseller on building a business that works without you being the bottleneck.</p>
-            <a href="#about" class="btn-primary service-cta">Get Your Free Copy</a>
+        <div class="services-group">
+          <div class="services-group-header">
+            <p class="section-eyebrow">Go Deeper</p>
+            <h2>Working Together</h2>
+            <p class="services-intro">For businesses ready to act on what they've found. These are structured engagements with a clear outcome, whether that's a coaching relationship, a mapped journey, or a running implementation.</p>
           </div>
+          <div class="services-grid">
 
-          <div class="service-card">
-            <p class="service-price">Free</p>
-            <h3>Self Assessment</h3>
-            <p class="service-desc">Take the Business Journey Scorecard to see exactly where your business is losing value, and get a personalised report in minutes.</p>
-            <a href="https://business-journey-health.scoreapp.com/" class="btn-primary service-cta" target="_blank" rel="noopener">Take the Assessment</a>
+            <div class="service-card">
+              <p class="service-price">£495/mo</p>
+              <h3>Business Journey Coaching</h3>
+              <p class="service-desc">An ongoing coaching relationship built around your business, not a generic programme. Fortnightly calls, weekly async check-ins, and a shared Business Journey Map that evolves as your business does.</p>
+              <NuxtLink to="/coaching" class="btn-primary service-cta">Learn More</NuxtLink>
+            </div>
+
+            <div class="service-card">
+              <p class="service-price">£2,495</p>
+              <h3>White Room Process Workshop</h3>
+              <p class="service-desc">A full-day in-person session to map your complete customer journey end-to-end. Required before any implementation work begins. Discounted for existing coaching clients.</p>
+              <NuxtLink to="/workshop" class="btn-primary service-cta">What's Involved</NuxtLink>
+            </div>
+
+            <div class="service-card">
+              <p class="service-price">£1,000–£1,500/mo</p>
+              <h3>Ongoing Implementation</h3>
+              <p class="service-desc">Once your journey is mapped and priorities are clear, I work with a trusted network of specialists to implement the solutions we've designed, so you get the thinking and the delivery, without managing it yourself.</p>
+              <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary service-cta" target="_blank" rel="noopener">Let's Talk</a>
+            </div>
+
           </div>
-
-          <div class="service-card">
-            <p class="service-price">£249</p>
-            <h3>Journey Audit</h3>
-            <p class="service-desc">A focused, remote audit of your customer journey. Discover where you're losing time and money, and get a prioritised action plan, delivered within a week.</p>
-            <NuxtLink to="/journey-audit" class="btn-primary service-cta">Book a Journey Audit</NuxtLink>
-          </div>
-
-          <div class="service-card">
-            <p class="service-price">£2,495</p>
-            <h3>Workshop</h3>
-            <p class="service-desc">A full-day in-person session to map your complete customer journey end-to-end, and leave with a clear picture of exactly what to fix and how.</p>
-            <NuxtLink to="/workshop" class="btn-primary service-cta">What's Involved in a Workshop</NuxtLink>
-          </div>
-
         </div>
       </div>
     </div>
 
     <!-- WHO I WORK WITH -->
+    <div class="who-wrap">
     <div class="who">
       <div class="who-header">
         <p class="section-eyebrow">Who I Work With</p>
@@ -144,7 +172,7 @@ onBeforeUnmount(() => {
         </div>
         <div class="fit-card good">
           <h3>Also a strong fit if you...</h3>
-          <p>Have tried automation tools or AI before and felt like you didn't get the value. Or you're thinking about AI and want someone who can help you make genuinely good decisions - not sell you a solution looking for a problem. You need a technical partner who speaks business, not jargon.</p>
+          <p>Have invested in software or tools before and felt like you didn't get the value, or you're still doing things manually because nothing you tried actually stuck. You want someone who will look at the problem honestly, not sell you a solution looking for a problem.</p>
         </div>
         <div class="fit-card notgood">
           <h3>Probably not the right fit if...</h3>
@@ -155,6 +183,7 @@ onBeforeUnmount(() => {
           <p>You want cheap or fast. I offer neither. The businesses I work with see genuine, lasting improvement in how they operate - and that takes proper thinking, proper building, and a willingness to look honestly at how things currently work.</p>
         </div>
       </div>
+    </div>
     </div>
 
     <!-- ABOUT -->
@@ -422,10 +451,6 @@ section { padding: 7rem 3rem; }
   padding: 7rem 3rem;
 }
 
-.services-header {
-  margin-bottom: 3.5rem;
-}
-
 .services-intro {
   color: var(--ink-2);
   font-size: 1rem;
@@ -434,9 +459,19 @@ section { padding: 7rem 3rem; }
   margin-top: 0.5rem;
 }
 
+.services-group + .services-group {
+  margin-top: 5rem;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border);
+}
+
+.services-group-header {
+  margin-bottom: 2.5rem;
+}
+
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
 }
 
@@ -483,6 +518,10 @@ section { padding: 7rem 3rem; }
 }
 
 /* WHO I WORK WITH */
+.who-wrap {
+  background: var(--surface);
+}
+
 .who {
   max-width: 1100px;
   margin: 0 auto;
@@ -519,7 +558,7 @@ section { padding: 7rem 3rem; }
 }
 
 .fit-card.good { border-top: 3px solid var(--accent); }
-.fit-card.notgood { border-top: 3px solid transparent; background: var(--surface); }
+.fit-card.notgood { border-top: 3px solid transparent; background: var(--bg); }
 .fit-card.notgood h3 { color: var(--ink-2); }
 
 /* ABOUT */

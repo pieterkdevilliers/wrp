@@ -1,6 +1,6 @@
 <script setup>
 useSeoMeta({
-  title: 'Customer Journey Mapping Workshop — Pieter K de Villiers',
+  title: 'Customer Journey Mapping Workshop: Pieter K de Villiers',
   description: 'A focused, facilitated full-day workshop to map your customer journey, reveal hidden gaps, and identify your highest-leverage automation and AI opportunities.',
 })
 </script>
@@ -14,7 +14,7 @@ useSeoMeta({
       <div class="workshop-hero-inner">
         <p class="section-eyebrow">The Workshop</p>
         <h1>One day that changes how you see your business.</h1>
-        <p class="workshop-hero-sub">The Customer Journey Mapping Workshop is the starting point for every engagement. In a single focused day, you'll see your business more clearly than you ever have.</p>
+        <p class="workshop-hero-sub">The White Room Process Workshop is a full-day, in-person session for businesses that are ready to see their complete customer journey mapped, end to end, and leave with a clear picture of exactly what to fix, and how. It's the foundation for any implementation work we do together.</p>
         <div class="hero-actions">
           <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
         </div>
@@ -34,7 +34,7 @@ useSeoMeta({
               <p>The Customer Journey Mapping Workshop (White Room Process) is a focused, facilitated session with you and your leadership team, held in person, at your premises. (Or a meeting room of your choosing.)</p>
               <p>We map every stage of your prospect and customer journey: how people find you, what happens when they engage, how they buy, how you onboard them, and what keeps them - or doesn't.</p>
               <p>Most business owners have never seen their own business this way. The gaps that are invisible day-to-day become obvious when you step back and look at the whole picture.</p>
-              <p>You'll leave with a complete journey map, a prioritised list of improvement opportunities, and clarity on where automation and AI can make the biggest difference - whether or not you continue working with me.</p>
+              <p>You'll leave with a complete journey map, a prioritised list of improvement opportunities, and clarity on exactly what to fix, in what order, and what the path forward looks like, whether or not you continue working with me.</p>
             </div>
             <div class="workshop-callout">
               "The workshop alone is worth more than most businesses spend on software in a year. It gives you the map before you buy the territory."
@@ -63,12 +63,49 @@ useSeoMeta({
                 <span class="detail-label">Investment</span>
                 <span class="detail-value price">£2,495</span>
               </div>
+              <p class="coaching-discount">Coaching clients: £1,995 Existing Business Journey Coaching clients receive a £500 discount.</p>
               <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary workshop-cta" target="_blank" rel="noopener">Let's Talk</a>
             </div>
           </div>
         </div>
+
       </section>
     </div>
+
+    <!-- WHAT THE DAY LOOKS LIKE -->
+    <section class="day-section">
+      <div class="day-inner">
+        <div class="day-heading-row">
+          <p class="section-eyebrow">The Day</p>
+          <h2>What the day looks like</h2>
+        </div>
+        <div class="day-body">
+          <p>We start in the morning with context. Your business, your customers, how things currently work. From there, we map every stage of your prospect and customer journey together: how people find you, what happens when they engage, how they buy, how you onboard them, how you retain them, and critically, where things fall through the gaps.</p>
+          <p>By the afternoon, the picture is on the wall. We shift from mapping to analysis. Identifying the friction points, the manual effort that should be automated, and the handoff failures that are quietly costing you. You leave with a complete journey map and a prioritised list of what to address, ranked by impact.</p>
+          <p>Most business owners have never seen their business this way. The gaps that are invisible day-to-day become obvious when you step back and look at the whole picture.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WHAT COMES NEXT -->
+    <section class="next-section">
+      <div class="next-inner">
+        <div class="next-heading">
+          <p class="section-eyebrow">After the Workshop</p>
+          <h2>What comes next</h2>
+        </div>
+        <div class="next-body">
+          <p>The workshop is a requirement before any implementation work begins. It ensures that what gets built is grounded in how your business actually works, not how we assume it works.</p>
+          <p>Many clients come to the workshop after a period of Business Journey Coaching. Others use it as a standalone investment and take the findings away to implement themselves or with their own team.</p>
+          <p>If you're not sure whether you're ready for the workshop, the right first step is a £249 Audit Call.</p>
+          <div class="next-actions">
+            <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
+            <NuxtLink to="/journey-audit" class="btn-secondary">Start with an Audit Call</NuxtLink>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <SiteFooter />
   </div>
@@ -215,11 +252,80 @@ h2 {
   letter-spacing: -0.02em;
 }
 
+.coaching-discount {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-inv);
+}
+
 .workshop-cta {
   width: 100%;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   display: block;
+}
+
+.day-section {
+  padding: 7rem 3rem;
+  background: var(--surface);
+}
+
+.day-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.day-heading-row {
+  margin-bottom: 2.5rem;
+}
+
+.day-body {
+  max-width: 780px;
+  color: var(--ink-2);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.day-body p + p { margin-top: 1.1rem; }
+
+/* WHAT COMES NEXT */
+.next-section {
+  padding: 7rem 3rem;
+  background: var(--surface-dark);
+  color: #ffffff;
+}
+
+.next-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.next-heading {
+  margin-bottom: 2rem;
+}
+
+.next-body {
+  max-width: 680px;
+}
+
+.next-body p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.8;
+  margin-bottom: 1.1rem;
+}
+
+.next-section h2 { color: #ffffff; }
+.next-section .section-eyebrow { color: var(--accent); }
+
+.next-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
 }
 
 @media (max-width: 900px) {
@@ -229,5 +335,7 @@ h2 {
   .workshop-details { position: static; padding: 1.5rem 1.25rem; border-radius: 14px; }
   .detail-row { flex-direction: column; align-items: flex-start; gap: 0.2rem; }
   .detail-value.price { font-size: 1.2rem; }
+  .day-section { padding: 5rem 1.5rem; }
+  .next-section { padding: 5rem 1.5rem; }
 }
 </style>

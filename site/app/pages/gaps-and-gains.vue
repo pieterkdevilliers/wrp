@@ -1,17 +1,16 @@
 <script setup>
 useSeoMeta({
-  title: 'Gaps & Gains — Pieter K de Villiers',
-  description: 'The Gaps & Gains podcast — practical conversations on AI, automation, and building better businesses.',
+  title: 'Gaps & Gains: Pieter K de Villiers',
+  description: 'The Gaps & Gains podcast. Practical conversations on AI, automation, and building better businesses.',
 })
 
-useHead({
-  script: [
-    {
-      type: 'text/javascript',
-      charset: 'utf-8',
-      src: 'https://www.buzzsprout.com/2606605.js?container_id=buzzsprout-small-player&player=small',
-    },
-  ],
+onMounted(() => {
+  const existing = document.querySelector('script[src*="buzzsprout.com/2606605"]')
+  if (existing) existing.remove()
+
+  const script = document.createElement('script')
+  script.src = 'https://www.buzzsprout.com/2606605.js?container_id=buzzsprout-small-player&player=small'
+  document.body.appendChild(script)
 })
 </script>
 
