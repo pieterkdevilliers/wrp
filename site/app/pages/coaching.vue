@@ -1,6 +1,6 @@
 <script setup>
 useSeoMeta({
-  title: 'Business Journey Coaching - Pieter K de Villiers',
+  title: 'Coaching — Blindspot Works',
   description: 'An ongoing coaching relationship for owner-managed businesses ready to close their operational gaps and build a business that works properly.',
 })
 </script>
@@ -12,9 +12,9 @@ useSeoMeta({
     <!-- HERO -->
     <section class="coaching-hero">
       <div class="coaching-hero-inner">
-        <p class="section-eyebrow">Business Journey Coaching</p>
+        <p class="section-eyebrow">Blindspot Works Coaching</p>
         <h1>Your business has gaps. Let's close them, together, and systematically.</h1>
-        <p class="hero-sub">Business Journey Coaching is an ongoing relationship for owner-managed businesses who are ready to stop firefighting and start building a business that works properly. Not a course. Not a one-off. A genuine thinking partnership, built around your business.</p>
+        <p class="hero-sub">Blindspot Works Coaching is an ongoing relationship for owner-managed businesses who are ready to stop firefighting and start building a business that works properly. Not a course. Not a one-off. A genuine thinking partnership, built around your business.</p>
         <div class="hero-actions">
           <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Start with a Conversation</a>
         </div>

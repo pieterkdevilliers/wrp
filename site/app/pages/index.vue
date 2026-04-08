@@ -3,7 +3,7 @@ import { onMounted, onBeforeUnmount, ref } from 'vue'
 import { useSeoMeta } from '#imports'
 
 useSeoMeta({
-  title: 'Pieter K de Villiers - AI & Automation Consulting',
+  title: 'Blindspot Works — Find the gaps. Fix the business.',
 })
 
 const gcForm = ref(null)
@@ -32,7 +32,7 @@ onBeforeUnmount(() => {
     <!-- HERO -->
     <section class="hero">
       <div class="hero-left">
-        <p class="hero-eyebrow">Business Journey Consulting · UK</p>
+        <p class="hero-eyebrow">Blindspot Works · UK</p>
         <h1>Your leads are going cold. Your onboarding is inconsistent. Your team is doing work that <em>should be automated.</em></h1>
         <p class="hero-sub">
           I help owner-managed businesses map their full customer journey, find exactly where they're losing time and money, and fix it, without adding more tools to the pile.
@@ -134,7 +134,7 @@ onBeforeUnmount(() => {
 
             <div class="service-card">
               <p class="service-price">£495/mo</p>
-              <h3>Business Journey Coaching</h3>
+              <h3>Blindspot Works Coaching</h3>
               <p class="service-desc">An ongoing coaching relationship built around your business, not a generic programme. Fortnightly calls, weekly async check-ins, and a shared Business Journey Map that evolves as your business does.</p>
               <NuxtLink to="/coaching" class="btn-primary service-cta">Learn More</NuxtLink>
             </div>

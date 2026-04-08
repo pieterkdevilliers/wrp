@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <span>© 2025 Pieter K de Villiers · Cobham, Surrey, UK</span>
+    <span>© 2026 Blindspot Works · Pieter K de Villiers · UK</span>
     <div class="footer-links">
       <a href="https://linkedin.com/in/pkdevilliers" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/pieterkdevilliers" target="_blank" rel="noopener">GitHub</a>

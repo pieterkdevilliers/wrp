@@ -8,7 +8,7 @@ const { data: post } = await useAsyncData(`post-${slug}`, () =>
 if (!post.value) throw createError({ statusCode: 404, statusMessage: 'Post not found' })
 
 useSeoMeta({
-  title: `${post.value.title} — Pieter K de Villiers`,
+  title: `${post.value.title} — Blindspot Works`,
   description: post.value.description,
 })
 

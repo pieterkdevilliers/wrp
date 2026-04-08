@@ -1,6 +1,6 @@
 <script setup>
 useSeoMeta({
-  title: 'Journey Audit: Pieter K de Villiers',
+  title: 'Journey Audit — Blindspot Works',
   description: 'A focused remote audit of your customer journey for £249. Identify where your business is leaking value and get a prioritised list of automation and AI opportunities.',
 })
 </script>

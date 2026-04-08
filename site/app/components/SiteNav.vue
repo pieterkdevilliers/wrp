@@ -1,6 +1,6 @@
 <template>
   <nav :class="dark ? 'nav--dark' : 'nav--light'">
-    <NuxtLink to="/" class="nav-logo">Pieter K de Villiers</NuxtLink>
+    <NuxtLink to="/" class="nav-logo">Blindspot Works</NuxtLink>
 
     <ul class="nav-links">
       <li><NuxtLink to="/#services">Services</NuxtLink></li>
