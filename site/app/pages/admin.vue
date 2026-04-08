@@ -1,5 +1,5 @@
 <script setup lang="ts">
-useSeoMeta({ title: 'Admin: Pieter K de Villiers', robots: 'noindex' })
+useSeoMeta({ title: 'Admin — Blindspot Works', robots: 'noindex' })
 
 // ── Auth ──────────────────────────────────────────────────────────────────────
 const isLoggedIn = ref(false)

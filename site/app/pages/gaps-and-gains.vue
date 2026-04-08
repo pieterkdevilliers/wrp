@@ -1,6 +1,6 @@
 <script setup>
 useSeoMeta({
-  title: 'Gaps & Gains: Pieter K de Villiers',
+  title: 'Gaps & Gains — Blindspot Works',
   description: 'The Gaps & Gains podcast. Practical conversations on AI, automation, and building better businesses.',
 })
 

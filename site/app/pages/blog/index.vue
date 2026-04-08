@@ -1,5 +1,5 @@
 <script setup>
-useSeoMeta({ title: 'Blog — Pieter K de Villiers' })
+useSeoMeta({ title: 'Blog — Blindspot Works' })
 
 const { data: posts } = await useAsyncData('posts', () =>
   queryCollection('posts').order('date', 'DESC').all()
