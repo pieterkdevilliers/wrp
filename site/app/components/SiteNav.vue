@@ -1,4 +1,5 @@
 <template>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <nav :class="dark ? 'nav--dark' : 'nav--light'">
     <NuxtLink to="/" class="nav-logo">Blindspot Works</NuxtLink>
 
@@ -41,6 +42,25 @@ defineProps({
 </script>
 
 <style scoped>
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  background: var(--accent);
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0 0 8px 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.1s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;

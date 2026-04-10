@@ -2,8 +2,42 @@
 import { onMounted, onBeforeUnmount, ref } from 'vue'
 import { useSeoMeta } from '#imports'
 
+const siteUrl = 'https://blindspotworks.com'
+
 useSeoMeta({
   title: 'Blindspot Works — Find the gaps. Fix the business.',
+  description: 'I help owner-managed businesses map their customer journey, find where they\'re losing time and money, and fix it — without adding more tools to the pile.',
+  ogTitle: 'Blindspot Works — Find the gaps. Fix the business.',
+  ogDescription: 'I help owner-managed businesses map their customer journey, find where they\'re losing time and money, and fix it — without adding more tools to the pile.',
+  ogImage: `${siteUrl}/images/pkdv-profile.jpg`,
+  ogUrl: siteUrl,
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Blindspot Works — Find the gaps. Fix the business.',
+  twitterDescription: 'I help owner-managed businesses map their customer journey, find where they\'re losing time and money, and fix it — without adding more tools to the pile.',
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: siteUrl }],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ProfessionalService',
+        name: 'Blindspot Works',
+        description: 'Business process improvement and automation consultancy for owner-managed businesses.',
+        url: siteUrl,
+        founder: {
+          '@type': 'Person',
+          name: 'Pieter K de Villiers',
+          jobTitle: 'Business Process Consultant',
+        },
+        areaServed: 'GB',
+        serviceType: ['Business Process Consulting', 'Automation', 'Customer Journey Mapping'],
+      }),
+    },
+  ],
 })
 
 const gcForm = ref(null)

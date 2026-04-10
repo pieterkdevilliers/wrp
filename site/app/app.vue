@@ -1,6 +1,8 @@
 <template>
   <NuxtRouteAnnouncer />
-  <NuxtPage />
+  <main id="main-content">
+    <NuxtPage />
+  </main>
   <div id="my-ai-chat-widget-container"></div>
 </template>
 
