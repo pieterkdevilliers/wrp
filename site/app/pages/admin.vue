@@ -27,6 +27,7 @@ async function login() {
     loginPassword.value = ''
     await loadPodcasts()
     await loadPosts()
+    await loadTestimonials()
   } catch {
     loginError.value = 'Incorrect password.'
   } finally {
@@ -39,6 +40,7 @@ async function logout() {
   isLoggedIn.value = false
   podcasts.value = []
   posts.value = []
+  testimonials.value = []
 }
 
 // ── Podcasts ──────────────────────────────────────────────────────────────────
@@ -60,6 +62,7 @@ onMounted(async () => {
   if (isLoggedIn.value) {
     await loadPodcasts()
     await loadPosts()
+    await loadTestimonials()
   }
 })
 
@@ -164,6 +167,90 @@ async function deletePost(slug: string) {
     postDeleting.value = null
   }
 }
+
+// ── Testimonials ───────────────────────────────────────────────────────────
+const testimonials = ref([])
+const testimonialSaving = ref(false)
+const testimonialDeleting = ref<string | null>(null)
+const editingTestimonialId = ref<string | null>(null)
+const showTestimonialForm = ref(false)
+
+const emptyTestimonialForm = () => ({ name: '', company: '', photo: '', quote: '' })
+const testimonialForm = ref(emptyTestimonialForm())
+
+async function loadTestimonials() {
+  testimonials.value = await $fetch('/api/admin/testimonials')
+}
+
+function startAddTestimonial() {
+  editingTestimonialId.value = null
+  testimonialForm.value = emptyTestimonialForm()
+  showTestimonialForm.value = true
+}
+
+function startEditTestimonial(t) {
+  editingTestimonialId.value = t.id
+  testimonialForm.value = { ...t }
+  showTestimonialForm.value = true
+}
+
+function cancelTestimonialForm() {
+  showTestimonialForm.value = false
+  editingTestimonialId.value = null
+  photoUploadError.value = ''
+}
+
+const photoUploading = ref(false)
+const photoUploadError = ref('')
+
+async function uploadPhoto(e: Event) {
+  const input = e.target as HTMLInputElement
+  const file = input.files?.[0]
+  if (!file) return
+
+  photoUploading.value = true
+  photoUploadError.value = ''
+  try {
+    const formData = new FormData()
+    formData.append('photo', file)
+    const result = await $fetch<{ path: string }>('/api/admin/upload-testimonial-photo', {
+      method: 'POST',
+      body: formData,
+    })
+    testimonialForm.value.photo = result.path
+  } catch (err: any) {
+    photoUploadError.value = err?.data?.message ?? 'Upload failed'
+  } finally {
+    photoUploading.value = false
+    input.value = ''
+  }
+}
+
+async function saveTestimonialForm() {
+  testimonialSaving.value = true
+  try {
+    if (editingTestimonialId.value) {
+      await $fetch(`/api/admin/testimonials/${editingTestimonialId.value}`, { method: 'PUT', body: testimonialForm.value })
+    } else {
+      await $fetch('/api/admin/testimonials', { method: 'POST', body: testimonialForm.value })
+    }
+    await loadTestimonials()
+    cancelTestimonialForm()
+  } finally {
+    testimonialSaving.value = false
+  }
+}
+
+async function deleteTestimonial(id: string) {
+  if (!confirm('Delete this testimonial?')) return
+  testimonialDeleting.value = id
+  try {
+    await $fetch(`/api/admin/testimonials/${id}`, { method: 'DELETE' })
+    await loadTestimonials()
+  } finally {
+    testimonialDeleting.value = null
+  }
+}
 </script>
 
 <template>
@@ -203,7 +290,7 @@ async function deletePost(slug: string) {
 
         <!-- NOTICE -->
         <div class="notice">
-          <strong>Heads up:</strong> Changes write to <code>app/data/podcasts.json</code> and <code>content/posts/</code>. Commit and redeploy to make them permanent in production.
+          <strong>Heads up:</strong> Changes write to <code>app/data/podcasts.json</code>, <code>app/data/testimonials.json</code>, and <code>content/posts/</code>. Commit and redeploy to make them permanent in production.
         </div>
 
         <!-- PODCASTS SECTION -->
@@ -327,6 +414,74 @@ async function deletePost(slug: string) {
             </div>
           </div>
           <p v-else class="empty-state">No posts yet. Add one above.</p>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section class="admin-section" style="margin-top: 2rem;">
+          <div class="section-header">
+            <h2>Testimonials</h2>
+            <button class="btn-primary btn-sm" @click="startAddTestimonial" v-if="!showTestimonialForm">+ Add New</button>
+          </div>
+
+          <!-- ADD / EDIT FORM -->
+          <div v-if="showTestimonialForm" class="podcast-form">
+            <h3>{{ editingTestimonialId ? 'Edit Testimonial' : 'New Testimonial' }}</h3>
+            <div class="form-grid">
+              <label class="form-field">
+                <span>Name</span>
+                <input v-model="testimonialForm.name" type="text" class="admin-input" placeholder="Jane Smith" />
+              </label>
+              <label class="form-field">
+                <span>Company</span>
+                <input v-model="testimonialForm.company" type="text" class="admin-input" placeholder="Acme Corp" />
+              </label>
+              <div class="form-field form-field--full">
+                <span class="upload-label">Photo</span>
+                <div class="photo-upload-row">
+                  <img v-if="testimonialForm.photo" :src="testimonialForm.photo" class="upload-preview" alt="Preview" />
+                  <div class="upload-controls">
+                    <label class="btn-ghost btn-sm upload-btn">
+                      {{ photoUploading ? 'Uploading…' : (testimonialForm.photo ? 'Replace photo' : 'Upload photo') }}
+                      <input type="file" accept=".jpg,.jpeg,.png,.webp" @change="uploadPhoto" :disabled="photoUploading" hidden />
+                    </label>
+                    <span v-if="photoUploadError" class="form-error">{{ photoUploadError }}</span>
+                    <span v-if="testimonialForm.photo && !photoUploadError" class="upload-path">{{ testimonialForm.photo }}</span>
+                  </div>
+                </div>
+              </div>
+              <label class="form-field form-field--full">
+                <span>Quote</span>
+                <textarea v-model="testimonialForm.quote" class="admin-input admin-textarea" rows="4" placeholder="What they said…" />
+              </label>
+            </div>
+            <div class="form-actions">
+              <button class="btn-primary btn-sm" @click="saveTestimonialForm" :disabled="testimonialSaving">
+                {{ testimonialSaving ? 'Saving…' : (editingTestimonialId ? 'Save Changes' : 'Add Testimonial') }}
+              </button>
+              <button class="btn-ghost btn-sm" @click="cancelTestimonialForm">Cancel</button>
+            </div>
+          </div>
+
+          <!-- TESTIMONIAL LIST -->
+          <div v-if="testimonials.length" class="podcast-list">
+            <div v-for="t in testimonials" :key="t.id" class="podcast-row">
+              <img v-if="t.photo" :src="t.photo" :alt="t.name" class="testimonial-thumb" />
+              <div class="podcast-info">
+                <span class="podcast-ep-label">{{ t.name }}</span>
+                <span class="podcast-show-label">{{ t.company }}</span>
+                <span class="podcast-date-label testimonial-quote-preview">{{ t.quote }}</span>
+              </div>
+              <div class="podcast-actions">
+                <button class="btn-ghost btn-sm" @click="startEditTestimonial(t)">Edit</button>
+                <button
+                  class="btn-danger btn-sm"
+                  @click="deleteTestimonial(t.id)"
+                  :disabled="testimonialDeleting === t.id"
+                >{{ testimonialDeleting === t.id ? '…' : 'Delete' }}</button>
+              </div>
+            </div>
+          </div>
+          <p v-else class="empty-state">No testimonials yet. Add one above.</p>
         </section>
 
       </main>
@@ -585,6 +740,67 @@ async function deletePost(slug: string) {
   display: flex;
   gap: 0.5rem;
   flex-shrink: 0;
+}
+
+.upload-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  letter-spacing: 0.03em;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.photo-upload-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upload-preview {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.upload-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.upload-btn {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.upload-path {
+  font-size: 0.75rem;
+  color: var(--ink-2);
+  font-family: 'Courier New', monospace;
+}
+
+.testimonial-thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  background: var(--surface-dark);
+  border: 1px solid var(--border);
+}
+
+.testimonial-quote-preview {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
 }
 
 .empty-state {

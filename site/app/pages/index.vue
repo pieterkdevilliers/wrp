@@ -186,6 +186,9 @@ onBeforeUnmount(() => {
     </div>
     </div>
 
+    <!-- TESTIMONIALS -->
+    <TestimonialsSection />
+
     <!-- ABOUT -->
     <div id="about">
       <section class="about">
