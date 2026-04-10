@@ -63,7 +63,7 @@ useSeoMeta({
                 <span class="detail-label">Investment</span>
                 <span class="detail-value price">£2,495</span>
               </div>
-              <p class="coaching-discount">Coaching clients: £1,995 Existing Blindspot Works Coaching clients receive a £500 discount.</p>
+              <p class="coaching-discount">Coaching clients: £1,495 Existing Blindspot Works Coaching clients receive a £1,000 discount.</p>
               <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary workshop-cta" target="_blank" rel="noopener">Let's Talk</a>
             </div>
           </div>

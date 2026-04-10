@@ -85,7 +85,7 @@ onBeforeUnmount(() => {
         <li>Are you using five different tools that were meant to solve the same problem?</li>
         <li>Does your team spend hours each week on tasks that should take minutes?</li>
         <li>Have you thought about adding AI but don't know where it would actually make a difference?</li>
-        <li>Does growth feel like it requires more people, when it should require better systems?</li>
+        <li>Does growth feel like it requires more people, when it really requires better systems?</li>
       </ul>
     </section>
 
@@ -110,7 +110,7 @@ onBeforeUnmount(() => {
             <div class="service-card">
               <p class="service-price">Free</p>
               <h3>Business Journey Scorecard</h3>
-              <p class="service-desc">Answer 20 questions and get a personalised report showing exactly where your business is losing value. Takes less than 5 minutes.</p>
+              <p class="service-desc">Answer 15 questions and get a personalised report showing exactly where your business is losing value. Takes less than 5 minutes.</p>
               <a href="https://business-journey-health.scoreapp.com/" class="btn-primary service-cta" target="_blank" rel="noopener">Take the Scorecard</a>
             </div>
 
@@ -135,21 +135,21 @@ onBeforeUnmount(() => {
             <div class="service-card">
               <p class="service-price">£495/mo</p>
               <h3>Blindspot Works Coaching</h3>
-              <p class="service-desc">An ongoing coaching relationship built around your business, not a generic programme. Fortnightly calls, weekly async check-ins, and a shared Business Journey Map that evolves as your business does.</p>
+              <p class="service-desc">An ongoing coaching relationship built around your business, not a generic programme. Fortnightly calls, weekly async check-ins, ongoing research and input that evolves as your business does.</p>
               <NuxtLink to="/coaching" class="btn-primary service-cta">Learn More</NuxtLink>
             </div>
 
             <div class="service-card">
               <p class="service-price">£2,495</p>
-              <h3>White Room Process Workshop</h3>
-              <p class="service-desc">A full-day in-person session to map your complete customer journey end-to-end. Required before any implementation work begins. Discounted for existing coaching clients.</p>
+              <h3>White Room Process</h3>
+              <p class="service-desc">For business owners who want to get their quicker. A full-day, in-person workshop to map your complete customer journey end-to-end. Required before any implementation work begins. Discounted for existing coaching clients.</p>
               <NuxtLink to="/workshop" class="btn-primary service-cta">What's Involved</NuxtLink>
             </div>
 
             <div class="service-card">
-              <p class="service-price">£1,000–£1,500/mo</p>
+              <p class="service-price">from £1,000/mo</p>
               <h3>Ongoing Implementation</h3>
-              <p class="service-desc">Once your journey is mapped and priorities are clear, I work with a trusted network of specialists to implement the solutions we've designed, so you get the thinking and the delivery, without managing it yourself.</p>
+              <p class="service-desc">Once your journey is mapped and priorities are clear, I work with a trusted network of specialists to implement the solutions we've designed, so you get the thinking and the delivery, without having to manage it yourself.</p>
               <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary service-cta" target="_blank" rel="noopener">Let's Talk</a>
             </div>
 
@@ -194,7 +194,7 @@ onBeforeUnmount(() => {
           <p class="section-eyebrow">About</p>
           <h2>More than a decade of helping businesses work smarter. Now with AI in the toolkit.</h2>
           <div class="about-body">
-            <p>I'm Pieter K de Villiers. I've been working with business owners on process improvement and automation since 2014, long before AI became a buzzword. I understand how businesses actually run: the manual work-arounds, the hand-off failures, the bottlenecks that everyone knows about but nobody has fixed.</p>
+            <p>I'm Pieter K de Villiers. I've been working with business owners on process improvement and automation since 2014, long before AI became a buzzword. I understand how businesses actually run: the manual work-arounds, the hand-off failures, the bottlenecks that everyone knows about but nobody has quite figured out how to fix.</p>
             <p>Along the way, I built MacantaCRM, a no-code CRM and process automation platform, from the ground up. Took it to market, and managed the transition through acquisition. I know what it's like to be the business owner trying to keep operations together, and I know what it takes to build systems that genuinely hold up under pressure.</p>
             <p>That background shapes how I work. I'm not a developer who learned to talk to clients, and I'm not a strategist who hands you a report and leaves. I sit at the intersection of business thinking and technical delivery, which means the recommendations I make are ones that can actually be implemented, and the things I build are grounded in how your business works in practice.</p>
             <p>I work with a small number of clients at any time. You'll work with me directly, not an account manager, not a junior consultant.</p>
@@ -204,7 +204,7 @@ onBeforeUnmount(() => {
             <div class="credential">Former co-founder: built and sold MacantaCRM, a no-code CRM and automation platform</div>
             <div class="credential">10+ years working with owners and leadership teams on operational improvement</div>
             <div class="credential">Now applying AI and modern automation tools to the same problems I've always solved</div>
-            <div class="credential">Author of <em>Barefoot Business</em> (2017 bestseller)</div>
+            <div class="credential">Author of<em>Barefoot Business</em>(2017 bestseller)</div>
           </div>
         </div>
         <div class="about-bottom">

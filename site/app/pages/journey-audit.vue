@@ -14,7 +14,7 @@ useSeoMeta({
       <div class="audit-hero-inner">
         <p class="section-eyebrow">Journey Audit · £249</p>
         <h1>Find out exactly where your business is leaking value.</h1>
-        <p class="audit-hero-sub">A focused remote engagement that maps the critical stages of your customer journey, surfaces the gaps costing you time and money, and delivers a clear, prioritised action plan, all for a fixed price of £249.</p>
+        <p class="audit-hero-sub">A focused remote session that maps the critical stages of your customer journey, surfaces the gaps costing you time and money, and delivers a clear, prioritised action plan, all for a fixed price of £249.</p>
         <div class="hero-actions">
           <a href="https://buy.stripe.com/9B6aEXeEM6D163k8k1eEo02" class="btn-primary" target="_blank" rel="noopener">Book a Journey Audit</a>
         </div>
@@ -31,8 +31,8 @@ useSeoMeta({
         <div class="audit-content">
           <div class="audit-body">
             <p>The Journey Audit is a structured remote session designed for businesses that know something isn't working, but aren't sure exactly where to focus. It's the right first step if you want clarity before making any investment in automation or AI.</p>
-            <p>We start with a focused discovery call where I gather the context I need about your business, your customers, and your current processes. From there, I conduct a structured audit of 3–5 key stages of your customer journey, from first contact through to retention, identifying the friction points, handoff failures, and manual effort that are quietly draining your resources.</p>
-            <p>You receive a written report with a clear description of what I found, followed by a prioritised list of automation and AI opportunities ranked by impact and implementation effort. We then review together, so you leave with a genuine understanding of what to do next, not just a document to file away.</p>
+            <p>We start with a focused discovery call where I gather the context I need about your business, your customers, and your current processes. From there, I conduct a structured audit of 3-5 key stages of your customer journey, from first contact through to retention, identifying the friction points, handoff failures, and manual efforts that are quietly draining your resources.</p>
+            <p>You receive a written report with a clear outline of what I found, followed by a prioritised list of automation and AI opportunities ranked by impact and implementation effort. We then review together, so you leave with a genuine understanding of what to do next, not just a document to file away.</p>
           </div>
         </div>
 
@@ -80,7 +80,7 @@ useSeoMeta({
       <div class="for-inner">
         <p class="section-eyebrow">Who It's For</p>
         <h2>You don't need to be ready for a full engagement.</h2>
-        <p class="for-body">The Journey Audit is ideal if you're an owner-managed business that knows things could run more smoothly, but you're not ready to commit to a full-day workshop. It's also the right starting point if you've been aware that things could run more smoothly, but you've never had an outside pair of eyes look at the whole picture honestly. Think of it as the map that tells you whether the territory is worth exploring.</p>
+        <p class="for-body">The Journey Audit is ideal if you're an owner-managed business that knows things could run more smoothly, but you're not ready to commit to a full-day workshop or ongoing coaching. It's also the right starting point if you've been aware that things could run more smoothly, but you've never had an outside pair of eyes look at the whole picture honestly. Think of it as the map that tells you whether the territory is worth exploring.</p>
       </div>
     </section>
 
@@ -90,9 +90,9 @@ useSeoMeta({
         <div class="price-card">
           <p class="card-eyebrow">Fixed Price</p>
           <div class="price-amount">£249</div>
-          <p class="price-desc">One fixed price. No surprises. Delivered remotely, typically within 5–7 working days of the discovery call.</p>
+          <p class="price-desc">One fixed price. No surprises. Delivered remotely, with a report typically within 5–7 working days of the discovery call.</p>
           <a href="https://buy.stripe.com/9B6aEXeEM6D163k8k1eEo02" class="btn-primary book-cta" target="_blank" rel="noopener">Book a Journey Audit</a>
-          <p class="price-note">You'll be taken to a secure Stripe checkout. Once payment is confirmed, I'll be in touch within one working day to schedule your discovery call.</p>
+          <p class="price-note">You'll be taken to a secure Stripe checkout. Once payment is confirmed, you'll be able to schedule your discovery call.</p>
         </div>
         <div class="book-copy">
           <h2>Ready to see where you're losing value?</h2>
