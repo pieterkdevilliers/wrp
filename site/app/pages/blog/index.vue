@@ -1,11 +1,7 @@
 <script setup>
 useSeoMeta({ title: 'Blog — Blindspot Works' })
 
-const { data: posts, refresh } = await useAsyncData('posts', () =>
-  queryCollection('posts').order('date', 'DESC').all()
-)
-
-onMounted(() => { refresh() })
+const { data: posts } = await useFetch('/api/posts', { default: () => [] })
 
 function formatDate(d) {
   return new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
@@ -25,8 +21,8 @@ function formatDate(d) {
     <div class="blog-grid">
       <NuxtLink
         v-for="post in posts"
-        :key="post.path"
-        :to="`/blog/${post.stem.replace('posts/', '')}`"
+        :key="post.slug"
+        :to="`/blog/${post.slug}`"
         class="post-card"
       >
         <div class="post-card-inner">
