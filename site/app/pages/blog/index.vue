@@ -1,9 +1,11 @@
 <script setup>
 useSeoMeta({ title: 'Blog — Blindspot Works' })
 
-const { data: posts } = await useAsyncData('posts', () =>
+const { data: posts, refresh } = await useAsyncData('posts', () =>
   queryCollection('posts').order('date', 'DESC').all()
 )
+
+onMounted(() => { refresh() })
 
 function formatDate(d) {
   return new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
