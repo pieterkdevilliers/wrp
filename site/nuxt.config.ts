@@ -20,7 +20,7 @@ export default defineNuxtConfig({
           "font-src 'self' https://fonts.gstatic.com",
           "img-src 'self' data: https:",
           "frame-src https://ee-crm.expertecho.ai https://www.buzzsprout.com",
-          "connect-src 'self' https://*.checkanalytic.com https://d31env5c5sjhq3.cloudfront.net https://*.expertecho.ai https://www.buzzsprout.com",
+          "connect-src 'self' https://checkanalytic.com https://*.checkanalytic.com https://d31env5c5sjhq3.cloudfront.net https://*.expertecho.ai https://www.buzzsprout.com",
           "object-src 'none'",
           "base-uri 'self'",
         ].join('; '),
