@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
         'Content-Security-Policy': [
           "default-src 'self'",
-          "script-src 'self' 'unsafe-inline' https://checkanalytic.com https://d31env5c5sjhq3.cloudfront.net https://www.buzzsprout.com",
+          "script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://checkanalytic.com https://d31env5c5sjhq3.cloudfront.net https://www.buzzsprout.com",
           "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
           "font-src 'self' https://fonts.gstatic.com",
           "img-src 'self' data: https:",
