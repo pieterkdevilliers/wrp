@@ -25,8 +25,8 @@ function formatDate(d) {
     <div class="blog-grid">
       <NuxtLink
         v-for="post in posts"
-        :key="post.slug"
-        :to="`/blog/${post.slug}`"
+        :key="post.stem"
+        :to="`/blog/${post.stem.replace('posts/', '')}`"
         class="post-card"
       >
         <div class="post-card-inner">
