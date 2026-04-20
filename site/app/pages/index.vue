@@ -67,36 +67,13 @@ onBeforeUnmount(() => {
     <section class="hero">
       <div class="hero-left">
         <p class="hero-eyebrow">Blindspot Works · UK</p>
-        <h1>Your leads are going cold. Your onboarding is inconsistent. Your team is doing work that <em>should be automated.</em></h1>
+        <h1>I find the gaps quietly costing your business time and clients - and fix them, <em>without more tools, more staff, or more chaos.</em></h1>
         <p class="hero-sub">
-          I help owner-managed businesses map their full customer journey, find exactly where they're losing time and money, and fix it, without adding more tools to the pile.
+          I help owner-managed businesses map their full customer journey, find exactly where they're losing time and money, and fix it.
         </p>
         <div class="hero-actions">
           <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
           <a href="#services" class="btn-secondary">See What's Available</a>
-        </div>
-      </div>
-      <div class="hero-right">
-        <p class="hero-quote">
-          "Most businesses don't have a sales problem or a tech problem. They have a journey problem - and they've been too busy to look at it properly."
-        </p>
-        <div class="hero-stats">
-          <div>
-            <div class="stat-number">10+</div>
-            <div class="stat-label">Years working with owner-managed businesses on process and operations</div>
-          </div>
-          <div>
-            <div class="stat-number">2014</div>
-            <div class="stat-label">The year I started doing this, long before AI became a buzzword</div>
-          </div>
-          <div>
-            <div class="stat-number">£249</div>
-            <div class="stat-label">Fixed-price audit call, report, and review, to find exactly where you're losing value</div>
-          </div>
-          <div>
-            <div class="stat-number">5-50</div>
-            <div class="stat-label">The team size of the businesses I work with</div>
-          </div>
         </div>
       </div>
     </section>
@@ -322,8 +299,6 @@ h2 {
 
 /* HERO */
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   padding-top: 4rem;
 }
 
@@ -331,16 +306,10 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6rem 4rem 6rem 3rem;
-  position: relative;
-}
-
-.hero-left::after {
-  content: '';
-  position: absolute;
-  right: 0; top: 15%; bottom: 15%;
-  width: 1px;
-  background: linear-gradient(to bottom, transparent, var(--border), transparent);
+  padding: 6rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hero-eyebrow {
@@ -355,7 +324,7 @@ h2 {
 .hero-sub {
   font-size: 1.05rem;
   color: var(--ink-2);
-  max-width: 480px;
+  max-width: 640px;
   margin-bottom: 2.5rem;
   line-height: 1.75;
   font-weight: 400;
@@ -367,55 +336,6 @@ h2 {
   flex-wrap: wrap;
 }
 
-.hero-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 6rem 3rem 6rem 4rem;
-  background: var(--surface);
-}
-
-.hero-quote {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.45rem;
-  line-height: 1.6;
-  font-style: italic;
-  color: var(--ink);
-  margin-bottom: 1.5rem;
-}
-
-.hero-quote-attr {
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--ink-2);
-}
-
-.hero-stats {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  border-top: 1px solid var(--border);
-  padding-top: 2rem;
-}
-
-.stat-number {
-  font-family: 'Inter', sans-serif;
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--accent);
-  line-height: 1;
-  letter-spacing: -0.02em;
-}
-
-.stat-label {
-  font-size: 0.78rem;
-  color: var(--ink-2);
-  margin-top: 0.3rem;
-  line-height: 1.4;
-}
 
 /* HERO ANIMATIONS */
 .hero-left > * {
@@ -703,9 +623,7 @@ section { padding: 7rem 3rem; }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; }
   .hero-left { padding: 4.5rem 1.5rem 3rem; }
-  .hero-right { padding: 3rem 1.5rem; }
   .problem { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
   .fit-grid { grid-template-columns: 1fr; }
