@@ -120,7 +120,7 @@ onBeforeUnmount(() => {
 
             <div class="service-card">
               <p class="service-price">Free</p>
-              <h3>Business Journey Scorecard</h3>
+              <h3>Business Blindspot Scorecard</h3>
               <p class="service-desc">Answer 15 questions and get a personalised report showing exactly where your business is losing value. Takes less than 5 minutes.</p>
               <a href="https://business-journey-health.scoreapp.com/" class="btn-primary service-cta" target="_blank" rel="noopener">Take the Scorecard</a>
             </div>
