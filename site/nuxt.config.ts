@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   routeRules: {
+    '/lets-talk': { redirect: { to: 'https://tap-now-link.com/widget/bookings/i-am-curious', statusCode: 302 } },
     '/**': {
       headers: {
         'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
