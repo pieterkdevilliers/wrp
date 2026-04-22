@@ -10,7 +10,7 @@
       <li><NuxtLink to="/gaps-and-gains">Gaps &amp; Gains</NuxtLink></li>
       <li><NuxtLink to="/blog">Blog</NuxtLink></li>
       <li><NuxtLink to="/#about">About</NuxtLink></li>
-      <li><a href="https://koalendar.com/u/pieter-de-villiers" class="nav-cta" target="_blank" rel="noopener">Let's Talk</a></li>
+      <li><a href="https://blindspotworks.com/lets-talk" class="nav-cta" target="_blank" rel="noopener">Let's Talk</a></li>
     </ul>
 
     <button class="nav-toggle" @click="open = !open" :aria-expanded="String(open)" aria-label="Toggle menu">
@@ -27,7 +27,7 @@
         <li><NuxtLink to="/gaps-and-gains" @click="open = false">Gaps &amp; Gains</NuxtLink></li>
         <li><NuxtLink to="/blog" @click="open = false">Blog</NuxtLink></li>
         <li><NuxtLink to="/#about" @click="open = false">About</NuxtLink></li>
-        <li><a href="https://koalendar.com/u/pieter-de-villiers" class="mobile-cta" target="_blank" rel="noopener" @click="open = false">Let's Talk</a></li>
+        <li><a href="https://blindspotworks.com/lets-talk" class="mobile-cta" target="_blank" rel="noopener" @click="open = false">Let's Talk</a></li>
       </ul>
     </div>
   </nav>

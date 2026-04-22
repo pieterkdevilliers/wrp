@@ -16,7 +16,7 @@ useSeoMeta({
         <h1>One day that changes how you see your business.</h1>
         <p class="workshop-hero-sub">The White Room Process Workshop is a full-day, in-person session for businesses that are ready to see their complete customer journey mapped, end to end, and leave with a clear picture of exactly what to fix, and how. It's the foundation for any implementation work we do together.</p>
         <div class="hero-actions">
-          <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
+          <a href="https://tap-now-link.com/widget/bookings/wrp-interest-lets-talk" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
         </div>
       </div>
     </section>
@@ -64,7 +64,7 @@ useSeoMeta({
                 <span class="detail-value price">£2,495</span>
               </div>
               <p class="coaching-discount">Coaching clients: £1,495 Existing Blindspot Works Coaching clients receive a £1,000 discount.</p>
-              <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary workshop-cta" target="_blank" rel="noopener">Let's Talk</a>
+              <a href="https://tap-now-link.com/widget/bookings/wrp-interest-lets-talk" class="btn-primary workshop-cta" target="_blank" rel="noopener">Let's Talk</a>
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@ useSeoMeta({
           <p>Many clients come to the workshop after a period of Blindspot Works Coaching. Others use it as a standalone investment and take the findings away to implement themselves or with their own team.</p>
           <p>If you're not sure whether you're ready for the workshop, the right first step is a £249 Audit Call.</p>
           <div class="next-actions">
-            <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
+            <a href="https://tap-now-link.com/widget/bookings/wrp-interest-lets-talk" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
             <NuxtLink to="/journey-audit" class="btn-secondary">Start with an Audit Call</NuxtLink>
           </div>
         </div>

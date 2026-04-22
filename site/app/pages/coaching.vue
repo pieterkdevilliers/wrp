@@ -16,7 +16,7 @@ useSeoMeta({
         <h1>Your business has gaps. Let's close them, together, and systematically.</h1>
         <p class="hero-sub">Blindspot Works Coaching is an ongoing relationship for owner-managed businesses who are ready to stop firefighting and start building a business that works properly. Not a course. Not a one-off. A genuine thinking partnership, built around your business.</p>
         <div class="hero-actions">
-          <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Start with a Conversation</a>
+          <a href="https://tap-now-link.com/widget/bookings/coaching-interest-lets-talk" class="btn-primary" target="_blank" rel="noopener">Start with a Conversation</a>
         </div>
       </div>
     </section>
@@ -106,7 +106,7 @@ useSeoMeta({
           <p class="pricing-terms">Billed monthly. Rolling 3-month commitment, reviewed quarterly. Cancel at the end of any quarter with 30 days notice.</p>
           <p class="pricing-body">"This is designed to be a 12-month relationship. The businesses that get the most from it are the ones who commit to the journey, not just the next quarter. That said, you're never locked in. If it's not working, we part ways cleanly."</p>
           <p class="pricing-note">Existing coaching clients receive a discounted rate on the White Room Process Workshop (normally £2,495).</p>
-          <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Start with a Conversation</a>
+          <a href="https://tap-now-link.com/widget/bookings/coaching-interest-lets-talk" class="btn-primary" target="_blank" rel="noopener">Start with a Conversation</a>
         </div>
         <div class="pricing-card">
           <div class="pricing-card-row">
@@ -160,7 +160,7 @@ useSeoMeta({
       <h2>Ready to map the gaps?</h2>
       <p>The first step is a conversation. No commitment, no hard sell. Just an honest look at where your business is and whether this is the right fit.</p>
       <div class="cta-actions">
-        <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Start with a Conversation</a>
+        <a href="https://tap-now-link.com/widget/bookings/coaching-interest-lets-talk" class="btn-primary" target="_blank" rel="noopener">Start with a Conversation</a>
       </div>
     </div>
 

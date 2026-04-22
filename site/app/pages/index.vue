@@ -72,7 +72,7 @@ onBeforeUnmount(() => {
           I help owner-managed businesses map their full customer journey, find exactly where they're losing time and money, and fix it.
         </p>
         <div class="hero-actions">
-          <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
+          <a href="https://blindspotworks.com/lets-talk" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
           <a href="#services" class="btn-secondary">See What's Available</a>
         </div>
       </div>
@@ -161,7 +161,7 @@ onBeforeUnmount(() => {
               <p class="service-price">from £1,000/mo</p>
               <h3>Ongoing Implementation</h3>
               <p class="service-desc">Once your journey is mapped and priorities are clear, I work with a trusted network of specialists to implement the solutions we've designed, so you get the thinking and the delivery, without having to manage it yourself.</p>
-              <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary service-cta" target="_blank" rel="noopener">Let's Talk</a>
+              <a href="https://tap-now-link.com/widget/bookings/ongoing-implementation-lets-talk" class="btn-primary service-cta" target="_blank" rel="noopener">Let's Talk</a>
             </div>
 
           </div>
@@ -259,7 +259,7 @@ onBeforeUnmount(() => {
       <p>
         I work with a small number of businesses at any one time to ensure every client gets the attention they deserve. If you're interested in working together, the best first step is a short conversation. No commitment - just the first step in the right direction.
       </p>
-      <a href="https://koalendar.com/u/pieter-de-villiers" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
+      <a href="https://blindspotworks.com/lets-talk" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
     </div>
 
     <SiteFooter />
