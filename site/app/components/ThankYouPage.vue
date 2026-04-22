@@ -6,6 +6,9 @@ defineProps({
   headline: { type: String, required: true },
   subheadline: { type: String, required: true },
   steps: { type: Array, required: true },
+  extraEyebrow: { type: String, default: null },
+  extraParagraphs: { type: Array, default: null },
+  extraNote: { type: String, default: null },
   resources: { type: Array, required: true },
 })
 </script>
@@ -34,6 +37,17 @@ defineProps({
             <p class="step-text">{{ step }}</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- EXTRA CONTENT (optional) -->
+    <section v-if="extraParagraphs" class="extra-section">
+      <div class="extra-inner">
+        <p v-if="extraEyebrow" class="section-eyebrow">{{ extraEyebrow }}</p>
+        <div class="extra-body">
+          <p v-for="(para, i) in extraParagraphs" :key="i">{{ para }}</p>
+        </div>
+        <div v-if="extraNote" class="extra-note">{{ extraNote }}</div>
       </div>
     </section>
 
@@ -219,10 +233,42 @@ h1 {
   color: var(--accent);
 }
 
+/* EXTRA CONTENT */
+.extra-section {
+  padding: 7rem 3rem;
+  background: var(--surface);
+}
+
+.extra-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.extra-body {
+  margin-top: 2rem;
+  color: var(--ink-2);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.extra-body p + p { margin-top: 1.1rem; }
+
+.extra-note {
+  margin-top: 2rem;
+  padding: 1.5rem 1.75rem;
+  background: var(--bg);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 10px 10px 0;
+  font-size: 0.95rem;
+  color: var(--ink-2);
+  line-height: 1.75;
+}
+
 @media (max-width: 900px) {
   .ty-hero { padding: 8rem 1.5rem 5rem; }
   .steps-section { padding: 5rem 1.5rem; }
   .step { grid-template-columns: 2.5rem 1fr; gap: 1.25rem; }
+  .extra-section { padding: 5rem 1.5rem; }
   .resources-section { padding: 5rem 1.5rem; }
 }
 </style>
