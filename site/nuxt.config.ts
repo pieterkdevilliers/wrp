@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/lets-talk': { redirect: { to: 'https://tap-now-link.com/widget/bookings/i-am-curious', statusCode: 302 } },
+    '/blindspot-score': { redirect: { to: 'https://business-journey-health.scoreapp.com/', statusCode: 302 } },
     '/**': {
       headers: {
         'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
