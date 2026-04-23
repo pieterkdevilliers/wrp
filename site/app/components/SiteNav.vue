@@ -2,7 +2,7 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <nav :class="dark ? 'nav--dark' : 'nav--light'">
     <NuxtLink to="/" class="nav-logo">
-      <img src="/images/logo-blindspot-works.png" alt="Blindspot Works" class="nav-logo-img" />
+      <img :src="dark ? '/images/blindspot-logo-inverted-no-tagline.png' : '/images/logo-blindspot-works.png'" alt="Blindspot Works" class="nav-logo-img" />
     </NuxtLink>
 
     <ul class="nav-links">
