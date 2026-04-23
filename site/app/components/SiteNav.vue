@@ -1,7 +1,9 @@
 <template>
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <nav :class="dark ? 'nav--dark' : 'nav--light'">
-    <NuxtLink to="/" class="nav-logo">Blindspot Works</NuxtLink>
+    <NuxtLink to="/" class="nav-logo">
+      <img src="/images/logo-blindspot-works.png" alt="Blindspot Works" class="nav-logo-img" />
+    </NuxtLink>
 
     <ul class="nav-links">
       <li><NuxtLink to="/#services">Services</NuxtLink></li>
@@ -69,13 +71,17 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
   text-decoration: none;
   position: relative;
   z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-img {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 
 /* Light variant — fixed, frosted */
@@ -90,7 +96,6 @@ nav {
   border-bottom: 1px solid var(--border);
 }
 
-.nav--light .nav-logo { color: var(--ink); }
 
 /* Dark variant — static */
 .nav--dark {
@@ -99,7 +104,6 @@ nav {
   border-bottom: 1px solid var(--border-inv);
 }
 
-.nav--dark .nav-logo { color: #ffffff; }
 
 /* Desktop nav links */
 .nav-links {
