@@ -4,6 +4,7 @@
     <NuxtPage />
   </main>
   <div id="my-ai-chat-widget-container"></div>
+  <ExitIntentPopup />
 </template>
 
 <script setup>
