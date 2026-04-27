@@ -18,7 +18,7 @@
       </a>
     </div>
 
-    <span class="footer-copy">© 2026 Blindspot Works · Pieter K de Villiers · UK</span>
+    <span class="footer-copy">© 2026 Blindspot Works · Pieter K de Villiers · UK · <NuxtLink to="/privacy" class="footer-privacy">Privacy Policy</NuxtLink></span>
 
     <div class="footer-right"></div>
   </footer>
@@ -51,6 +51,13 @@ footer {
 }
 
 .footer-social a:hover { color: rgba(255, 255, 255, 0.85); }
+
+.footer-privacy {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-privacy:hover { color: rgba(255, 255, 255, 0.75); }
 
 .footer-copy {
   position: absolute;

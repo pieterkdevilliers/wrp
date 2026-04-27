@@ -5,6 +5,7 @@
   </main>
   <div id="my-ai-chat-widget-container"></div>
   <ExitIntentPopup />
+  <CookieBanner />
 </template>
 
 <script setup>
