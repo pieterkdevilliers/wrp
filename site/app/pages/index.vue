@@ -158,10 +158,10 @@ onBeforeUnmount(() => {
             </div>
 
             <div class="service-card">
-              <p class="service-price">from £1,000/mo</p>
-              <h3>Ongoing Implementation</h3>
-              <p class="service-desc">Once your journey is mapped and priorities are clear, I work with a trusted network of specialists to implement the solutions we've designed, so you get the thinking and the delivery, without having to manage it yourself.</p>
-              <a href="https://tap-now-link.com/widget/bookings/ongoing-implementation-lets-talk" class="btn-primary service-cta" target="_blank" rel="noopener">Let's Talk</a>
+              <p class="service-price">From £6,995</p>
+              <h3>The Clarity Programme</h3>
+              <p class="service-desc">A structured six-month engagement that maps your complete customer journey, closes the gaps costing you time and clients, and builds the systems your business needs to run without you. Twelve steps. Four phases. One clear outcome.</p>
+              <NuxtLink to="/clarity-programme" class="btn-primary service-cta">Find Out More</NuxtLink>
             </div>
 
           </div>

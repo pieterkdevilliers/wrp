@@ -1,6 +1,6 @@
 <script setup>
 useSeoMeta({
-  title: 'The Clarity Programme — Blindspot Works',
+  title: 'The Clarity Programme - Blindspot Works',
   description: 'A structured six-month engagement for UK owner-managed businesses ready to stop firefighting and start building a business that works without them. Find the gaps. Fix the business. Get your time back.',
 })
 </script>
@@ -13,10 +13,12 @@ useSeoMeta({
     <section class="cp-hero">
       <div class="cp-hero-inner">
         <p class="section-eyebrow">The Clarity Programme</p>
-        <h1>Find the gaps. Fix the business. Get your time back.</h1>
+        <h1>Find the gaps.</h1>
+        <h1>Fix the business.</h1>
+        <h1>Get your time back.</h1>
         <p class="hero-sub">A structured six-month engagement for UK owner-managed businesses who are ready to stop firefighting and start building a business that works without them.</p>
         <div class="hero-actions">
-          <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book a Free 15-Minute Call</a>
+          <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book a Free Introductory Call</a>
           <a href="/clarity-programme-brochure.pdf" class="btn-secondary" target="_blank" rel="noopener">Download the Programme Brochure</a>
         </div>
       </div>
@@ -33,17 +35,17 @@ useSeoMeta({
           <div class="situation-body">
             <p>The business is generating good revenue. There's a team. Clients are broadly happy. You've built something real from nothing, over years of hard work, and there's genuine pride in that.</p>
             <p>But behind the numbers, the experience of running the business feels nothing like success.</p>
-            <p>You are the load-bearing wall of the entire operation. Every important decision flows through you. Every client issue that escalates lands on your desk. The team is capable but dependent. The systems exist but only just. And growth — which you want — feels threatening rather than exciting, because you know the business can barely handle what it has now.</p>
+            <p>You are the load-bearing wall of the entire operation. Every important decision flows through you. Every client issue that escalates lands on your desk. The team is capable but dependent. The systems exist but only just. And growth, which you want, feels threatening rather than exciting, because you know the business can barely handle what it has now.</p>
           </div>
           <p class="list-intro">This is for you if:</p>
           <ul class="for-list">
-            <li>You know something isn't working but can't identify precisely what</li>
+            <li>You know something isn't working but can't identify precisely what, or how to fix it</li>
             <li>You are the bottleneck in your own business and you want to change that</li>
-            <li>You've tried to fix things yourself and the problem keeps returning</li>
+            <li>You've tried to fix things yourself and the same problems keep returning</li>
             <li>You want to grow but worry that growth just means more of the same chaos</li>
             <li>You're ready to invest properly in getting this right, not looking for a quick fix</li>
           </ul>
-          <p class="for-note">This isn't the right fit if your business is in survival mode, if you're not willing to involve your team in the process, or if you're looking for someone to simply execute a brief rather than think alongside you.</p>
+          <p class="for-note">This isn't the right fit if your business is in survival mode, if you're not willing to involve your team in the process, or if you're looking for someone to simply execute a brief rather than think and work alongside you.</p>
         </div>
       </div>
     </section>
@@ -53,8 +55,9 @@ useSeoMeta({
       <div class="section-inner">
         <div class="section-heading">
           <p class="section-eyebrow">Built On</p>
-          <h2>Seven principles. Not just a framework.</h2>
-          <p class="section-intro">Every decision in the Clarity Programme — what we do, in what order, and how — is grounded in these principles.</p>
+          <h2>Seven principles.</h2>
+          <h2>Not just a framework.</h2>
+          <p class="section-intro">Every decision in the Clarity Programme, what we do, in what order, and how, is grounded in these principles.</p>
         </div>
         <div class="steps">
           <div class="step">
@@ -68,14 +71,14 @@ useSeoMeta({
             <span class="step-number">2</span>
             <div class="step-content">
               <h3>The outside view changes everything</h3>
-              <p>You've been inside your business too long to see it clearly. An honest outside perspective reveals things that years of internal effort never could.</p>
+              <p>You've been inside your business too long to see it clearly. An outside perspective reveals things that years of internal effort never could.</p>
             </div>
           </div>
           <div class="step">
             <span class="step-number">3</span>
             <div class="step-content">
               <h3>One thing at a time</h3>
-              <p>The businesses that change the most fix one thing properly before moving to the next. Not the easiest — the most important.</p>
+              <p>The businesses that change the most fix one thing properly before moving to the next. Not the easiest, the most important.</p>
             </div>
           </div>
           <div class="step">
@@ -96,14 +99,14 @@ useSeoMeta({
             <span class="step-number">6</span>
             <div class="step-content">
               <h3>Implementation is the work</h3>
-              <p>Knowing what needs to change is not the same as changing it. The Clarity Programme continues through the implementation — not just the plan.</p>
+              <p>Knowing what needs to change is not the same as changing it. The Clarity Programme continues through the implementation, not just the plan.</p>
             </div>
           </div>
           <div class="step">
             <span class="step-number">7</span>
             <div class="step-content">
               <h3>The business should serve your life</h3>
-              <p>Every decision is measured against one question: does this move you closer to a business that serves your life — or further away?</p>
+              <p>Every decision is measured against one question: does this move you closer to a business that serves your life, or further away?</p>
             </div>
           </div>
         </div>
@@ -115,7 +118,9 @@ useSeoMeta({
       <div class="section-inner">
         <div class="section-heading">
           <p class="section-eyebrow">How It Works</p>
-          <h2>Twelve steps. Four phases. Six months.</h2>
+          <h2>Twelve steps.</h2>
+          <h2>Four phases.</h2>
+          <h2>Six months.</h2>
           <p class="section-intro">The Clarity Programme follows a structured twelve-step process. Each step builds on the previous one. Nothing is skipped.</p>
         </div>
 
@@ -129,28 +134,28 @@ useSeoMeta({
             <span class="step-number">1</span>
             <div class="step-content">
               <h3>The Business Blindspot Report</h3>
-              <p>Before anything else, we generate a comprehensive outside view of your business — scored across website health, operational gaps, online reputation, and competitive position. Specific to your business. Not templated. Delivered within 48 hours of onboarding.</p>
+              <p>Before anything else, we generate a comprehensive outside view of your business, scored across website health, operational gaps, online reputation, and competitive position. Specific to your business. Not templated. Delivered within 48 hours of onboarding.</p>
             </div>
           </div>
           <div class="step">
             <span class="step-number">2</span>
             <div class="step-content">
               <h3>The Value Leak Assessment</h3>
-              <p>You complete the structured self-assessment that scores your business across your four core dimensions. This gives us the inside view alongside the outside view — revealing the gap between how your business appears and how it actually operates.</p>
+              <p>You complete the structured self-assessment that scores your business across your four core dimensions. This gives us the inside view alongside the outside view, revealing the gap between how your business appears and how it actually operates.</p>
             </div>
           </div>
           <div class="step">
             <span class="step-number">3</span>
             <div class="step-content">
               <h3>The Audit Call <span class="step-meta">90 minutes</span></h3>
-              <p>A 90-minute diagnostic conversation structured around your Blindspot Report and Assessment results. We map your specific situation — what is working, what is costing you, and what needs to change first. Followed by a written Audit Report with a clear, prioritised action plan within five working days.</p>
+              <p>A 90-minute diagnostic conversation structured around your Blindspot Report and Assessment results. We map your specific situation, what is working, what is costing you, and what needs to change first. Followed by a written Audit Report with a clear, prioritised action plan within five working days.</p>
             </div>
           </div>
           <div class="step">
             <span class="step-number">4</span>
             <div class="step-content">
               <h3>The Audit Report Review Call</h3>
-              <p>We review the written report together. You challenge it, push back on it, refine it. You leave this call knowing exactly what you are working on first — and why.</p>
+              <p>We review the written report together. You challenge it, push back on it, refine it. You leave this call knowing exactly what you are working on first, and why.</p>
             </div>
           </div>
         </div>
@@ -165,8 +170,9 @@ useSeoMeta({
             <span class="step-number">5</span>
             <div class="step-content">
               <h3>The White Room Process Workshop <span class="step-meta">Full day, in person</span></h3>
-              <p>A full day, in person, at your location. You, your key team members, and Pieter — working through your complete customer journey from first contact to loyal advocate.</p>
-              <p>Morning: we design the ideal journey — how it should work, with no constraints from how things currently operate. Afternoon: we map the internal reality — what needs to exist inside the business to deliver the morning's design consistently.</p>
+              <p>A full day, in person, at your location. You, your key team members, and myself, working through your complete customer journey from first contact to loyal advocate.</p>
+              <p>Morning: we design the ideal journey: How it should work, with no constraints from how things currently operate.</p>
+              <p>Afternoon: We map the internal reality: what needs to exist inside the business to deliver the morning's design consistently.</p>
               <p>You leave with a complete journey map, a prioritised implementation list, role clarity, and a 90-day action plan.</p>
             </div>
           </div>
@@ -182,14 +188,14 @@ useSeoMeta({
             <span class="step-number">6</span>
             <div class="step-content">
               <h3>Monthly Strategy Calls <span class="step-meta">90 minutes × 5</span></h3>
-              <p>One 90-minute strategy call per month for five months. Each call reviews progress and sets the priority focus for the coming month. Working sessions — not check-ins.</p>
+              <p>One 90-minute strategy call per month for five months. Each call reviews progress and sets the priority focus for the coming month. Working sessions, not check-ins.</p>
             </div>
           </div>
           <div class="step">
             <span class="step-number">7</span>
             <div class="step-content">
-              <h3>Progress Calls <span class="step-meta">30 minutes × 10</span></h3>
-              <p>Two 30-minute progress calls per month — weeks 2 and 4 — sitting either side of the strategy call. Focused entirely on the current implementation priority. What happened. What got stuck. What to do next.</p>
+              <h3>Progress Calls <span class="step-meta">30 minutes × 5</span></h3>
+              <p>5 30-minute progress calls per month, week 3, sitting either side of the strategy call. Focused entirely on the current implementation priority. What happened. What got stuck. What to do next.</p>
             </div>
           </div>
           <div class="step">
@@ -225,7 +231,7 @@ useSeoMeta({
             <span class="step-number">11</span>
             <div class="step-content">
               <h3>The Six-Month Review</h3>
-              <p>A full review of the programme at month six. What changed. What is now running without you. What the next 90 days should look like. The handover — the point at which you have enough clarity and confidence to continue.</p>
+              <p>A full review of the programme at month six. What changed. What is now running without you. What the next 90 days should look like. The handover, the point at which you have enough clarity and confidence to continue.</p>
             </div>
           </div>
           <div class="step">
@@ -238,7 +244,7 @@ useSeoMeta({
         </div>
 
         <div class="section-cta">
-          <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book a Free 15-Minute Call</a>
+          <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book a Free Introductory Call</a>
         </div>
       </div>
     </section>
@@ -268,16 +274,15 @@ useSeoMeta({
               <li>Pre-day preparation brief</li>
               <li>Post-day session notes and journey map</li>
               <li>90-day implementation plan from the workshop</li>
-              <li>Role clarity document</li>
             </ul>
           </div>
           <div class="inclusion-group">
-            <p class="inclusion-group-title">Ongoing Support — Five Months</p>
+            <p class="inclusion-group-title">Ongoing Support - Five Months</p>
             <ul class="inclusion-list">
               <li>5 × monthly 90-minute strategy calls</li>
-              <li>10 × 30-minute progress calls (2 per month)</li>
-              <li>Weekly async check-in — response within 24 hours</li>
-              <li>Living Business Journey Map — updated monthly</li>
+              <li>5 × 30-minute progress calls</li>
+              <li>Weekly async check-in, response within 24 hours</li>
+              <li>Living Business Journey Map, updated monthly</li>
               <li>90-day Value Leak Assessment rerun</li>
               <li>Six-month review session</li>
             </ul>
@@ -293,7 +298,7 @@ useSeoMeta({
           </div>
         </div>
         <div class="section-cta">
-          <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book a Free 15-Minute Call</a>
+          <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book a Free Introductory Call</a>
         </div>
       </div>
     </section>
@@ -304,13 +309,14 @@ useSeoMeta({
         <div class="pricing-text">
           <p class="section-eyebrow">Investment</p>
           <h2>Simple, transparent pricing.</h2>
-          <div class="pricing-amount">£6,995 <span class="pricing-period">+ VAT</span></div>
-          <p class="pricing-terms">Or £1,199 + VAT per month for six months. No hidden extras. Everything listed above is included.</p>
-          <p class="pricing-note">This is the introductory year one price. Future cohorts will be priced higher as the programme matures and case studies develop.</p>
+          <div class="pricing-amount">£6,995 <span class="pricing-period"></span></div>
+          <p class="pricing-terms">Or £1,199 per month for six months. No hidden extras. Everything listed above is included.</p>
           <div class="guarantee">
-            <strong>Risk-free start.</strong> If after the Audit Call and written Audit Report you don't feel the programme is the right fit, we'll refund the Audit Call fee in full and part ways with no further obligation.
+            <strong>The Clarity Programme Guarantee.</strong> If you complete the six-month programme, attend the scheduled calls, implement the actions agreed at each stage, and at the end of the programme you don't feel the business has meaningfully improved — we will work with you for an additional month at no charge until it does.
+            <p>This is not a money-back guarantee. It is a results guarantee. We are committed to delivering what this programme promises. In return, we ask that you show up, do the work, and implement what we agree together.</p>
+            <p>We have never had to honour this guarantee. We expect to keep it that way.</p>
           </div>
-          <a href="/lets-talk" class="btn-primary pricing-cta" target="_blank" rel="noopener">Book a Free 15-Minute Call</a>
+          <a href="/lets-talk" class="btn-primary pricing-cta" target="_blank" rel="noopener">Book a Free Introductory Call</a>
         </div>
         <div class="pricing-card">
           <p class="pricing-card-title">Component value breakdown</p>
@@ -327,7 +333,7 @@ useSeoMeta({
             <span class="detail-value">£2,125</span>
           </div>
           <div class="pricing-card-row">
-            <span class="detail-label">10 × Progress Calls</span>
+            <span class="detail-label">5 × Progress Calls</span>
             <span class="detail-value">£1,875</span>
           </div>
           <div class="pricing-card-row">
@@ -361,14 +367,12 @@ useSeoMeta({
           <p class="section-eyebrow">Important</p>
           <h2>What the Clarity Programme is not.</h2>
         </div>
-        <div class="for-body">
-          <ul class="for-list">
-            <li><strong>Not a consulting project</strong> — we support your decision-making, we don't make decisions for you.</li>
-            <li><strong>Not a technology implementation</strong> — we identify where technology can help and design what it should do. Building it is a separate engagement.</li>
-            <li><strong>Not a quick fix</strong> — six months is the minimum timeframe for meaningful, durable change. Anyone promising faster is selling something else.</li>
-            <li><strong>Not right for every business</strong> — if your business is in survival mode, or you're not ready to involve your team, this is not the right starting point.</li>
-          </ul>
-        </div>
+        <ul class="not-list">
+          <li><span><strong>Not a consulting project</strong> - we support your decision-making, we don't make decisions for you.</span></li>
+          <li><span><strong>Not a technology implementation</strong> - we identify where technology can help and design what it should do. Building it is a separate engagement.</span></li>
+          <li><span><strong>Not a quick fix</strong> - six months is the minimum timeframe for meaningful, durable change. Anyone promising faster is selling something else.</span></li>
+          <li><span><strong>Not right for every business</strong> - if your business is in survival mode, or you're not ready to involve your team, this is not the right starting point.</span></li>
+        </ul>
       </div>
     </section>
 
@@ -380,7 +384,7 @@ useSeoMeta({
           <h2>The programme ends. The relationship doesn't have to.</h2>
         </div>
         <div class="after-body">
-          <p>Most clients continue into ongoing coaching after the programme — a monthly strategy call, two progress calls, and weekly async check-in at £495 per month. The intensity reduces because the foundations are in place.</p>
+          <p>Many clients continue into ongoing coaching after the programme. A monthly strategy call, and progress calls, and weekly async check-in at £495 per month. The intensity reduces because the foundations are in place.</p>
           <p>Some clients implement independently for a period and return for a second White Room day to map the next stage of growth from a stronger foundation.</p>
           <p>Either way, by the end of the programme you will have something you didn't have at the start: a clear picture of your business, documented systems that run without you, and the confidence that growth is something to look forward to rather than dread.</p>
         </div>
@@ -394,8 +398,8 @@ useSeoMeta({
           <p class="section-eyebrow">About</p>
           <h2>You'll work with me directly.</h2>
           <div class="about-text">
-            <p>I'm Pieter K de Villiers. I've been working with owner-managed businesses on process improvement and operational systems since 2014. I built and sold MacantaCRM — a no-code CRM and automation platform. I'm the author of Barefoot Business, an Amazon Number 1 international bestseller on business systems.</p>
-            <p>I work with a small number of Clarity Programme clients at any one time. Not because of capacity constraints — because quality of attention is the product. You will not be handed to a junior or managed through a portal. You work directly with me throughout the programme.</p>
+            <p>I'm Pieter K de Villiers. I've been working with owner-managed businesses on process improvement and operational systems since 2014. I built and sold MacantaCRM, a no-code CRM and automation platform. I'm the author of Barefoot Business, an Amazon Number 1 bestseller on business systems.</p>
+            <p>I work with a small number of Clarity Programme clients at any one time. Not simply because of capacity constraints, because quality of attention is the product. You will not be handed to a junior or managed through a portal. You work directly with me throughout the programme.</p>
           </div>
         </div>
         <div class="about-photo">
@@ -408,10 +412,9 @@ useSeoMeta({
     <div class="cta-section">
       <p class="section-eyebrow">Get Started</p>
       <h2>Ready to find the gaps?</h2>
-      <p>The Clarity Programme begins with a 15-minute conversation. No commitment, no pitch. An honest discussion about where your business is, whether this programme is the right fit, and what you'd want to be different in six months.</p>
+      <p>The Clarity Programme begins with a conversation. No commitment, no pitch. A discussion about where your business is, whether this programme is the right fit, and what you'd want to be different in six months.</p>
       <div class="cta-actions">
-        <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book a Free 15-Minute Call</a>
-        <a href="/value-leak-assessment" class="btn-secondary" target="_blank" rel="noopener">Take the Free Value Leak Assessment first</a>
+        <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book a Free Introductory Call</a>
       </div>
     </div>
 
@@ -499,7 +502,7 @@ h2 {
 }
 
 .section-heading {
-  max-width: 640px;
+  max-width: 740px;
   margin-bottom: 3rem;
 }
 
@@ -836,6 +839,34 @@ h2 {
 .not-section {
   padding: 7rem 3rem;
   background: var(--surface);
+}
+
+.not-list {
+  list-style: none;
+  padding: 0;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.not-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink-2);
+}
+
+.not-list li strong { color: var(--ink); }
+
+.not-list li::before {
+  content: '—';
+  color: var(--accent);
+  flex-shrink: 0;
+  font-weight: 600;
+  margin-top: 0.1rem;
 }
 
 /* ─── AFTER THE PROGRAMME ─── */
