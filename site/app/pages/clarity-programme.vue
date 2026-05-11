@@ -41,7 +41,7 @@ useSeoMeta({
             <li>You are the bottleneck in your own business and you want to change that</li>
             <li>You've tried to fix things yourself and the problem keeps returning</li>
             <li>You want to grow but worry that growth just means more of the same chaos</li>
-            <li>You're ready to invest properly in getting this right — not looking for a quick fix</li>
+            <li>You're ready to invest properly in getting this right, not looking for a quick fix</li>
           </ul>
           <p class="for-note">This isn't the right fit if your business is in survival mode, if you're not willing to involve your team in the process, or if you're looking for someone to simply execute a brief rather than think alongside you.</p>
         </div>
