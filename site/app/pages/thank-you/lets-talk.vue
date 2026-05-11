@@ -16,7 +16,7 @@ useSeoMeta({
       'If you need to reschedule, use the link in the calendar invitation. No awkward emails needed.',
     ]"
     :resources="[
-      { description: 'Curious where your business is losing value? Take the free Business Journey Scorecard before our call so we can hit the ground running.', href: 'https://business-journey-health.scoreapp.com/', label: 'Take the Scorecard', external: true },
+      { description: 'Curious where your business is losing value? Take the free Value Leak Assessment before our call so we can hit the ground running.', href: '/value-leak-assessment', label: 'Take the Free Assessment', external: true },
       { description: 'Find out what Blindspot Works actually does, and how other business owners have used it to close the gaps in their operations.', href: '/coaching', label: 'Learn about Coaching', external: false },
     ]"
   />

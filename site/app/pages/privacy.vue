@@ -55,14 +55,14 @@ useSeoMeta({
 
           <div class="policy-subsection">
             <h3>Email marketing (Go High Level)</h3>
-            <p>If you book a call, complete the scorecard, or request content from this site, your name and email address are added to our CRM system (Go High Level). We use this to send you relevant emails about our services and content. You can unsubscribe at any time using the link in any email.</p>
+            <p>If you book a call, complete the assessment, or request content from this site, your name and email address are added to our CRM system (Go High Level). We use this to send you relevant emails about our services and content. You can unsubscribe at any time using the link in any email.</p>
             <p class="legal-basis">Legal basis: legitimate interests / consent (where obtained at point of data collection).</p>
           </div>
 
           <div class="policy-subsection">
-            <h3>Business Journey Scorecard (Scoreapp)</h3>
-            <p>If you complete the Business Journey Scorecard, Scoreapp collects your name, email address, and your responses to the scorecard questions. This data is used to generate your personalised results and to follow up with relevant content. Scoreapp's own privacy policy applies to their platform. We receive your results and contact details via Scoreapp's integration.</p>
-            <p class="legal-basis">Legal basis: consent (given at point of scorecard completion).</p>
+            <h3>Value Leak Assessment (Scoreapp)</h3>
+            <p>If you complete the Value Leak Assessment, Scoreapp collects your name, email address, and your responses to the assessment questions. This data is used to generate your personalised results and to follow up with relevant content. Scoreapp's own privacy policy applies to their platform. We receive your results and contact details via Scoreapp's integration.</p>
+            <p class="legal-basis">Legal basis: consent (given at point of assessment completion).</p>
           </div>
 
           <div class="policy-subsection">
@@ -102,7 +102,7 @@ useSeoMeta({
           <ul class="policy-list">
             <li><strong>Contact form enquiries</strong> — up to 2 years, or until the enquiry is resolved.</li>
             <li><strong>CRM records (Go High Level)</strong> — as long as you remain a contact or client, or until you unsubscribe and request removal.</li>
-            <li><strong>Scorecard results</strong> — held by Scoreapp in accordance with their data retention policy.</li>
+            <li><strong>Assessment results</strong> — held by Scoreapp in accordance with their data retention policy.</li>
             <li><strong>Analytics data</strong> — aggregated data is retained for up to 26 months.</li>
           </ul>
         </div>
@@ -114,7 +114,7 @@ useSeoMeta({
           <p>We use the following third-party services that may process your data as part of delivering our service:</p>
           <ul class="policy-list">
             <li><strong>Go High Level</strong> (CRM and email marketing) — USA, with EU standard contractual clauses in place.</li>
-            <li><strong>Scoreapp</strong> (scorecard platform) — subject to their own privacy policy.</li>
+            <li><strong>Scoreapp</strong> (assessment platform) — subject to their own privacy policy.</li>
             <li><strong>Checkanalytic</strong> (website analytics).</li>
             <li><strong>Heroku</strong> (chatbot hosting) — USA, Salesforce company.</li>
           </ul>

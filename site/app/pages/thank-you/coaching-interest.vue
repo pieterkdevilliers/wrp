@@ -16,7 +16,7 @@ useSeoMeta({
       'Coaching engagements are ongoing and built around your specific situation, not a fixed curriculum. The first session is about understanding where you are and what\'s getting in the way.',
     ]"
     :resources="[
-      { description: 'Take the free Business Journey Scorecard while you wait. It\'s a good way to surface the patterns we\'ll likely focus on together.', href: 'https://business-journey-health.scoreapp.com/', label: 'Take the Scorecard', external: true },
+      { description: 'Take the free Value Leak Assessment while you wait. It\'s a good way to surface the patterns we\'ll likely focus on together.', href: '/value-leak-assessment', label: 'Take the Free Assessment', external: true },
       { description: 'Read more about what the White Room Process covers and what past participants have taken away from the two days.', href: '/workshop', label: 'About the Workshop', external: false },
     ]"
   />

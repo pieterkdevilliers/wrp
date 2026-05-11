@@ -16,7 +16,7 @@ useSeoMeta({
       'The call is 45 minutes. We\'ll map the current state of your business, identify where value is leaking, and outline what a full audit would uncover.',
     ]"
     :resources="[
-      { description: 'Take the free Business Journey Scorecard before our call. It gives us a structured starting point and means we spend less time on basics and more time on what matters.', href: 'https://business-journey-health.scoreapp.com/', label: 'Take the Scorecard', external: true },
+      { description: 'Take the free Value Leak Assessment before our call. It gives us a structured starting point and means we spend less time on basics and more time on what matters.', href: '/value-leak-assessment', label: 'Take the Free Assessment', external: true },
       { description: 'Find out what Blindspot Works actually does, and how other business owners have used it to close the gaps in their operations.', href: '/coaching', label: 'Learn about Coaching', external: false },
     ]"
   />

@@ -16,7 +16,7 @@ useSeoMeta({
       'If you need to reschedule, use the link in the calendar invitation.',
     ]"
     :resources="[
-      { description: 'Take the free Business Journey Scorecard before we speak. It helps surface the structural gaps that implementation work usually needs to address.', href: 'https://business-journey-health.scoreapp.com/', label: 'Take the Scorecard', external: true },
+      { description: 'Take the free Value Leak Assessment before we speak. It helps surface the structural gaps that implementation work usually needs to address.', href: '/value-leak-assessment', label: 'Take the Free Assessment', external: true },
       { description: 'Read more about what the White Room Process covers and what past participants have taken away from the two days.', href: '/workshop', label: 'About the Workshop', external: false },
     ]"
   />

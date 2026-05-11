@@ -16,7 +16,7 @@ useSeoMeta({
       'If you need to reschedule, use the link in the calendar invitation.',
     ]"
     :resources="[
-      { description: 'The Business Journey Scorecard is a good way to benchmark where your business stands before the workshop. Takes about five minutes.', href: 'https://business-journey-health.scoreapp.com/', label: 'Take the Scorecard', external: true },
+      { description: 'The Value Leak Assessment is a good way to benchmark where your business stands before the workshop. Takes about five minutes.', href: '/value-leak-assessment', label: 'Take the Free Assessment', external: true },
       { description: 'Find out what Blindspot Works actually does, and how other business owners have used it to close the gaps in their operations.', href: '/coaching', label: 'Learn about Coaching', external: false },
     ]"
   />

@@ -82,7 +82,7 @@ useSeoMeta({
             <span class="step-number">5</span>
             <div class="step-content">
               <h3>Quarterly Progress Review</h3>
-              <p>Every quarter we re-run a version of your Business Journey Scorecard to measure what's changed. Progress that's visible is progress that motivates.</p>
+              <p>Every quarter we re-run a version of your Value Leak Assessment to measure what's changed. Progress that's visible is progress that motivates.</p>
             </div>
           </div>
           <div class="step">

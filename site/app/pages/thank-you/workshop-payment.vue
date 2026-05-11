@@ -24,7 +24,7 @@ useSeoMeta({
     ]"
     extra-note="One thing worth knowing: the most valuable thing you can do before the day is decide who to bring. The White Room works best when the people who understand how the business actually runs are in the room — not just the owner. If you have a team, bring the people who would normally say 'that\'s not how it works' when a new idea is suggested. Those are exactly the voices you want in the room."
     :resources="[
-      { description: 'If you haven\'t completed the Business Journey Scorecard yet, it\'s worth doing before the workshop — it gives both of us a useful starting point and takes less than five minutes.', href: 'https://business-journey-health.scoreapp.com/', label: 'Take the Scorecard', external: true },
+      { description: 'If you haven\'t completed the Value Leak Assessment yet, it\'s worth doing before the workshop — it gives both of us a useful starting point and takes less than five minutes.', href: '/value-leak-assessment', label: 'Take the Free Assessment', external: true },
       { description: 'Read more about what the White Room Process Workshop involves.', href: '/workshop', label: 'About the Workshop', external: false },
     ]"
   />

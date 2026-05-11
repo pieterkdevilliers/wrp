@@ -120,9 +120,9 @@ onBeforeUnmount(() => {
 
             <div class="service-card">
               <p class="service-price">Free</p>
-              <h3>Business Blindspot Scorecard</h3>
-              <p class="service-desc">Answer 15 questions and get a personalised report showing exactly where your business is losing value. Takes less than 5 minutes.</p>
-              <a href="https://business-journey-health.scoreapp.com/" class="btn-primary service-cta" target="_blank" rel="noopener">Take the Scorecard</a>
+              <h3>Value Leak Assessment</h3>
+              <p class="service-desc">Find out exactly where your business is losing time, clients, and revenue. The free Value Leak Assessment scores your business across four dimensions and shows you precisely where to focus first. Takes five minutes.</p>
+              <a href="/value-leak-assessment" class="btn-primary service-cta" target="_blank" rel="noopener">Take the Free Assessment</a>
             </div>
 
             <div class="service-card">
