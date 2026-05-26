@@ -24,7 +24,7 @@ export default defineNuxtConfig({
           "font-src 'self' https://fonts.gstatic.com",
           "img-src 'self' data: https:",
           "frame-src https://ee-crm.expertecho.ai https://www.buzzsprout.com",
-          "connect-src 'self' https://d31env5c5sjhq3.cloudfront.net https://*.expertecho.ai https://www.buzzsprout.com https://fastapi-rag-2705cfd4c41a.herokuapp.com https://tap-now-link.com https://*.tap-now-link.com",
+          "connect-src 'self' https://d31env5c5sjhq3.cloudfront.net https://*.expertecho.ai https://www.buzzsprout.com https://fastapi-rag-2705cfd4c41a.herokuapp.com https://tap-now-link.com https://*.tap-now-link.com https://backend.leadconnectorhq.com",
           "object-src 'none'",
           "base-uri 'self'",
         ].join('; '),
