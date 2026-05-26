@@ -2,14 +2,14 @@ const STORAGE_KEY = 'bsw_cookie_consent'
 const consent = ref<'all' | 'essential' | null>(null)
 
 function injectAnalytics(): void {
-  if (document.getElementById('ZwSg9rf6GA')) return
-  const s = document.createElement('script')
-  s.setAttribute('data-host', 'https://checkanalytic.com')
-  s.src = 'https://checkanalytic.com/js/script.js'
-  s.id = 'ZwSg9rf6GA'
-  s.async = true
-  s.defer = true
-  document.head.appendChild(s)
+  if (!document.getElementById('ghl-tracking')) {
+    const g = document.createElement('script')
+    g.src = 'https://tap-now-link.com/js/external-tracking.js'
+    g.setAttribute('data-tracking-id', 'tk_29014db0668147acbf3124b4c45d8d5e')
+    g.id = 'ghl-tracking'
+    g.async = true
+    document.head.appendChild(g)
+  }
 }
 
 // Initialise synchronously from localStorage on client import —
