@@ -75,6 +75,7 @@ onBeforeUnmount(() => {
           <a href="https://blindspotworks.com/lets-talk" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
           <a href="#services" class="btn-secondary">See What's Available</a>
         </div>
+        <HeroCTACards />
       </div>
     </section>
 
@@ -306,7 +307,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 6rem 3rem;
+  padding: 6rem 3rem 3rem;
   max-width: 1100px;
   margin: 0 auto;
   width: 100%;
@@ -336,6 +337,10 @@ h2 {
   flex-wrap: wrap;
 }
 
+.hero-cta-cards {
+  margin-top: 4rem;
+}
+
 
 /* HERO ANIMATIONS */
 .hero-left > * {
@@ -347,6 +352,7 @@ h2 {
 h1 { animation-delay: 0.22s; }
 .hero-sub { animation-delay: 0.34s; }
 .hero-actions { animation-delay: 0.46s; }
+.hero-cta-cards { animation-delay: 0.58s; }
 
 /* SECTION BASE */
 section { padding: 7rem 3rem; }

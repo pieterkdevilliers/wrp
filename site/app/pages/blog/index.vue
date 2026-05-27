@@ -16,28 +16,34 @@ function formatDate(d) {
   <div class="blog-page">
     <SiteNav />
 
-    <div class="blog-header">
-      <p class="section-eyebrow">Blog</p>
-      <h1>Thinking out loud.</h1>
-      <p class="blog-intro">Longer-form thoughts on AI, automation, and building better businesses.</p>
-    </div>
-
-    <div class="blog-grid">
-      <NuxtLink
-        v-for="post in posts"
-        :key="post.stem"
-        :to="`/blog/${post.stem.replace('posts/', '')}`"
-        class="post-card"
-      >
-        <div class="post-card-inner">
-          <span class="post-date">{{ formatDate(post.date) }}</span>
-          <h2 class="post-title">{{ post.title }}</h2>
-          <p class="post-desc">{{ post.description }}</p>
-          <span class="post-read">Read more →</span>
+    <div class="blog-layout">
+      <div class="blog-main">
+        <div class="blog-header">
+          <p class="section-eyebrow">Blog</p>
+          <h1>Thinking out loud.</h1>
+          <p class="blog-intro">Longer-form thoughts on AI, automation, and building better businesses.</p>
         </div>
-      </NuxtLink>
 
-      <p v-if="!posts?.length" class="empty">No posts yet.</p>
+        <div class="blog-grid">
+          <NuxtLink
+            v-for="post in posts"
+            :key="post.stem"
+            :to="`/blog/${post.stem.replace('posts/', '')}`"
+            class="post-card"
+          >
+            <div class="post-card-inner">
+              <span class="post-date">{{ formatDate(post.date) }}</span>
+              <h2 class="post-title">{{ post.title }}</h2>
+              <p class="post-desc">{{ post.description }}</p>
+              <span class="post-read">Read more →</span>
+            </div>
+          </NuxtLink>
+
+          <p v-if="!posts?.length" class="empty">No posts yet.</p>
+        </div>
+      </div>
+
+      <BlogSidebar />
     </div>
 
     <SiteFooter />
@@ -51,10 +57,18 @@ function formatDate(d) {
   min-height: 100vh;
 }
 
-.blog-header {
-  max-width: 1100px;
+.blog-layout {
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 8rem 3rem 4rem;
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 4rem;
+  align-items: start;
+}
+
+.blog-header {
+  padding: 8rem 0 4rem;
 }
 
 .section-eyebrow {
@@ -81,9 +95,7 @@ h1 {
 }
 
 .blog-grid {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 3rem 7rem;
+  padding: 0 0 7rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
@@ -148,10 +160,14 @@ h1 {
 }
 
 @media (max-width: 900px) {
-  .blog-header { padding: 6rem 1.5rem 3rem; }
+  .blog-layout {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem;
+  }
+  .blog-header { padding: 6rem 0 3rem; }
   .blog-grid {
     grid-template-columns: 1fr;
-    padding: 0 1.5rem 5rem;
+    padding: 0 0 5rem;
   }
 }
 </style>

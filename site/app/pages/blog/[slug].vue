@@ -21,18 +21,22 @@ function formatDate(d) {
   <div class="post-page">
     <SiteNav />
 
-    <article class="post-wrap">
-      <header class="post-header">
-        <NuxtLink to="/blog" class="back-link">← All posts</NuxtLink>
-        <span class="post-date">{{ formatDate(post.date) }}</span>
-        <h1>{{ post.title }}</h1>
-        <p v-if="post.description" class="post-desc">{{ post.description }}</p>
-      </header>
+    <div class="post-layout">
+      <article class="post-wrap">
+        <header class="post-header">
+          <NuxtLink to="/blog" class="back-link">← All posts</NuxtLink>
+          <span class="post-date">{{ formatDate(post.date) }}</span>
+          <h1>{{ post.title }}</h1>
+          <p v-if="post.description" class="post-desc">{{ post.description }}</p>
+        </header>
 
-      <div class="post-body">
-        <ContentRenderer :value="post" />
-      </div>
-    </article>
+        <div class="post-body">
+          <ContentRenderer :value="post" />
+        </div>
+      </article>
+
+      <BlogSidebar />
+    </div>
 
     <SiteFooter />
   </div>
@@ -45,10 +49,18 @@ function formatDate(d) {
   min-height: 100vh;
 }
 
-.post-wrap {
-  max-width: 900px;
+.post-layout {
+  max-width: 1240px;
   margin: 0 auto;
   padding: 8rem 3rem 7rem;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 4rem;
+  align-items: start;
+}
+
+.post-wrap {
+  min-width: 0;
 }
 
 .back-link {
@@ -176,6 +188,9 @@ h1 {
 }
 
 @media (max-width: 900px) {
-  .post-wrap { padding: 6rem 1.5rem 5rem; }
+  .post-layout {
+    grid-template-columns: 1fr;
+    padding: 6rem 1.5rem 5rem;
+  }
 }
 </style>

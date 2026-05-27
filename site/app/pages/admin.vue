@@ -28,6 +28,7 @@ async function login() {
     await loadPodcasts()
     await loadPosts()
     await loadTestimonials()
+    await loadSidebarCards()
   } catch {
     loginError.value = 'Incorrect password.'
   } finally {
@@ -41,6 +42,7 @@ async function logout() {
   podcasts.value = []
   posts.value = []
   testimonials.value = []
+  sidebarCards.value = []
 }
 
 // ── Podcasts ──────────────────────────────────────────────────────────────────
@@ -63,6 +65,7 @@ onMounted(async () => {
     await loadPodcasts()
     await loadPosts()
     await loadTestimonials()
+    await loadSidebarCards()
   }
 })
 
@@ -251,6 +254,89 @@ async function deleteTestimonial(id: string) {
     testimonialDeleting.value = null
   }
 }
+
+// ── Sidebar Cards ──────────────────────────────────────────────────────────
+const sidebarCards = ref([])
+const sidebarCardSaving = ref(false)
+const sidebarCardDeleting = ref<string | null>(null)
+const editingSidebarCardId = ref<string | null>(null)
+const showSidebarCardForm = ref(false)
+const sidebarImageUploading = ref(false)
+const sidebarImageUploadError = ref('')
+
+const emptySidebarCardForm = () => ({ title: '', subtitle: '', ctaText: '', image: '', href: '' })
+const sidebarCardForm = ref(emptySidebarCardForm())
+
+async function loadSidebarCards() {
+  sidebarCards.value = await $fetch('/api/admin/sidebar-cards')
+}
+
+function startAddSidebarCard() {
+  editingSidebarCardId.value = null
+  sidebarCardForm.value = emptySidebarCardForm()
+  showSidebarCardForm.value = true
+}
+
+function startEditSidebarCard(card) {
+  editingSidebarCardId.value = card.id
+  sidebarCardForm.value = { ...card }
+  showSidebarCardForm.value = true
+}
+
+function cancelSidebarCardForm() {
+  showSidebarCardForm.value = false
+  editingSidebarCardId.value = null
+  sidebarImageUploadError.value = ''
+}
+
+async function uploadSidebarImage(e: Event) {
+  const input = e.target as HTMLInputElement
+  const file = input.files?.[0]
+  if (!file) return
+
+  sidebarImageUploading.value = true
+  sidebarImageUploadError.value = ''
+  try {
+    const formData = new FormData()
+    formData.append('image', file)
+    const result = await $fetch<{ path: string }>('/api/admin/upload-sidebar-image', {
+      method: 'POST',
+      body: formData,
+    })
+    sidebarCardForm.value.image = result.path
+  } catch (err: any) {
+    sidebarImageUploadError.value = err?.data?.message ?? 'Upload failed'
+  } finally {
+    sidebarImageUploading.value = false
+    input.value = ''
+  }
+}
+
+async function saveSidebarCardForm() {
+  sidebarCardSaving.value = true
+  try {
+    if (editingSidebarCardId.value) {
+      await $fetch(`/api/admin/sidebar-cards/${editingSidebarCardId.value}`, { method: 'PUT', body: sidebarCardForm.value })
+    } else {
+      await $fetch('/api/admin/sidebar-cards', { method: 'POST', body: sidebarCardForm.value })
+    }
+    await loadSidebarCards()
+    cancelSidebarCardForm()
+  } finally {
+    sidebarCardSaving.value = false
+  }
+}
+
+async function deleteSidebarCard(id: string) {
+  if (!confirm('Delete this sidebar card?')) return
+  sidebarCardDeleting.value = id
+  try {
+    await $fetch(`/api/admin/sidebar-cards/${id}`, { method: 'DELETE' })
+    await loadSidebarCards()
+  } finally {
+    sidebarCardDeleting.value = null
+  }
+}
 </script>
 
 <template>
@@ -290,7 +376,7 @@ async function deleteTestimonial(id: string) {
 
         <!-- NOTICE -->
         <div class="notice">
-          <strong>Heads up:</strong> Changes write to <code>app/data/podcasts.json</code>, <code>app/data/testimonials.json</code>, and <code>content/posts/</code>. Commit and redeploy to make them permanent in production.
+          <strong>Heads up:</strong> Changes write to <code>app/data/podcasts.json</code>, <code>app/data/testimonials.json</code>, <code>app/data/sidebar-cards.json</code>, and <code>content/posts/</code>. Commit and redeploy to make them permanent in production.
         </div>
 
         <!-- PODCASTS SECTION -->
@@ -482,6 +568,78 @@ async function deleteTestimonial(id: string) {
             </div>
           </div>
           <p v-else class="empty-state">No testimonials yet. Add one above.</p>
+        </section>
+
+        <!-- SIDEBAR CARDS SECTION -->
+        <section class="admin-section" style="margin-top: 2rem;">
+          <div class="section-header">
+            <h2>Blog Sidebar Cards</h2>
+            <button class="btn-primary btn-sm" @click="startAddSidebarCard" v-if="!showSidebarCardForm">+ Add New</button>
+          </div>
+
+          <!-- ADD / EDIT FORM -->
+          <div v-if="showSidebarCardForm" class="podcast-form">
+            <h3>{{ editingSidebarCardId ? 'Edit Card' : 'New Card' }}</h3>
+            <div class="form-grid">
+              <label class="form-field">
+                <span>Title</span>
+                <input v-model="sidebarCardForm.title" type="text" class="admin-input" placeholder="e.g. Free Value Leak Assessment" />
+              </label>
+              <label class="form-field">
+                <span>Destination URL</span>
+                <input v-model="sidebarCardForm.href" type="url" class="admin-input" placeholder="https://…" />
+              </label>
+              <label class="form-field form-field--full">
+                <span>Subtitle</span>
+                <input v-model="sidebarCardForm.subtitle" type="text" class="admin-input" placeholder="Short supporting line" />
+              </label>
+              <label class="form-field">
+                <span>Button text <em style="font-weight:400;font-style:normal;">(defaults to "Find Out More" if blank)</em></span>
+                <input v-model="sidebarCardForm.ctaText" type="text" class="admin-input" placeholder="e.g. Take the Free Assessment" />
+              </label>
+              <div class="form-field form-field--full">
+                <span class="upload-label">Image</span>
+                <div class="photo-upload-row">
+                  <img v-if="sidebarCardForm.image" :src="sidebarCardForm.image" class="sidebar-img-preview" alt="Preview" />
+                  <div class="upload-controls">
+                    <label class="btn-ghost btn-sm upload-btn">
+                      {{ sidebarImageUploading ? 'Uploading…' : (sidebarCardForm.image ? 'Replace image' : 'Upload image') }}
+                      <input type="file" accept=".jpg,.jpeg,.png,.webp" @change="uploadSidebarImage" :disabled="sidebarImageUploading" hidden />
+                    </label>
+                    <span v-if="sidebarImageUploadError" class="form-error">{{ sidebarImageUploadError }}</span>
+                    <span v-if="sidebarCardForm.image && !sidebarImageUploadError" class="upload-path">{{ sidebarCardForm.image }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn-primary btn-sm" @click="saveSidebarCardForm" :disabled="sidebarCardSaving">
+                {{ sidebarCardSaving ? 'Saving…' : (editingSidebarCardId ? 'Save Changes' : 'Add Card') }}
+              </button>
+              <button class="btn-ghost btn-sm" @click="cancelSidebarCardForm">Cancel</button>
+            </div>
+          </div>
+
+          <!-- CARD LIST -->
+          <div v-if="sidebarCards.length" class="podcast-list">
+            <div v-for="card in sidebarCards" :key="card.id" class="podcast-row">
+              <img v-if="card.image" :src="card.image" :alt="card.title" class="sidebar-card-thumb" />
+              <div class="podcast-info">
+                <span class="podcast-ep-label">{{ card.title }}</span>
+                <span class="podcast-show-label">{{ card.subtitle }}</span>
+                <span class="podcast-date-label">{{ card.href }}</span>
+              </div>
+              <div class="podcast-actions">
+                <button class="btn-ghost btn-sm" @click="startEditSidebarCard(card)">Edit</button>
+                <button
+                  class="btn-danger btn-sm"
+                  @click="deleteSidebarCard(card.id)"
+                  :disabled="sidebarCardDeleting === card.id"
+                >{{ sidebarCardDeleting === card.id ? '…' : 'Delete' }}</button>
+              </div>
+            </div>
+          </div>
+          <p v-else class="empty-state">No sidebar cards yet. Add one above.</p>
         </section>
 
       </main>
@@ -880,5 +1038,25 @@ async function deleteTestimonial(id: string) {
   font-size: 0.85rem;
   line-height: 1.6;
   min-height: 400px;
+}
+
+.sidebar-card-thumb {
+  width: 80px;
+  height: 45px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--surface-dark);
+  border: 1px solid var(--border);
+}
+
+.sidebar-img-preview {
+  width: 160px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  background: var(--surface);
 }
 </style>

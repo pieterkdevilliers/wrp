@@ -44,17 +44,17 @@ watch(visible, (val) => {
           <img src="/images/logo-full.png" alt="Blindspot Works" class="eit-logo" />
 
           <h2 id="eit-headline" class="eit-headline">
-            Before you go, do you know where your business is losing value?
+            Before you go, is your business ready to scale without you holding it all together?
           </h2>
           <p class="eit-sub">
-            The free Value Leak Assessment takes 5 minutes and tells you exactly where to focus first.
+            The free Automation Readiness Assessment takes 5 minutes and tells you exactly where to focus first.
           </p>
           <p class="eit-body">
             Most business owners have a sense that something isn't working. The assessment shows you specifically what it is, scored across four dimensions and ranked by impact. It's the first step to fixing the leaks in your business and unlocking growth.
           </p>
 
           <a
-            href="/value-leak-assessment"
+            href="/automation-readiness"
             target="_blank"
             rel="noopener"
             class="btn-primary eit-cta"
