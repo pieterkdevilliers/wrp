@@ -1,7 +1,7 @@
 <script setup>
 useSeoMeta({
-  title: 'A Special Offer: Blindspot Works',
-  description: 'An exclusive offer for networking contacts, automated business systems for service businesses.',
+  title: 'The Foundation — Blindspot Works',
+  description: 'A complete automation system for service businesses. Enquiry follow-up, new client welcome, and Google review automation — set up and running in under two weeks.',
   robots: 'noindex, nofollow',
 })
 </script>
@@ -19,9 +19,9 @@ useSeoMeta({
     <!-- HERO -->
     <section class="offer-hero">
       <div class="hero-inner">
-        <p class="section-eyebrow">Exclusively for networking contacts</p>
+        <p class="section-eyebrow">Get the foundations right</p>
         <h1>Most service businesses are losing enquiries, reviews, and repeat clients every week. Not because the work they do isn't good enough, but because the systems around the work aren't doing their job.</h1>
-        <p class="hero-sub">As someone I have met personally, I am offering you a significantly reduced package to set up a complete automation system for your business, and a free 15-minute call to start the conversation.</p>
+        <p class="hero-sub">A complete automation system for your business, set up and running in under two weeks, with a free 30-minute call to start the conversation.</p>
         <div class="hero-actions">
           <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book Your Free Call Now</a>
         </div>
@@ -95,8 +95,8 @@ useSeoMeta({
     <section class="pricing-section">
       <div class="section-inner">
         <div class="section-heading">
-          <p class="section-eyebrow">The Networking Offer</p>
-          <h2>A package built for businesses I meet in person</h2>
+          <p class="section-eyebrow">The Investment</p>
+          <h2>Simple, transparent pricing</h2>
         </div>
         <div class="pricing-layout">
           <div class="pricing-card">
@@ -104,8 +104,8 @@ useSeoMeta({
               <div class="tier-header">
                 <h3>Foundation Setup</h3>
                 <div class="tier-price">
-                  <span class="price-was">£595</span>
-                  <span class="price-now">£395</span>
+                  <!-- <span class="price-was">£595</span> -->
+                  <span class="price-now">£595</span>
                 </div>
               </div>
               <p class="tier-desc">Complete setup and delivery of all three automation systems within two weeks. Includes process design, sequence writing, automation build, and website connection.</p>
@@ -115,14 +115,11 @@ useSeoMeta({
               <div class="tier-header">
                 <h3>Ongoing Monthly</h3>
                 <div class="tier-price">
-                  <span class="price-was">£147/month</span>
-                  <span class="price-now">£97<span class="price-period">/mo</span></span>
+                  <!-- <span class="price-was">£147/month</span> -->
+                  <span class="price-now">£147<span class="price-period">/mo</span></span>
                 </div>
               </div>
               <p class="tier-desc">Automation software licence, and direct access when something needs attention.</p>
-            </div>
-            <div class="pricing-saving">
-              Save £200 on setup + £50/month ongoing — exclusively for networking contacts.
             </div>
             <div class="pricing-footer">
               <p class="pricing-contract">No contract. Cancel any time.</p>
@@ -131,7 +128,7 @@ useSeoMeta({
           </div>
 
           <div class="pricing-callout">
-            <p class="callout-text">"Start with a free chat. No pitch. No obligation. Just a conversation about your business and whether this is the right fit."</p>
+            <p class="callout-text">"Start with a chat. No pitch. No obligation. Just a conversation about your business and whether this is the right fit."</p>
             <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book Your Free Call Now!</a>
           </div>
         </div>
@@ -189,7 +186,7 @@ useSeoMeta({
             <span class="step-number">4</span>
             <div class="step-content">
               <h3>The Build <span class="step-meta">Week 1–2</span></h3>
-              <p>I build everything and connect it to your website(We'll work with your web developer where needed). You receive a walkthrough when it is ready.</p>
+              <p>I build everything and connect it to your website (we'll work with your web developer where needed). You receive a walkthrough when it is ready.</p>
             </div>
           </div>
           <div class="step">
