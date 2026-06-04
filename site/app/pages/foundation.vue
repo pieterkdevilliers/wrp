@@ -25,6 +25,7 @@ useSeoMeta({
         <div class="hero-actions">
           <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book Your Free Call Now</a>
         </div>
+        <HeroCTACards />
       </div>
     </section>
 
@@ -245,11 +246,11 @@ useSeoMeta({
 .offer-hero {
   background: var(--surface-dark);
   color: #ffffff;
-  padding: 8rem 3rem 7rem;
+  padding: 8rem 3rem 4rem;
 }
 
 .hero-inner {
-  max-width: 720px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -627,6 +628,10 @@ h2 {
   .profile-photo { width: 96px; height: 96px; }
   .process-section { padding: 5rem 1.5rem; }
   .cta-section { padding: 5rem 1.5rem; }
+}
+
+.hero-cta-cards {
+  margin-top: 4rem;
 }
 
 .testimonials-wrap {
