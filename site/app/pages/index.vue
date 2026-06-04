@@ -5,16 +5,16 @@ import { useSeoMeta } from '#imports'
 const siteUrl = 'https://blindspotworks.com'
 
 useSeoMeta({
-  title: 'Blindspot Works — Find the gaps. Fix the business.',
-  description: 'I help owner-managed businesses map their customer journey, find where they\'re losing time and money, and fix it — without adding more tools to the pile.',
+  title: 'Blindspot Works — Business Automation for Service Businesses',
+  description: 'Service businesses lose enquiries, reviews, and repeat clients every week — not because the work isn\'t good, but because the systems aren\'t doing their job. Blindspot Works fixes that.',
   ogTitle: 'Blindspot Works — Find the gaps. Fix the business.',
-  ogDescription: 'I help owner-managed businesses map their customer journey, find where they\'re losing time and money, and fix it — without adding more tools to the pile.',
+  ogDescription: 'Service businesses lose enquiries, reviews, and repeat clients every week — not because the work isn\'t good, but because the systems aren\'t doing their job. Blindspot Works fixes that.',
   ogImage: `${siteUrl}/images/pkdv-profile.jpg`,
   ogUrl: siteUrl,
   ogType: 'website',
   twitterCard: 'summary_large_image',
   twitterTitle: 'Blindspot Works — Find the gaps. Fix the business.',
-  twitterDescription: 'I help owner-managed businesses map their customer journey, find where they\'re losing time and money, and fix it — without adding more tools to the pile.',
+  twitterDescription: 'Service businesses lose enquiries, reviews, and repeat clients every week — not because the work isn\'t good, but because the systems aren\'t doing their job. Blindspot Works fixes that.',
 })
 
 useHead({
@@ -69,11 +69,11 @@ onBeforeUnmount(() => {
         <p class="hero-eyebrow">Blindspot Works · UK</p>
         <h1>I find the gaps quietly costing your business time and clients - and fix them, <em>without more tools, more staff, or more chaos.</em></h1>
         <p class="hero-sub">
-          I help owner-managed businesses map their full customer journey, find exactly where they're losing time and money, and fix it.
+          Enquiries go cold. Satisfied clients don't leave reviews. New clients feel forgotten in week one. I fix all three, automatically, in under two weeks.
         </p>
         <div class="hero-actions">
-          <a href="https://blindspotworks.com/lets-talk" class="btn-primary" target="_blank" rel="noopener">Let's Talk</a>
-          <a href="#services" class="btn-secondary">See What's Available</a>
+          <a href="/foundation" class="btn-primary" target="_blank" rel="noopener">See How It Works</a>
+          <a href="/lets-talk" class="btn-secondary">Book a Free Call</a>
         </div>
         <HeroCTACards />
       </div>
@@ -83,21 +83,21 @@ onBeforeUnmount(() => {
     <section class="problem">
       <div>
         <p class="section-eyebrow">The Problem</p>
-        <h2>You don't need more tools. You need clarity.</h2>
+        <h2>Your business is losing jobs it already has. Here is where they go.</h2>
         <div class="problem-body">
-          <p>Most businesses invest in software, automation, and AI before they understand their own process. So the tools add complexity instead of removing it.</p>
-          <p>The result is a patchwork of systems that don't talk to each other, a team doing manual work that should be automated, and customers falling through gaps that nobody has properly mapped.</p>
-          <p>Before you spend another pound on technology, you need to see the journey your customers are actually on, not the one you think they're on.</p>
-          <p>These aren't technology problems. They're journey problems, and most businesses don't even realise they have one until they've mapped it properly.</p>
+          <p>Most service businesses lose between a third and half of their enquiries. Not because the quote was wrong or the price was too high, but because the response was too slow, the follow-up never happened, or the prospect felt like nobody was really on it.</p>
+          <p>The same businesses have few Google reviews, that do not reflect the quality of their work. Not because clients were unhappy, but because nobody asked at the right moment.</p>
+          <p>And the clients who do sign up often feel uncertain in the first two weeks, because onboarding depends on whoever has time that week rather than a system that runs the same way every time.</p>
+          <p>These are not technology problems. They are process problems. And they are fixable, without adding complexity, without hiring more people, and without spending months on a transformation programme.</p>
         </div>
       </div>
       <ul class="problem-list">
-        <li>Do you find leads are going cold because follow-up depends on someone remembering to do it?</li>
-        <li>Is your onboarding process inconsistent because it relies on tribal knowledge?</li>
-        <li>Are you using five different tools that were meant to solve the same problem?</li>
-        <li>Does your team spend hours each week on tasks that should take minutes?</li>
-        <li>Have you thought about adding AI but don't know where it would actually make a difference?</li>
-        <li>Does growth feel like it requires more people, when it really requires better systems?</li>
+        <li>Do your enquiries get a response within minutes, or does it depend on who is available?</li>
+        <li>How many Google reviews did you receive last month versus how many jobs you completed or customers you served?</li>
+        <li>What does a new client experience in their first 48 hours, and is it consistent every time?</li>
+        <li>Is your follow-up process documented, or does it live in someone's memory?</li>
+        <li>When a job is done, does the client hear from you again, or does the relationship go silent?</li>
+        <li>Could your business handle twice the enquiry volume with the systems you have today?</li>
       </ul>
     </section>
 
@@ -114,23 +114,23 @@ onBeforeUnmount(() => {
 
             <div class="service-card">
               <p class="service-price">Free</p>
-              <h3>The Book</h3>
-              <p class="service-desc">Get a free copy of <em>Barefoot Business</em>: the 2017 Amazon bestseller on building a business that works without you being the bottleneck.</p>
-              <a href="#about" class="btn-primary service-cta">Get Your Free Copy</a>
-            </div>
-
-            <div class="service-card">
-              <p class="service-price">Free</p>
               <h3>Value Leak Assessment</h3>
               <p class="service-desc">Find out exactly where your business is losing time, clients, and revenue. The free Value Leak Assessment scores your business across four dimensions and shows you precisely where to focus first. Takes five minutes.</p>
               <a href="/value-leak-assessment" class="btn-primary service-cta" target="_blank" rel="noopener">Take the Free Assessment</a>
             </div>
 
             <div class="service-card">
-              <p class="service-price">£249</p>
-              <h3>Audit Call</h3>
-              <p class="service-desc">A focused 90-minute diagnostic call. We look at your business, your customer journey, and where the gaps are costing you. You leave with clarity and a prioritised view of what to fix. No commitment beyond the call.</p>
-              <NuxtLink to="/journey-audit" class="btn-primary service-cta">Find Out More</NuxtLink>
+              <p class="service-price">Free</p>
+              <h3>The Book</h3>
+              <p class="service-desc">Get a free copy of <em>Barefoot Business</em>: the 2017 Amazon bestseller on building a business that works without you being the bottleneck.</p>
+              <a href="#about" class="btn-primary service-cta">Get Your Free Copy</a>
+            </div>
+
+            <div class="service-card">
+              <p class="service-price">From £595</p>
+              <h3>The Foundation Package</h3>
+              <p class="service-desc">A complete automation system for your business, set up and running in under two weeks. Enquiry follow-up, new client welcome sequence, and Google review automation. All done for you.</p>
+              <NuxtLink to="/foundation" class="btn-primary service-cta">See What's Included</NuxtLink>
             </div>
 
           </div>
@@ -154,7 +154,7 @@ onBeforeUnmount(() => {
             <div class="service-card">
               <p class="service-price">£2,495</p>
               <h3>White Room Process</h3>
-              <p class="service-desc">For business owners who want to get their quicker. A full-day, in-person workshop to map your complete customer journey end-to-end. Required before any implementation work begins. Discounted for existing coaching clients.</p>
+              <p class="service-desc">For business owners who want to get there quicker. A full-day, in-person workshop to map your complete customer journey end-to-end. Required before any implementation work begins. Discounted for existing coaching clients.</p>
               <NuxtLink to="/workshop" class="btn-primary service-cta">What's Involved</NuxtLink>
             </div>
 
@@ -180,19 +180,15 @@ onBeforeUnmount(() => {
       <div class="fit-grid">
         <div class="fit-card good">
           <h3>A strong fit if you are...</h3>
-          <p>An owner-managed business with 5–50 people that has grown beyond spreadsheets and manual processes, but hasn't yet built a proper operations or technology function. You know things could be slicker. You're ready to invest in getting them right, and you want a partner who can both think strategically and actually build things.</p>
+          <p>A service business with a team, trades, professional services, agencies, or any business that handles enquiries, delivers jobs, and wants more Google reviews than it currently has. You know things could run more smoothly. You are ready to invest a small amount monthly to make that happen, and you want it done for you, not handed to you as a project to manage yourself.</p>
         </div>
         <div class="fit-card good">
           <h3>Also a strong fit if you...</h3>
-          <p>Have invested in software or tools before and felt like you didn't get the value, or you're still doing things manually because nothing you tried actually stuck. You want someone who will look at the problem honestly, not sell you a solution looking for a problem.</p>
+          <p>You have tried software before and it gathered dust. You have bought a CRM that nobody used. You are sceptical of technology promises, and rightly so. This is different because I design the process first, build the automation second, and deliver it working. The system runs in the background. You do not have to manage it.</p>
         </div>
         <div class="fit-card notgood">
           <h3>Probably not the right fit if...</h3>
-          <p>You're looking for someone to simply execute a brief you've already written. Or you need a team of 10 developers. I'm a specialist, not an agency - I work with a small number of clients at any time, and I'm selective about the engagements I take on.</p>
-        </div>
-        <div class="fit-card notgood">
-          <h3>Also not the right fit if...</h3>
-          <p>You want cheap or fast. I offer neither. The businesses I work with see genuine, lasting improvement in how they operate - and that takes proper thinking, proper building, and a willingness to look honestly at how things currently work.</p>
+          <p>You are looking for a cheap tool you can set up yourself, or you want a full agency with a team of ten. I work with a small number of clients personally, I am not the right fit if you need scale or speed over quality and fit.</p>
         </div>
       </div>
     </div>
@@ -207,9 +203,10 @@ onBeforeUnmount(() => {
         <div class="about-text">
           <img src="/images/pkdv-profile.jpg" alt="Pieter K de Villiers" class="profile-photo" />
           <p class="section-eyebrow">About</p>
-          <h2>More than a decade of helping businesses work smarter. Now with AI in the toolkit.</h2>
+          <h2>I have been fixing this problem for over a decade. Now the tools to fix it properly are within reach of every small business.</h2>
           <div class="about-body">
-            <p>I'm Pieter K de Villiers. I've been working with business owners on process improvement and automation since 2014, long before AI became a buzzword. I understand how businesses actually run: the manual work-arounds, the hand-off failures, the bottlenecks that everyone knows about but nobody has quite figured out how to fix.</p>
+            <p>I'm Pieter K de Villiers. I've been working with service business owners on process improvement and automation since 2014, long before AI became a buzzword. The problems I fix now are the same ones I have always fixed: enquiries that go cold, clients who feel forgotten, teams doing manually what should happen automatically.</p>
+            <p>The difference is that the tools available today make it faster and more affordable to fix them than ever before. What used to require a significant technology budget can now be set up in two weeks for a few hundred pounds.</p>
             <p>Along the way, I built MacantaCRM, a no-code CRM and process automation platform, from the ground up. Took it to market, and managed the transition through acquisition. I know what it's like to be the business owner trying to keep operations together, and I know what it takes to build systems that genuinely hold up under pressure.</p>
             <p>That background shapes how I work. I'm not a developer who learned to talk to clients, and I'm not a strategist who hands you a report and leaves. I sit at the intersection of business thinking and technical delivery, which means the recommendations I make are ones that can actually be implemented, and the things I build are grounded in how your business works in practice.</p>
             <p>I work with a small number of clients at any time. You'll work with me directly, not an account manager, not a junior consultant.</p>

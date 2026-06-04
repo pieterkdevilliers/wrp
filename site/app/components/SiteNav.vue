@@ -6,12 +6,11 @@
     </NuxtLink>
 
     <ul class="nav-links">
-      <li><NuxtLink to="/#services">Services</NuxtLink></li>
+      <li><NuxtLink to="/foundation">How It Works</NuxtLink></li>
       <li><NuxtLink to="/coaching">Coaching</NuxtLink></li>
-      <li><NuxtLink to="/#podcasts">Podcasts</NuxtLink></li>
       <li><NuxtLink to="/blog">Blog</NuxtLink></li>
       <li><NuxtLink to="/#about">About</NuxtLink></li>
-      <li><a href="https://blindspotworks.com/lets-talk" class="nav-cta" target="_blank" rel="noopener">Let's Talk</a></li>
+      <li><a href="/lets-talk" class="nav-cta" target="_blank" rel="noopener">Book a Free Call</a></li>
     </ul>
 
     <button class="nav-toggle" @click="open = !open" :aria-expanded="String(open)" aria-label="Toggle menu">
@@ -22,12 +21,11 @@
 
     <div class="nav-mobile" :class="{ 'is-open': open }">
       <ul>
-        <li><NuxtLink to="/#services" @click="open = false">Services</NuxtLink></li>
+        <li><NuxtLink to="/foundation" @click="open = false">How It Works</NuxtLink></li>
         <li><NuxtLink to="/coaching" @click="open = false">Coaching</NuxtLink></li>
-        <li><NuxtLink to="/#podcasts" @click="open = false">Podcasts</NuxtLink></li>
         <li><NuxtLink to="/blog" @click="open = false">Blog</NuxtLink></li>
         <li><NuxtLink to="/#about" @click="open = false">About</NuxtLink></li>
-        <li><a href="https://blindspotworks.com/lets-talk" class="mobile-cta" target="_blank" rel="noopener" @click="open = false">Let's Talk</a></li>
+        <li><a href="/lets-talk" class="mobile-cta" target="_blank" rel="noopener" @click="open = false">Book a Free Call</a></li>
       </ul>
     </div>
   </nav>
