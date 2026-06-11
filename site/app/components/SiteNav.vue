@@ -8,6 +8,7 @@
     <ul class="nav-links">
       <li><NuxtLink to="/foundation">How It Works</NuxtLink></li>
       <li><NuxtLink to="/coaching">Coaching</NuxtLink></li>
+      <li><NuxtLink to="/gaps-and-gains">Gaps &amp; Gains</NuxtLink></li>
       <li><NuxtLink to="/blog">Blog</NuxtLink></li>
       <li><NuxtLink to="/#about">About</NuxtLink></li>
       <li><a href="/lets-talk" class="nav-cta" target="_blank" rel="noopener">Book a Free Call</a></li>
@@ -23,6 +24,7 @@
       <ul>
         <li><NuxtLink to="/foundation" @click="open = false">How It Works</NuxtLink></li>
         <li><NuxtLink to="/coaching" @click="open = false">Coaching</NuxtLink></li>
+        <li><NuxtLink to="/gaps-and-gains" @click="open = false">Gaps &amp; Gains</NuxtLink></li>
         <li><NuxtLink to="/blog" @click="open = false">Blog</NuxtLink></li>
         <li><NuxtLink to="/#about" @click="open = false">About</NuxtLink></li>
         <li><a href="/lets-talk" class="mobile-cta" target="_blank" rel="noopener" @click="open = false">Book a Free Call</a></li>
