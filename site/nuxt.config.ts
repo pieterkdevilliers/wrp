@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   routeRules: {
-    '/lets-talk': { redirect: { to: 'https://tap-now-link.com/widget/bookings/i-am-curious', statusCode: 302 } },
+    '/lets-talk': { redirect: { to: 'https://api.blindspotworks.com/widget/bookings/i-am-curious', statusCode: 302 } },
     '/blindspot-score': { redirect: { to: 'https://business-journey-health.scoreapp.com/', statusCode: 302 } },
     '/value-leak-assessment': { redirect: { to: 'https://value-leak.scoreapp.com', statusCode: 302 } },
     '/automation-readiness': { redirect: { to: 'https://blindspot-automation-readiness.scoreapp.com', statusCode: 302 } },
@@ -19,12 +19,12 @@ export default defineNuxtConfig({
         'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
         'Content-Security-Policy': [
           "default-src 'self'",
-          "script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://d31env5c5sjhq3.cloudfront.net https://www.buzzsprout.com https://fastapi-rag-2705cfd4c41a.herokuapp.com https://tap-now-link.com",
+          "script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://d31env5c5sjhq3.cloudfront.net https://www.buzzsprout.com https://fastapi-rag-2705cfd4c41a.herokuapp.com https://tap-now-link.com https://api.blindspotworks.com",
           "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
           "font-src 'self' https://fonts.gstatic.com",
           "img-src 'self' data: https:",
           "frame-src https://ee-crm.expertecho.ai https://www.buzzsprout.com",
-          "connect-src 'self' https://d31env5c5sjhq3.cloudfront.net https://*.expertecho.ai https://www.buzzsprout.com https://fastapi-rag-2705cfd4c41a.herokuapp.com https://tap-now-link.com https://*.tap-now-link.com https://backend.leadconnectorhq.com",
+          "connect-src 'self' https://d31env5c5sjhq3.cloudfront.net https://*.expertecho.ai https://www.buzzsprout.com https://fastapi-rag-2705cfd4c41a.herokuapp.com https://tap-now-link.com https://*.tap-now-link.com https://backend.leadconnectorhq.com https://api.blindspotworks.com",
           "object-src 'none'",
           "base-uri 'self'",
         ].join('; '),
