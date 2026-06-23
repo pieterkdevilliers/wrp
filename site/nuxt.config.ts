@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     '/blindspot-score': { redirect: { to: 'https://business-journey-health.scoreapp.com/', statusCode: 302 } },
     '/value-leak-assessment': { redirect: { to: 'https://value-leak.scoreapp.com', statusCode: 302 } },
     '/automation-readiness': { redirect: { to: 'https://blindspot-automation-readiness.scoreapp.com', statusCode: 302 } },
+    '/networking-121': { redirect: { to: 'https://api.blindspotworks.com/widget/bookings/networking-121-chat', statusCode: 302 } },
     '/**': {
       headers: {
         'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
