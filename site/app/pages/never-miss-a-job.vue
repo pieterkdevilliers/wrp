@@ -1,6 +1,11 @@
 <script setup>
 const siteUrl = 'https://blindspotworks.com'
 
+// Hero video: drop the file in public/videos/ and set e.g. '/videos/always-on-demo.mp4'.
+// Leave empty to show the placeholder.
+const heroVideoSrc = ''
+const heroVideoPoster = ''
+
 useSeoMeta({
   title: 'Never Miss a Job - Blindspot Works',
   description: 'Every missed call is a job someone else just won. The Always-On System answers your phone, follows up enquiries, looks after new clients, and gets you Google reviews — automatically, 24 hours a day.',
@@ -20,17 +25,39 @@ useHead({
 <template>
   <div class="page">
 
-    <SiteNav />
-
     <!-- HERO -->
     <section class="hero">
       <div class="hero-inner">
-        <p class="section-eyebrow">For trades and home service businesses</p>
-        <h1>"Every missed call is a job someone else just won."</h1>
-        <p class="hero-sub">The Always-On System answers your phone, follows up your enquiries, looks after new clients, and gets you more Google reviews - automatically, 24 hours a day.</p>
-        <div class="hero-actions">
-          <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book a Free 15-Min Call</a>
-          <a href="#solution" class="hero-scroll-link">See what's included ↓</a>
+        <div class="hero-content">
+          <p class="section-eyebrow">For trades and home service businesses</p>
+          <h1>"Every missed call is a job someone else just won."</h1>
+          <p class="hero-sub">The Always-On System answers your phone, follows up your enquiries, looks after new clients, and gets you more Google reviews - automatically, 24 hours a day.</p>
+          <div class="hero-demo">
+            <p class="hero-demo-label">Call now to experience an AI receptionist for yourself</p>
+            <a href="tel:+447365796399" class="hero-demo-number">07365 796399</a>
+            <p class="hero-demo-note">Available 24/7. Ask it anything you'd expect a customer to ask.</p>
+          </div>
+          <div class="hero-actions">
+            <a href="/always-on-system" class="btn-primary" target="_blank" rel="noopener">Book a Free 30-Min Call</a>
+            <a href="#solution" class="hero-scroll-link">See what's included ↓</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <video
+            v-if="heroVideoSrc"
+            class="hero-video"
+            :src="heroVideoSrc"
+            :poster="heroVideoPoster || undefined"
+            controls
+            playsinline
+            preload="metadata"
+          />
+          <div v-else class="hero-video-placeholder" aria-label="Video coming soon">
+            <span class="hero-video-play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+            </span>
+            <span class="hero-video-caption">Video coming soon</span>
+          </div>
         </div>
       </div>
     </section>
@@ -111,7 +138,7 @@ useHead({
           <div class="step">
             <span class="step-number">1</span>
             <div class="step-content">
-              <h3>Free 15-Min Call</h3>
+              <h3>Free 30-Min Call</h3>
               <p>We talk through how your business currently handles enquiries, what happens when someone calls, fills in a form, or sends a message. No pitch. No pressure. Just an honest look at where jobs might be slipping through.</p>
             </div>
           </div>
@@ -167,7 +194,7 @@ useHead({
           </div>
           <div class="pricing-callout">
             <p class="callout-text">"The setup covers the full build: AI Receptionist configuration, all four automations, website connection, and a walkthrough when it goes live."</p>
-            <a href="/lets-talk" class="btn-primary" target="_blank" rel="noopener">Book a Free 15-Min Call</a>
+            <a href="/always-on-system" class="btn-primary" target="_blank" rel="noopener">Book a Free 30-Min Call</a>
           </div>
         </div>
       </div>
@@ -194,9 +221,9 @@ useHead({
     <section class="cta-section">
       <div class="cta-inner">
         <h2>Stop losing jobs to your voicemail.</h2>
-        <p>The 15-minute call is free. No pitch. No hard sell. Just a conversation about whether this is the right fit for your business.</p>
+        <p>The 30-minute call is free. No pitch. No hard sell. Just a conversation about whether this is the right fit for your business.</p>
         <div class="cta-actions">
-          <a href="/lets-talk" class="btn-primary-inv" target="_blank" rel="noopener">Book Your Free Call</a>
+          <a href="/always-on-system" class="btn-primary-inv" target="_blank" rel="noopener">Book Your Free Call</a>
         </div>
         <a href="/automation-readiness" class="cta-text-link">Or take the free Automation Readiness Assessment →</a>
       </div>
@@ -237,12 +264,60 @@ h2 {
 .hero {
   background: var(--surface-dark);
   color: #ffffff;
-  padding: 9rem 3rem 6rem;
+  padding: 6rem 3rem 6rem;
 }
 
 .hero-inner {
   max-width: 1100px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.hero-content {
+  min-width: 0;
+}
+
+.hero-media {
+  min-width: 0;
+}
+
+.hero-video,
+.hero-video-placeholder {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  background: #000000;
+}
+
+.hero-video-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.hero-video-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  padding-left: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.hero-video-caption {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .hero .section-eyebrow {
@@ -274,6 +349,43 @@ h2 {
 
 .hero-scroll-link:hover {
   color: #ffffff;
+}
+
+.hero-demo {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 1.75rem;
+  max-width: 600px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.hero-demo-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.hero-demo-number {
+  display: inline-block;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.hero-demo-number:hover {
+  color: #ffffff;
+}
+
+.hero-demo-note {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 0.4rem;
 }
 
 /* SHARED */
@@ -604,7 +716,13 @@ h2 {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .hero { padding: 7rem 1.5rem 4rem; }
+  .hero { padding: 4rem 1.5rem 4rem; }
+  /* Flatten the hero so the video sits between the intro text and the call-now panel */
+  .hero-inner { grid-template-columns: 1fr; gap: 0; }
+  .hero-content { display: contents; }
+  .hero-media { order: 1; margin-bottom: 2.5rem; }
+  .hero-demo { order: 2; }
+  .hero-actions { order: 3; }
   .problems-section { padding: 5rem 1.5rem; }
   .problems-grid { grid-template-columns: 1fr; }
   .solution-section { padding: 5rem 1.5rem; }
