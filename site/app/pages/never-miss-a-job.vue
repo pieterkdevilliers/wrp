@@ -6,6 +6,10 @@ const siteUrl = 'https://blindspotworks.com'
 const heroVideoSrc = ''
 const heroVideoPoster = ''
 
+// AI receptionist demo line, shown in the hero and pricing sections
+const demoPhone = '07365 796399'
+const demoPhoneHref = 'tel:+447365796399'
+
 useSeoMeta({
   title: 'Never Miss a Job - Blindspot Works',
   description: 'Every missed call is a job someone else just won. The Always-On System answers your phone, follows up enquiries, looks after new clients, and gets you Google reviews — automatically, 24 hours a day.',
@@ -34,7 +38,7 @@ useHead({
           <p class="hero-sub">The Always-On System answers your phone, follows up your enquiries, looks after new clients, and gets you more Google reviews - automatically, 24 hours a day.</p>
           <div class="hero-demo">
             <p class="hero-demo-label">Call now to experience an AI receptionist for yourself</p>
-            <a href="tel:+447365796399" class="hero-demo-number">07365 796399</a>
+            <a :href="demoPhoneHref" class="hero-demo-number">{{ demoPhone }}</a>
             <p class="hero-demo-note">Available 24/7. Ask it anything you'd expect a customer to ask.</p>
           </div>
           <div class="hero-actions">
@@ -194,6 +198,11 @@ useHead({
           </div>
           <div class="pricing-callout">
             <p class="callout-text">"The setup covers the full build: AI Receptionist configuration, all four automations, website connection, and a walkthrough when it goes live."</p>
+            <div class="hero-demo hero-demo--solid">
+              <p class="hero-demo-label">Call now to experience an AI receptionist for yourself</p>
+              <a :href="demoPhoneHref" class="hero-demo-number">{{ demoPhone }}</a>
+              <p class="hero-demo-note">Available 24/7. Ask it anything you'd expect a customer to ask.</p>
+            </div>
             <a href="/always-on-system" class="btn-primary" target="_blank" rel="noopener">Book a Free 30-Min Call</a>
           </div>
         </div>
@@ -359,6 +368,14 @@ h2 {
   border-left: 3px solid var(--accent);
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.04);
+}
+
+.hero-demo--solid {
+  margin-bottom: 0;
+  max-width: none;
+  background: var(--surface-dark);
+  border-color: var(--surface-dark);
+  border-left-color: var(--accent);
 }
 
 .hero-demo-label {
@@ -721,7 +738,7 @@ h2 {
   .hero-inner { grid-template-columns: 1fr; gap: 0; }
   .hero-content { display: contents; }
   .hero-media { order: 1; margin-bottom: 2.5rem; }
-  .hero-demo { order: 2; }
+  .hero .hero-demo { order: 2; }
   .hero-actions { order: 3; }
   .problems-section { padding: 5rem 1.5rem; }
   .problems-grid { grid-template-columns: 1fr; }
